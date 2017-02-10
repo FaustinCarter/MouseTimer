@@ -1,0 +1,315 @@
+﻿
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Synology Data Replicator 3</title>
+<style type="text/css">
+<!--
+.head {
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.h1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.h2 {
+	font-weight: bold;
+	color: #FF3300;
+	font-size: 16px;
+}
+
+.topic {
+	font-family: "Geneva, Arial, Helvetica, sans-serif";
+	font-weight: bold;
+	color: #000000;
+	font-size: 16px;
+}
+
+body, td {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 10pt;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.notehead {
+	font-weight: bold;
+	font-size: 10pt;
+	color: #FF0000;
+}
+
+.notecontent {
+	font-size: 10pt;
+	color: #FF0000;
+}
+.style2 {font-size: 20px; font-weight: bold; color: #666666; 
+}
+.style4 {font-weight: bold; color: #0000FF; }
+-->
+</style>
+</head>
+<body>
+<p class="style2">Bruke Data Replicator 3</p>
+<p>Klikk på følgende hovedfunksjoner for å bli kjent med Data Replicator 3.</p>
+<ul>
+<li><a href="#bkp">Sikkerhetskopiering av PC-data</a> </li>
+<li><a href="#restore">Gjenopprette sikkerhetskopifiler</a> </li>
+<li><a href="#setting">Avanserte innstillinger</a> </li>
+<li><a href="#log">Logg</a> </li>
+</ul>
+<hr>
+<p class=h1><a name="bkp"></a>Sikkerhetskopiering av PC-data</p>
+<p>Vennligst følg trinnene nedenfor for å sette opp sikkerhetskopieringen. Du kan også gå til <a href="#setting">Avanserte innstillinger</a> for å bli kjent med andre innstillinger, som vil hjelpe deg å tilpasse sikkerhetskopieringen av PC-data til dine personlige behov.</p>
+<ol>
+<li class=topic>Velg et sikkerhetskopimål</li>
+	<p>Du kan velge å sikkerhetskopiere PC-dataene dine til en Synology server eller en annen adresse. Etter at sikkerhetskopieringen er vellykket gjennomført, vil du finne de sikkerhetskopierte filene i den tildelte mappen.</p>
+	<p>1.1	Sikkerhetskopier til en Synology server</p>
+		<ol type="a">
+		<li>Klikk <b>Velg</b>.</li>
+		<li>Velg <b>Synology Server</b> og klikk <b>OK</b>. </li>
+		<li>I neste vindu klikker du på den Synology serveren hvor den delte mappen for sikkerhetskopier befinner seg. Deretter klikker du <b>Neste</b>.</li>
+		<li>Skriv inn brukernavn og passordet som kan Lese fra/Skrive til den delte mappen du nettopp har valgt, og klikk <b>Neste</b>. </li>
+		<li>Klikk på den delte mappen du ønsker å bruke til sikkerhetskopier og klikk deretter <b>Fullfør</b>. </li>
+		</ol>
+  <p>1.2	Sikkerhetskopiering til en annen adresse</p>
+		<ol type="a">
+		<li>Klikk <b>Velg</b>.</li>
+		<li>Velg <b>Annen adresse</b>, og klikk <b>Bla gjennom</b> for å finne sikkerhetskopimålet.</li>
+		<li>Klikk <b>OK</b> for å fullføre.</li>
+  </ol>
+<BR>
+<li class=topic>Hak av mappene du ønsker å sikkerhetskopiere</li>
+<BR>
+<li class=topic>Velg sikkerhetskopieringsmodus</li>
+<p>Data Replicator 3 lar deg for enkelhets skyld velge mellom 3 sikkerhetskopieringsmodi:  <i><b>Umiddelbar</b></i>, <i><b>Synkronisert</b></i> og <i><b>Tidsbestemt</b></i>.</p>
+	3.1	<b>Umiddelbar</b>
+  	<p>     Ved å klikke <b>Umiddelbar</b>-knappen, vil alle filene i den/de valgte lokale mappen(e) umiddelbart bli sikkerhetskopiert til det valgte sikkerhetskopimålet.</p>
+	<p>3.2	<b>Synkronisert</b>  </p>
+		<ul>
+		<li>Synkroniser data nå og begynn overvåkning</li>
+		<p>Klikk <b>Synkroniser</b>-knappen, og Data Replicator 3 vil foreta en komplett sikkerhetskopiering av alle filene i den/de valgte mappen(e) til sikkerhetskopimålet. Deretter vil Data Replicator 3 begynne å overvåke mappen(e). Når du foretar endringer, sikkerhetskopierer Data Replicator 3 bare filer som er endret.</p>
+		<p class="notehead">Merk:</p>
+		<ol class="notecontent">
+		<li>Etter at Data Replicator 3 er gått i overvåkningsmodus, vil den fortsette å arbeide inntil du stopper.</li>
+		<li>Tidsintervallet mellom e-postsynkronisering er tiden fra synkroniseringen er fullført til neste synkronisering starter. Oppgaven kan bli utsatt hvis Data Replicator 3 gjennomfører synkronisering av andre filer.</li>
+		</ol>
+		<br>
+		<li>Stopp overvåkning</li>
+		<p>For å stoppe overvåkningen, klikk <b>Stopp synkronisering</b>-knappen i programvinduet til Data Replicator 3. Dersom programvinduet har blitt minimalisert og lagt i systemfeltet, vennligst dobbelklikk på ikonet til Data Replicator 3 for å åpne programvinduet.</p>
+  </ul>
+	    <p>3.3	<b>Tidsplan</b></p>
+	    <ul>
+	  <li>Stille inn tidstabell</li>
+	  <p>Data Replicator 3 kan konfigureres til å foreta automatiske sikkerhetskopieringer jevnlig på oppgitte tidspunkt. Slik gjør du dette:</p>
+	  <ol type="a">
+		<li>Klikk <b>Tidstabell</b>.</li>
+		<li>Still inn sikkerhetskopieringsperioden og starttid for Tidsinnstilt sikkerhetskopiering og klikk <b>OK</b>. </li>
+		<li>Dersom du ønsker å utføre Tidsinnstilt sikkerhetskopiering når du er logget av, vennligst skriv inn brukernavn og passordet du bruker når du logger på denne datamaskinen. Deretter klikk <b>OK</b>.<br> Dersom du ikke ønsker å utføre Tidsinnstilt sikkerhetskopiering når du er logget av, vennligst klikk <b>Hopp over</b>.</li>
+	  </ol>
+	  <p class="notehead">Merk:</p>
+	  <ol class="notecontent">
+		<li>For å foreta sikkerhetskopiering når du er logget av, kan brukernavn og passord ikke stå tomt.</li>
+		<li>For brukere som kjører Windows 98 eller Windows ME, er muligheten til utføring av Tidsinnstilt sikkerhetskopiering når du er logget av innebygget i programmet.</li>
+	  </ol>
+	  <p>Når tidsinnstillingen er fullført, kan du avslutte Synology Data Replicator 3 eller minimalisere programvinduet til systemstatusfeltet. Synology Data Replicator 3 vil automatisk utføre tidsbestemt sikkerhetskopiering når tiden er inne.</p>
+	  <li>Slette tidstabell </li>
+	  <p>Klikk <b>Slett tidstabell</b> for å stoppe Tidsinnstilt sikkerhetskopiering og fjerne tidsinnstillingene.</p>
+		</ul>
+<p>Når du ønsker å sikkerhetskopiere Outlook-, Outlook Express- eller Windows Mail-filer, vennligst merk:</p>
+<ul>
+<li>Hvis du kjører Windows XP, Windows 2003 eller Windows Vista, </li>
+	<ol type="a">
+	<li>Minst en av stasjonene på PC-en må være i NTFS-formatet. </li>
+	<li>Outlook-/Windows Mail-filer må være på lokale stasjoner. </li>
+	<li>Du må logge inn som PC-ens administrator.</li>
+	</ol>
+<li>Hvis du kjører andre operativsystemer enn Windows XP og Windows 2003, må du lukke Outlook før du sikkerhetskopierer Outlook.</li>
+<br>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Støtte & begrensninger </font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<ol>
+<li>Når du søker etter målserver, vil Synology Data Replicator 3 bruke port 9999 eller 9998 eller 9997. </li>
+<li>Komprimerte filer og krypterte filer vil bli vanlige filer etter sikkerhetskopiering. Filegenskapene vil bli slettet. </li>
+<li>Når det gjelder lengden på filnavn, støtter Synology Data Replicator 3 opptil 240 byte. </li>
+<li>Hvis du endrer navnet på PC-en, må du angi administratorpassordet for PC-en når du setter opp Tidsbestemt sikkerhetskopiering, for å være sikker på at Data Replicator 3 fungerer på riktig måte. Hvis du allerede har satt opp en tidstabell for sikkerhetskopiering, må du slette den tidstabellen og bruke administratorpassordet for PC-en til å sette opp en ny tidstabell.</li>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name="restore"></a>Gjenopprette sikkerhetskopifiler</p>
+<p>For å gjenopprette sikkerhetskopifiler må du velge sikkerhetskopimål først, og deretter en av de følgende metodene for å gjenopprette de sikkerhetskopierte filene dine:</p>
+<ol>
+<li class=topic>Gjenopprett ved å bla gjennom</li>
+<p>Dersom du er usikker på hvor de sikkerhetskopierte filene befinner seg, kan du i de fleste tilfeller bruke <i>Gjenopprett ved å bla gjennom</i> for å gjenopprette filene dine:</p>
+	<ol>
+	<li>Klikk <b>Start</b>-knappen under <i>Gjenopprett ved å bla gjennom</i>. </li>
+	<li>Klikk på <b>Neste</b>.</li>
+	<li>Klikk for å velge gjenopprettingskilde, og klikk deretter <b>Neste</b>. </li>
+	<li>Klikk for å liste opp filer <b>Etter versjon</b> eller <b>Etter gjenopprettingspunkt</b>. </li>
+	<li>Hak av mappen(e) som du ønsker å gjenopprette, og klikk <b>Neste</b>. </li>
+	<li>Velg adressen som de sikkerhetskopierte filene skal gjenopprettes til. Deretter klikker du <b>Fullfør</b>.</li>
+	</ol>
+    <br>
+<li class=topic>Gjenopprett ved søk</li>
+<p>Dersom du ikke er sikker på hvor de sikkerhetskopierte filene befinner seg, eller du ønsker kun å gjenopprette filer som inneholder bestemte nøkkelord, vennligst gjennomfør følgende trinn for å gjenopprette:</p>
+	<ol>
+	<li>Klikk <b>Start</b>-knappen under Gjenopprett ved søk. </li>
+	<li>Klikk på <b>Neste</b>.</li>
+	<li>Klikk for å velge gjenopprettingskilde, og klikk deretter <b>Neste</b>. </li>
+	<li>Skriv inn nøkkelordet du vil søke etter i ”Nøkkelord:” tekstfeltet. </li>
+	<li>Velg sikkerhetskopieringsmappe fra ”Sikkerhetskopier:” nedtrekksmenyen. </li>
+	<li>Klikk <b>Søk</b>.</li>
+	<li>Velg filene og mappene du ønsker å gjenopprette i den rammen til høyre, og klikk <b>Neste</b>.</li>
+	<li>Velg adressen som de sikkerhetskopierte filene skal gjenopprettes til. Deretter klikker du <b>Fullfør</b>.</li>
+	</ol>
+<br>
+<table width="550" border="0" bgcolor="#FFCCFF">
+<tr>
+<td><center>
+<b><font size="3">Tips for gjenoppretting av Outlook-, Outlook Express- og Windows Mail- filer</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<p>     Når du velger en målsti, kan du velge:</p>
+<ol>
+<b><li>Original sti</li></b>
+	<p>Hvis du velger dette alternativet trenger du ikke importere e-post og adressebok manuelt, da PC-data vil bli erstattet av de gjenopprettede filene.</p>
+<b><li>Ny sti</li></b>
+	<p>Hvis du velger dette alternativet, kan du gjenopprette dataene til en bestemt sti og importere e-post og adressebok manuelt med Outlook/Outlook Express/Windows Mail.</p>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name=setting></a>Avanserte innstillinger</p>
+<p>I seksjonen for Alternativer, kan du stille inn avanserte sikkerhetskopiinnstillinger, som følger:</p>
+<p class="topic">Filter</p>
+<blockquote>
+  <p>Bruk denne funksjonen for å foreta presise sikkerhetskopier. Ekskludering av filer med bestemte forstavelser eller etternavn fra sikkerhetskopilisten, vil hjelpe deg å gjennomføre sikkerhetskopieringen hurtigere. Følg trinnene for å fortsette:</p>
+  <ol>
+    <li>Klikk <b>Filter</b>.</li>
+    <li>Klikk <b>Legg til</b> på høyre side for alternativene for ”Filetternavn” eller ”Prefix”. </li>
+    <li>Oppgi kriterier, for eksempel ”.exe” for filetternavn eller ”~” for forstavelse. </li>
+    <li>Klikk <b>OK</b> for å lukke dialogvinduet for innstillinger, og klikk <b>OK</b> igjen for å lagre innstillingene.</li>
+  </ol>
+</blockquote>
+<p class="topic">Aktiver e-postvarsling</p>
+<blockquote>
+  <p>Bruk denne funksjonen for å motta sikkerhetskopieringsdetaljer på e-post etter Tidsinnstilt sikkerhetskopiering er ferdig.</p>
+  <ol>
+    <li>Klikk <b>SMTP-oppsett</b>. </li>
+    <li>Skriv inn gyldig e-postinformasjon og klikk <b>OK</b> for å fullføre.</li>
+  </ol>
+</blockquote>
+<p class="topic">Aktiver filversjoner</p>
+<blockquote>
+  <p class="style4">Hva er filversjonsfunksjonen til?</p>
+  <p>Aktivering av filversjonsfunksjonen kan hjelpe deg å ta vare på redigeringshistorien til den samme filen.</p>
+  <p>Når den første sikkerhetskopieringen er fullført, vil alle sikkerhetskopierte filer bli lagret i den ”latest” mappen i sikkerhetskopimålet. Fra og med den neste sikkerhetskopieringen, vil Data Replicator 3 automatisk sjekke om noen filer med det samme navnet finnes i den ”latest” mappen. Hvis det gjør det og innholdet i filene er endret, vil den sikkerhetskopierte filen i den latest mappen bli flyttet til en past mappe som en eldre versjon, mens filen på datamaskinen blir sikkerhetskopiert til den latest mappen, der du alltid finner de nyeste sikkerhetskopierte filene.</p>
+  <p class="notehead">Merk:</p>
+  <p class="notecontent">Filen det refereres til ovenfor må være i den samme mappen. Slik at når du bruker den samme kontoen til å sikkerhetskopiere mappen, vil en tidligere versjon bli generert.</p>
+  <p>Når filversjonsfunksjonen er aktivert og du opplever uriktig og uforanderlig redigering av de lokale filene dine, kan du finne filhistorien i sikkerhetskopimålet og enkelt gjenopprette filene.</p>
+  <p><b>Antall tidligere versjoner</b></p>
+  <p>Her kan du stille inn hvor mange tidligere versjoner av sikkerhetskopierte filer du ønsker å beholde. 20 versjoner er maksimalt antall.  Filnavnet til tidligere versjoner av filene vil få lagt til ”v00”, ”v01”, osv. Jo høyere versjonsnummeret er, desto nyere er den.</p>
+  <p>Still inn antall tidligere versjoner for å bestemme hvor mange tidligere versjoner som skal beholdes i sikkerhetskopimålet. Følg trinnene for å fortsette:</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>Hak av <v>Aktiver filversjoner</v>.</li>
+<li>Skriv inn et antall tidligere versjoner og klikk <b>Bruk</b> for å lagre innstillingene. </li>
+</ol>
+</blockquote>
+<p class="topic">Gjenopprettingspunkter</p>
+<blockquote>
+  <p class="style4">Hva er gjenopprettingspunkter?</p>
+  <p>Hver gang en sikkerhetskopiering utføres, vil det bli opprettet en mappe navngitt som sikkerhetskopieringens starttid, som inneholder alle filene i denne sikkerhetskopieringen. Dette vil bli et gjenopprettingspunkt.</p>
+  <p>Filen som aldri har vært endret, vil vises ved hvert gjenopprettingspunkt etter hver sikkerhetskopiering. Imidlertid vil kun en fildiskstørrelse faktisk bli brukt.</p>
+  <p><b>Antall gjenopprettingspunkter</b></p>
+  <p>Her kan du stille inn hvor mange gjenopprettingspunkter du ønsker å beholde. 128 gjenopprettingspunkter er maksimalt antall. Når antallet gjenopprettingspunkt overskrider den innstilte verdien, vil det eldste gjenopprettingspunktet automatisk bli slettet etter neste sikkerhetskopiering.</p>
+</blockquote>
+<blockquote>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Støtte & begrensninger </font></b>
+</center></td>
+</tr>
+<tr>
+<td>Funksjonen for gjenopprettingspunkt støttes bare for Windows 2000 / Windows XP / Windows 2003 / Windows Vista.</td>
+</tr>
+</table>
+</blockquote>
+
+<p class="topic">Autostart ved pålogging</p>
+<blockquote>
+  <p>Du kan stille inn Synology Data Replicator 3 til å starte automatisk når du logger deg på Windows. Følg trinnene for å fortsette:</p>
+  <ol>
+    <li>Hak av <b>Autostart Data Replicator 3 når Windows starter</b>. </li>
+    <li>Klikk <b>Bruk</b>.</li>
+  </ol>
+</blockquote>
+
+<p class="topic">Sjekk dataoverensstemmelse før synk</p>
+<blockquote>
+  <p>Du kan bestemme om dataoverensstemmelse skal sjekkes før Data Replicator går i synk-modus. Følg trinnene for å fortsette:</p>
+  <ol>
+    <li>Merk av <b>Sjekk dataoverensstemmelse før synkronisering starter</b>. </li>
+    <li>Klikk <b>Bruk</b>.</li>
+  </ol>
+  <p class="notehead">Merk:</p>
+  <p class="notecontent">Dersom du ikke velger dette alternativet og lukker Data Replicator, vil data som er lagt til, fjernet eller endret ikke bli synkronisert til serveren når du starter Data Replicator neste gang.</p>
+</blockquote>
+
+<p class="topic">Beholde identiske filer på målserver</p>
+<blockquote>
+  <p>Du kan stille inn programmet slik at filer i den "latest" mappen skal være identiske med dem på den lokale datamaskinen. Følg trinnene for å fortsette:</p>
+  <ol>
+    <li>Hak av <b>Når lokale filer slettes, slett de motsatte sikkerhetskopifilene samtidig</b>.</li>
+    <li>Klikk <b>Bruk</b>. </li>
+  </ol>
+</blockquote>
+<hr>
+
+<p class=h1><a name=log></a>Logg</p>
+<p>Maksimalstørrelse for loggfilen er 512 KB. Når loggfilen når denne grensen, slettes de eldste 128 KB.</p>
+<ul>
+<li class=topic>Lagre loggen</li>
+<ol>
+<li>Klikk <b>Lagre</b>. </li>
+<li>Velg målsti for sikkerhetskopimål, og klikk <b>Lagre</b> for å fullføre.</li>
+</ol>
+<br>
+<li class=topic>Fjern loggen</li>
+<ol>
+<li>Klikk på <b>Fjern</b>. </li>
+<li>Klikk <b>Ja</b> i dialogboksen for bekreftelse.</li>
+</ol>
+</ul>
+
+</body>
+</html>

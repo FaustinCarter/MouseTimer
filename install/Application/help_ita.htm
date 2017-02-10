@@ -1,0 +1,315 @@
+﻿
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Synology Data Replicator 3</title>
+<style type="text/css">
+<!--
+.head {
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.h1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.h2 {
+	font-weight: bold;
+	color: #FF3300;
+	font-size: 16px;
+}
+
+.topic {
+	font-family: "Geneva, Arial, Helvetica, sans-serif";
+	font-weight: bold;
+	color: #000000;
+	font-size: 16px;
+}
+
+body, td {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 10pt;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.notehead {
+	font-weight: bold;
+	font-size: 10pt;
+	color: #FF0000;
+}
+
+.notecontent {
+	font-size: 10pt;
+	color: #FF0000;
+}
+.style2 {font-size: 20px; font-weight: bold; color: #666666; 
+}
+.style4 {font-weight: bold; color: #0000FF; }
+-->
+</style>
+</head>
+<body>
+<p class="style2">Utilizzo di Data Replicator 3</p>
+<p>Fare clic su una delle seguenti funzioni principali per cominciare a conoscere Data Replicator 3.</p>
+<ul>
+<li><a href="#bkp">Backup dati PC</a> </li>
+<li><a href="#restore">Ripristino file di backup</a> </li>
+<li><a href="#setting">Impostazioni avanzate</a> </li>
+<li><a href="#log">Registro</a> </li>
+</ul>
+<hr>
+<p class=h1><a name="bkp"></a>Backup dati PC</p>
+<p>Seguire i passi indicati di seguito per impostare il backup.  è anche possibile accedere alle <a href="#setting">Impostazioni avanzate</a> per apprendere le altre impostazioni utili alla personalizzazione del backup dei dati contenuti nel PC.</p>
+<ol>
+<li class=topic>Selezionare una destinazione di backup</li>
+	<p>È possibile scegliere di effettuare il backup dei dati del PC su un Synology Server o in un'altra posizione.  Al termine della procedura di backup, i file si troveranno nella cartella assegnata. </p>
+	<p>1.1	Backup su un Synology Server </p>
+		<ol type="a">
+		<li>Fare clic su <b>Selezionare</b>.</li>
+		<li>Selezionare <b>Synology Server</b> e fare clic su <b>OK</b>. </li>
+		<li>Nella finestra successiva, fare clic sul Synology Server in cui si trova la cartella condivisa per il backup.  Quindi fare clic su <b>Avanti</b>.</li>
+		<li>Immettere nome utente e password dell'utente che ha diritto di Lettura/Scrittura della cartella condivisa scelta e fare clic su <b>Avanti</b>. </li>
+		<li>Fare clic sulla cartella condivisa che si desidera utilizzare per il backup e poi su <b>Fine</b>. </li>
+		</ol>
+  <p>1.2	Backup su un'altra posizione</p>
+		<ol type="a">
+		<li>Fare clic su <b>Selezionare</b>.</li>
+		<li>Selezionare <b>Altra Posizione</b>, fare clic su <b>Sfoglia</b> per individuare la cartella di destinazione per il backup.</li>
+		<li>Fare clic su <b>OK</b> per terminare.</li>
+  </ol>
+<BR>
+<li class=topic>Contrassegnare le cartelle da sottoporre a backup</li>
+<BR>
+<li class=topic>Scegliere una modalità di backup</li>
+<p>Data Replicator 3 consente di effettuare il backup in 3 modi diversi: <i><b>Immediato</b></i>, <i><b>Sync</b></i>, and <i><b>Pianificato</b></i>.</p>
+	3.1	<b>Immediato</b>
+  	<p>     Facendo clic sul pulsante <b>Immediato</b>, tutti i file nelle cartelle locali selezionate saranno inviati direttamente alla cartella di destinazione del backup.</p>
+	<p>3.2	<b>Sync</b>  </p>
+		<ul>
+		<li>Effettua subito la sincronizzazione e avvia il monitoraggio</li>
+		<p>Facendo clic sul pulsante <b>Sync</b>, Data Replicator 3 effettuerà un backup completo di tutti i file nelle cartelle selezionate nella destinazione del backup. Dopo di ciò, Data Replicator 3 avvierà il monitoraggio di quelle cartelle. Via via che vengono effettuate delle modifiche, Data Replicator 3 effettua il backup dei soli file modificati.</p>
+		<p class="notehead">Nota:</p>
+		<ol class="notecontent">
+		<li>la modalità di monitoraggio di Data Replicator 3 può essere arrestata solo manualmente.</li>
+		<li>L'intervallo temporale tra la sincronizzazione della posta si riferisce al tempo che intercorre tra il completamento di un'attività e l'inizio di quella successiva. L'attività può essere posticipata quando Data Replicator 3 sta elaborando la sincronizzazione di altri file.</li>
+		</ol>
+		<br>
+		<li>Arresto del monitoraggio</li>
+		<p>Per fermare il monitoraggio, fare clic sul pulsante <b>Stop Sync</b> nella finestra di Data Replicator 3. Se la finestra è stata ridotta ad icona, fare doppio clic sull'icona per aprire Data Replicator 3.</p>
+  </ul>
+	    <p>3.3	<b>Pianifica</b></p>
+	    <ul>
+	  <li>Impostare Pianificato</li>
+	  <p>Data Replicator 3 può essere impostato per creare backup automatici ad intervalli di tempo regolari. Per fare ciò:</p>
+	  <ol type="a">
+		<li>Fare clic su <b>Pianifica</b>.</li>
+		<li>Impostare il periodo di tempo e l'orario di inizio del Backup Pianificato e fare clic su <b>OK</b>. </li>
+		<li>Se si desidera effettuare un Backup Pianificato quando non si è connessi, immettere nome utente e password di accesso al computer. Quindi fare clic su <b>OK</b>.<br> Se non si desidera effettuare il Backup Pianificato quando non si è connessi, fare clic su <b>Ignora</b>.</li>
+	  </ol>
+	  <p class="notehead">Nota:</p>
+	  <ol class="notecontent">
+		<li>Per effettuare il backup quando non si è collegati la password utente non può essere vuota.</li>
+		<li>Per gli utenti di Windows 98 e Windows ME, Backup Pianificato può essere effettuato anche durante il logout.</li>
+	  </ol>
+	  <p>Al termine delle impostazioni, è possibile uscire da Synology Data Replicator 3 o ridurre ad icona la finestra del programma. Synology Data Replicator 3 effettua la pianificazione del backup automaticamente al momento opportuno.</p>
+	  <li>Elimina pianificazione</li>
+	  <p>Fare clic su <b>Elimina pianificazione</b> per interrompere il Backup Pianificato e rimuovere tutte le relative impostazioni.</p>
+		</ul>
+<p>Se si desidera effettuare il backup dei file di posta di Outlook, Outlook Express, o Windows Mail, si noti:</p>
+<ul>
+<li>Se si utilizza Windows XP e Windows 2003, o Windows Vista,  </li>
+	<ol type="a">
+	<li>Almeno una unità sul vostro PC deve essere formattata in NTFS. </li>
+	<li>I file di Outlook/Windows Mail devono trovarsi su dischi locali. </li>
+	<li>Gli utenti devono accedere come amministratori.</li>
+	</ol>
+<li>Se il vostro sistema operativo non è Windows XP o 2003, chiudere Outlook prima di effettuare il backup.</li>
+<br>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Supporto & Limitazioni </font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<ol>
+<li>Quando si ricerca un server di destinazione, Synology Data Replicator 3 usa le porte 9999, 9998 o 9997. </li>
+<li>I file compressi e crittografati perderanno queste caratteristiche dopo il backup. Le proprietà dei file saranno cancellate. </li>
+<li>Per la lunghezza dei nomi di file, Synology Data Replicator 3 supporta fino a 240 byte. </li>
+<li>Se si cambia il nome del computer, è necessario inserire la password di accesso dell'admin del PC quando si imposta Pianifica Backup per assicurare il corretto funzionamento di Data Replicator 3.  Se si è già impostato un backup pianificato, cancellare la programmazione ed usare la password di accesso dell'amministratore del PC per impostare un nuovo backup.</li>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name="restore"></a>Ripristino file di backup</p>
+<p>Per ripristinare i file di backup è necessario selezionare prima l'unità di destinazione e quindi scegliere uno dei seguenti metodi:</p>
+<ol>
+<li class=topic>Ripristino mediante esplorazione</li>
+<p>In molte situazioni, se si conosce la posizione dei file di backup è possibile usare <i>Ripristino mediante Esplorazione</i> per ripristinare i file:</p>
+	<ol>
+	<li>Fare clic sul pulsate <b>Avvia</b> in <i>Ripristino mediante Esplorazione</i>. </li>
+	<li>Fare clic su <b>Avanti</b>.</li>
+	<li>Fare clic per selezionare la sorgente e poi su <b>Avanti</b>. </li>
+	<li>Scegliere se elencare i file <b>Per versione</b> o <b>Per punto di ripristino</b>. </li>
+	<li>Selezionare le cartelle da ripristinare e fare clic su <b>Avanti</b>. </li>
+	<li>Scegliere la posizione in cui i file saranno ripristinati.  Al termine, fare clic su <b>Fine</b>.</li>
+	</ol>
+    <br>
+<li class=topic>Ripristino mediante Ricerca</li>
+<p>Se non si conosce la posizione dei file di backup, o se si vuole ripristinare solo alcuni file, effettuare una delle operazioni indicate in seguito:</p>
+	<ol>
+	<li>Fare clic sul pulsante <b>Avvia</b> in Ripristino mediante Esplorazione. </li>
+	<li>Fare clic su <b>Avanti</b>.</li>
+	<li>Fare clic per selezionare la sorgente e poi su <b>Avanti</b>. </li>
+	<li>Scrivere la parola chiave da ricercare nel campo "Parola chiave": campo di testo.  </li>
+	<li>Scegliere la cartella di backup dal menu a discesa "Backup": menu a discesa.  </li>
+	<li>Fare clic su <b>Cerca</b>.</li>
+	<li>Selezionare i file e le cartelle che si desidera ripristinare nella parte a destra e fare clic su <b>Avanti</b>.</li>
+	<li>Scegliere la posizione in cui i file saranno ripristinati.  Al termine, fare clic su <b>Fine</b>.</li>
+	</ol>
+<br>
+<table width="550" border="0" bgcolor="#FFCCFF">
+<tr>
+<td><center>
+<b><font size="3">Suggerimenti per il ripristino dei file di Outlook, Outlook Express, e Windows Mail</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<p>     Per la scelta di un percorso di destinazione, scegliere tra:</p>
+<ol>
+<b><li>Percorso originale</li></b>
+	<p>scegliendo questa opzione, non si ha bisogno di importare manualmente i messaggi e la rubrica, i dati sul PC saranno sostituiti dai file ripristinati.</p>
+<b><li>Nuovo percorso</li></b>
+	<p>scegliendo questa opzione, si può ripristinare i dati in un percorso specifico ed importare manualmente i messaggi e la rubrica con Outlook/Outlook Express e Windows Mail.</p>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name=setting></a>Impostazioni avanzate</p>
+<p>Nella sezione Opzioni si accede alle impostazioni avanzate di backup.</p>
+<p class="topic">Filtro</p>
+<blockquote>
+  <p>Usare questa funzione per effettuare un backup di precisione. Escludendo i file con un dato prefisso o estensione dall'elenco di backup renderà l'operazione di backup più rapida. Procedere come segue:</p>
+  <ol>
+    <li>Fare clic su <b>Filtra</b>.</li>
+    <li>Fare clic su <b>Aggiungi</b> alla destra dell'opzione "Estensione" o "Prefix". </li>
+    <li>Inserire un criterio specifico, ad esempio, ".exe" come estensione o "~" come prefisso. </li>
+    <li>Fare clic su <b>OK</b> per chiudere la finestra di dialogo e fare clic di nuovo su <b>OK</b> per salvare le impostazioni.</li>
+  </ol>
+</blockquote>
+<p class="topic">Abilita notifica e-mail</p>
+<blockquote>
+  <p>Usare questa funzione per ricevere i dettagli del backup per email al termine del Backup pianificato.</p>
+  <ol>
+    <li>Fare clic su <b>Configurazione SMTP</b>. </li>
+    <li>Inserire le informazioni relative all'e-mail e fare clic su <b>OK</b> per terminare.</li>
+  </ol>
+</blockquote>
+<p class="topic">Abilita versioni de file</p>
+<blockquote>
+  <p class="style4">A che cosa serve la funzione versioni file?</p>
+  <p>Abilitando questa funzione si può conservare uno storico delle versioni dello stesso file.</p>
+  <p>Dopo la prima operazione di backup, tutti i file saranno archiviati nella cartella "latest" nella posizione di destinazione. Dal backup successivo, Data Replicator 3 controllerà automaticamente se esiste uno stesso file con lo stesso nome nella cartella "latest". Se c'è e il contenuto dei file è cambiato, il file precedentemente archiviato nella cartella "latest" sarà spostato nella cartella "past", mentre il file sul computer sarà archiviato nella cartella "latest" dove sempre è possibile trovare gli ultimi backup dei file. </p>
+  <p class="notehead">Nota:</p>
+  <p class="notecontent">Il file cui si è accennato sopra deve trovarsi nella stessa cartella. Quindi, quando si usa uno stesso account per il backup della cartella, sarà generata una versione precedente. </p>
+  <p>Quando è attiva la funzione della versione del file e i file locali vengono modificati in modo improprio ed irreversibile, le versioni precedenti possono essere agevolmente trovate nella destinazione di backup e ripristinate. </p>
+  <p><b>Numero de versioni precedenti</b></p>
+  <p>È possibile impostare il numero di versioni precedenti da conservare. Il numero minimo è 20. Il nome dei file delle versioni precedenti sarà aggiunto con “v00”, “v01”, e così via. Più è alto il numero e più recente è la versione.</p>
+  <p>Impostare un numero di versioni precedenti per decidere quante versioni conservare. Procedere come segue:</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>Selezionare <v>Abilita versioni file</v>.</li>
+<li>Impostare un numero di versioni precedenti e fare clic su <b>Applica</b> per salvare le impostazioni. </li>
+</ol>
+</blockquote>
+<p class="topic">Punti di ripristino</p>
+<blockquote>
+  <p class="style4">Che cosa sono i punti di ripristino?</p>
+  <p>Ogni qual volta di effettua un backup, una cartella di backup sarà rinominata con la data e l'ora dell'avvio del backup. Questo è il punto di ripristino.</p>
+  <p>Il file che non è mai stato modificato apparirà in ogni punto di ripristino dopo ogni bakcup. Tuttavia, soltanto un file dalle dimensioni di un disco è effettivamente occupato.</p>
+  <p><b>Numero di punti di ripristino</b></p>
+  <p>È possibile impostare il numero dei punti di ripristino da conservare. Il numero massimo è 128. Quando il punto di ripristino supera il valore impostato, i punti di ripristino più vecchi saranno cancellati automaticamente dopo il backup successivo.</p>
+</blockquote>
+<blockquote>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Supporto & Limitazioni </font></b>
+</center></td>
+</tr>
+<tr>
+<td>La funzione Punto di ripristino è supportata soltanto in Windows 2000 / Windows XP / Windows 2003 / Windows Vista.</td>
+</tr>
+</table>
+</blockquote>
+
+<p class="topic">Avvio automatico al Logon</p>
+<blockquote>
+  <p>È possibile impostare l'avvio di Synology Data Replicator 3 automaticamente all'accesso a Windows. Procedere come segue:</p>
+  <ol>
+    <li>Selezionare <b>Avvia Data Replicator 3 con Windows</b>. </li>
+    <li>Fare clic su <b>Applica</b>.</li>
+  </ol>
+</blockquote>
+
+<p class="topic">Controllare la coerenza dei dati prima della sincronizzazione</p>
+<blockquote>
+  <p>È possibile decidere se controllare la coerenza dei dati prima che Data Replicator entri in modalità sincronizzazione. Procedere come segue:</p>
+  <ol>
+    <li>Selezionare <b>Controllare la coerenza dei dati prima della sincronizzazione</b>. </li>
+    <li>Fare clic su <b>Applica</b>.</li>
+  </ol>
+  <p class="notehead">Nota:</p>
+  <p class="notecontent">se si deseleziona questa opzione e si chiude Data Replicator, i dati aggiunti, rimossi o modificati potrebbero non essere sincronizzati al server al prossimo avvio di  Data Replicator.</p>
+</blockquote>
+
+<p class="topic">Conserva i file identici sul server di destinazione</p>
+<blockquote>
+  <p>Si possono conservare i file nell' "latest" cartella in modo da rispecchiare quelli contenuti nel computer locale.  Procedere come segue:</p>
+  <ol>
+    <li>Selezionare <b>Quando si cancellano i file locali, cancellare nel contempo i relativi file di backup</b>.</li>
+    <li>Fare clic su <b>Applica</b>. </li>
+  </ol>
+</blockquote>
+<hr>
+
+<p class=h1><a name=log></a>Registro</p>
+<p>La dimensione massima del file di log è 512KB; quando il file raggiunge tale limite, i 128KB più vecchi saranno eliminati.</p>
+<ul>
+<li class=topic>Salva Registro</li>
+<ol>
+<li>Fare clic su <b>Salva</b>. </li>
+<li>Scegliere il percorso della destinazione di backup e cliccare su <b>Salva</b> per terminare.</li>
+</ol>
+<br>
+<li class=topic>Pulisci Registro</li>
+<ol>
+<li>Fare clic su <b>Cancella</b>. </li>
+<li>Fare clic su <b>Sì</b> nella finestra di conferma.</li>
+</ol>
+</ul>
+
+</body>
+</html>

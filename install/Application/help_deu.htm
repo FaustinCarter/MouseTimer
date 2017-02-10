@@ -1,0 +1,315 @@
+﻿
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Synology Data Replicator 3</title>
+<style type="text/css">
+<!--
+.head {
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.h1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.h2 {
+	font-weight: bold;
+	color: #FF3300;
+	font-size: 16px;
+}
+
+.topic {
+	font-family: "Geneva, Arial, Helvetica, sans-serif";
+	font-weight: bold;
+	color: #000000;
+	font-size: 16px;
+}
+
+body, td {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 10pt;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.notehead {
+	font-weight: bold;
+	font-size: 10pt;
+	color: #FF0000;
+}
+
+.notecontent {
+	font-size: 10pt;
+	color: #FF0000;
+}
+.style2 {font-size: 20px; font-weight: bold; color: #666666; 
+}
+.style4 {font-weight: bold; color: #0000FF; }
+-->
+</style>
+</head>
+<body>
+<p class="style2">Data Replicator 3 verwenden</p>
+<p>Klicken Sie die folgenden Hauptfunktionen an, um sich mit dem Data Replicator 3 vertraut zu machen.</p>
+<ul>
+<li><a href="#bkp">PC-Datensicherung</a> </li>
+<li><a href="#restore">Sicherungsdateien wieder herstellen</a> </li>
+<li><a href="#setting">Erweiterte Einstellungen</a> </li>
+<li><a href="#log">Protokoll</a> </li>
+</ul>
+<hr>
+<p class=h1><a name="bkp"></a>PC-Datensicherung</p>
+<p>Bitte befolgen Sie die unten aufgeführten Schritte, um Ihre Datensicherung einzurichten: Sie können auch <a href="#setting">Erweiterte Einstellungen</a> anklicken, um weitere Einstellungen zu erlernen, mit denen Sie Ihre PC-Datensicherung persönlich gestalten können.</p>
+<ol>
+<li class=topic>Einen Zielpfad wählen</li>
+	<p>Sie können Ihre Daten auf einem Synology Server oder an einem anderen Ort speichern. Nachdem die Datensicherung erfolgreich durchgeführt wurde, können Sie gesicherten Dateien wieder aus dem von Ihnen zugewiesenen Ordner aufrufen.</p>
+	<p>1.1	Auf einem Synology Server sichern</p>
+		<ol type="a">
+		<li>Klicken Sie <b>Auswählen</b> an.</li>
+		<li>Wählen Sie <b>Synology Server</b> und klicken Sie <b>OK</b>. </li>
+		<li>Im nächsten Fenster klicken Sie den Synology Server an, auf dem sich der gemeinsam genutzte Ordner zur Datensicherung befindet. Klicken Sie anschließend auf <b>Weiter</b>.</li>
+		<li>Geben Sie den Benutzernamen und das Kennwort für den Schreib-/Lesezugriff auf den von Ihnen ausgewählten gemeinsam genutzten Order ein und klicken Sie auf <b>Weiter</b>. </li>
+		<li>Klicken Sie den gemeinsamen Ordner an, den Sie zur Datensicherung verwenden möchten und klicken Sie <b></b>Fertig stellen. </li>
+		</ol>
+  <p>1.2	Datensicherung an einem anderen Speicherort</p>
+		<ol type="a">
+		<li>Klicken Sie <b>Auswählen</b> an.</li>
+		<li>Wählen Sie <b>Anderer Speicherort</b> und klicken Sie die Schaltfläche <b>Durchsuchen</b> an.</li>
+		<li>Klicken Sie auf <b>OK</b>, um den Vorgang zu beenden.</li>
+  </ol>
+<BR>
+<li class=topic>Kreuzen Sie die Ordner an, die Sie sichern möchten</li>
+<BR>
+<li class=topic>Wählen Sie einen Datensicherungsmodus</li>
+<p>Data Replicator 3 bietet Ihnen 3 Datensicherungsmodi zur Auswahl an. Diese sind: <i><b>Sofort</b></i>, <i><b>Synchronisierung</b></i> und <i><b>Zeitplan</b></i>.</p>
+	3.1	<b>Sofort</b>
+  	<p>Wenn Sie die Schaltfläche <b>Sofort</b> anklicken, werden alle Dateien im ausgewählten lokalen Ordner sofort im Zielpfad gespeichert.</p>
+	<p>3.2	<b>Sync</b>  </p>
+		<ul>
+		<li>Synchronisieren Sie Ihre Daten jetzt und beginnen Sie mit der Überwachung</li>
+		<p>Wenn Sie die Schaltfläche <b>Synchronisation</b> anklicken, sichert Data Replicator 3 zunächst alle Dateien im ausgewählten lokalen Ordner im Zielpfad. Anschließend beginnt Data Replicator 3 mit der Überwachung Ihrer/s lokalen Ordner/s. Wenn Sie Änderungen vornehmen, sichert Data Replicator 3 nur jene Dateien, die Sie geändert haben.</p>
+		<p class="notehead">Anmerkung:</p>
+		<ol class="notecontent">
+		<li>Nachdem Data Replicator 3 in den Überwachungsmodus übergeht, arbeitet er weiter, bis Sie den Vorgang abbrechen.</li>
+		<li>Der Zeitintervall zwischen Mail-Synchronisationen bezieht sich auf die Zeitdauer zwischen dem Abschluss einer Synchronisation und dem Start der nächsten. Die Aufgabe kann verschoben werden, während Data Replicator 3 andere Dateien synchronisiert.</li>
+		</ol>
+		<br>
+		<li>Überwachung stoppen</li>
+		<p>Klicken Sie die Schaltfläche <b>Synchronisation stoppen</b> im Programmfenster von Data Replicator 3. Wenn das Programm auf die Taskleiste minimiert ist, doppelklicken Sie Data Replicator 3 an, um es zu öffnen.</p>
+  </ul>
+	    <p>3.3	<b>Plan</b></p>
+	    <ul>
+	  <li>Zeitplan einstellen</li>
+	  <p>Data Replicator 3 kann so eingestellt werden, dass er regelmäßig zur vorgegebenen Zeit automatische Datensicherungen vornimmt. So verfahren Sie:</p>
+	  <ol type="a">
+		<li>Klicken Sie <b>Zeitplan</b>.</li>
+		<li>Stellen Sie die Sicherungszeitdauer und die Startzeit für die eingestellte Datensicherung ein und klicken Sie <b>OK</b>. </li>
+		<li>Wenn Sie eine eingestellte Dateisicherung während des Abmeldens durchführen möchten, geben Sie bitte den Benutzernamen und das Kennwort ein, die Sie zum Anmelden auf diesem PC verwendet haben. Klicken Sie dann auf <b>OK</b>.<br> Wenn Sie beim Abmelden keine eingestellte Datensicherung durchführen möchten, klicken Sie bitte <b>Überspringen</b>.</li>
+	  </ol>
+	  <p class="notehead">Anmerkung:</p>
+	  <ol class="notecontent">
+		<li>Wenn Sie beim Abmelden Daten sichern möchten, darf das Kennwortfeld nicht leer bleiben.</li>
+		<li>Bei Windows 98 und Windows ME Anwendern kann die eingestellte Datensicherung während der Abmeldung durchgeführt werden.</li>
+	  </ol>
+	  <p>Wenn der Zeitplan eingestellt ist, können Sie Synology Data Replicator 3 verlassen oder das Programm in die Taskleiste minimieren. Synology Data Replicator 3 führt die eingestellte Datensicherung automatisch durch, wenn die Zeit abgelaufen ist.</p>
+	  <li>Zeitplan löschen</li>
+	  <p>Klicken Sie <b>Zeitplan löschen</b>, um die eingestellte Datensicherung zu stoppen und die Einstellungen zu entfernen.</p>
+		</ul>
+<p>Wenn Sie Outlook-, Outlook Express- oder Windows Mail-Dateien sichern möchten, beachten Sie bitte folgendes:</p>
+<ul>
+<li>Wenn Sie Windows XP, Windows 2003 oder Windows Vista haben, </li>
+	<ol type="a">
+	<li>sollte mindestens eines Ihrer Laufwerke auf Ihrem PC im NTFS-Format sein. </li>
+	<li>Outlook-/Windows Mail-Dateien sollten auf lokalen Laufwerken gespeichert sein. </li>
+	<li>Sie müssen sich als PC Administrator anmelden.</li>
+	</ol>
+<li>Wenn Sie ein Betriebssystem außer Windows XP und Windows 2003 haben, schließen Sie Outlook bitte vor der Sicherung.</li>
+<br>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Unterstützung und Haftungsbeschränkungen</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<ol>
+<li>Beim Suchen nach dem Zielserver verwendet der Synology Data Replicator 3 den Port 9999 oder 9998 oder 9997. </li>
+<li>Komprimierte und verschlüsselte Dateien werden nach dem Backup zu gewöhnlichen Dateien. Die Dateieigenschaften werden gelöscht. </li>
+<li>Synology Data Replicator 3 unterstützt bis zu 240 Bytes für den Dateinamen. </li>
+<li>Wenn Sie den Computernamen Ihres PCs ändern, müssen Sie das Administrator-Anmeldekennwort Ihres PCs eingeben, wenn Sie eine geplante Datensicherung einstellen, um sicherzustellen, dass der Data Replicator 3 korrekt läuft. Wenn Sie bereits eine geplante Datensicherung eingegeben haben, müssen Sie diese löschen und das Administrator-Anmeldekennwort Ihres PCs verwenden, um eine neue Sicherung einzustellen.</li>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name="restore"></a>Sicherungsdateien wieder herstellen</p>
+<p>Um gesicherte Dateien wiederherzustellen, müssen Sie zuerst einen Datensicherungs-Zielpfad festlegen und dann eine der folgenden Methoden wählen, um Ihre gesicherten Dateien wiederherzustellen:</p>
+<ol>
+<li class=topic>Wiederherstellen mittels Durchsuchen</li>
+<p>In den meisten Fällen können Sie die Funktion <i>Wiederherstellen mittels Durchsuchen</i> verwenden, um Ihre Dateien wiederherzustellen:</p>
+	<ol>
+	<li>Klicken Sie die Schaltfläche <b>Start</b> unter <i>Wiederherstellen mittels Durchsuchen</i>. </li>
+	<li>Klicken Sie auf <b>Weiter</b>.</li>
+	<li>Anklicken, um die Wiederherstellungsquelle zu wählen und anschließend <b>Weiter</b> anklicken. </li>
+	<li>Wählen Sie, ob Sie Dateien <b>Nach Version</b> oder <b>Durch Wiederherstellungspunkt</b> auflisten möchten. </li>
+	<li>Wählen Sie die wiederherzustellenden Ordner aus und klicken Sie <b>Weiter</b>. </li>
+	<li>Wählen Sie den Zielpfad, in dem die gesicherten Dateien wieder hergestellt werden sollen. Klicken Sie anschließend <b>Fertig stellen</b>.</li>
+	</ol>
+    <br>
+<li class=topic>Wiederherstellen mittels Suchen</li>
+<p>Wenn Sie sich über den Ort der wiederherzustellenden Dateien nicht sicher sind, oder nur Dateien mit bestimmten Schlüsselwörtern wiederherstellen möchten, befolgen Sie bitte die folgenden Schritte zur Wiederherstellung:</p>
+	<ol>
+	<li>Klicken Sie die Schaltfläche <b>Start</b> unter Wiederherstellen mittels Suchen. </li>
+	<li>Klicken Sie auf <b>Weiter</b>.</li>
+	<li>Anklicken, um die Wiederherstellungsquelle zu wählen und anschließend <b>Weiter</b> anklicken. </li>
+	<li>Schreiben Sie das Schlüsselwort, dass Sie suchen möchten in "Schlüsselwort:" Textfeld. </li>
+	<li>Wählen Sie den Sicherungsordner aus „Sicherungen“: Drop-Down Menü. </li>
+	<li>Klicken Sie <b>Suche</b>.</li>
+	<li>Wählen Sie die Dateien und Ordner, die Sie wiederherstellen möchten im rechten Rahmen und klicken Sie <b>Weiter</b>.</li>
+	<li>Wählen Sie den Zielpfad, in dem die gesicherten Dateien wieder hergestellt werden sollen. Klicken Sie anschließend <b>Fertig stellen</b>.</li>
+	</ol>
+<br>
+<table width="550" border="0" bgcolor="#FFCCFF">
+<tr>
+<td><center>
+<b><font size="3">Tipps zur Wiederherstellung von Outlook-, Outlook Express- und Windows Mail-Dateien</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<p>Wenn Sie einen Zielpfad wählen, können Sie wie folgt auswählen:</p>
+<ol>
+<b><li>Originalpfad</li></b>
+	<p>Wenn Sie diese Option wählen, müssen Sie Mail und Adressbuch nicht manuell importieren, PC-Daten werden durch die wiederhergestellten Dateien ersetzt.</p>
+<b><li>Neuer Pfad</li></b>
+	<p>Wenn Sie diese Option wählen, können Sie sie die Daten auf einem festgelegten Pfad wiederherstellen und müssen Mail und Adressbuch mit Outlook und Outlook Express/Windows Mail manuell importieren.</p>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name=setting></a>Erweiterte Einstellungen</p>
+<p>Unter Optionen können Sie wie folgt erweiterte Einstellungen zur Datensicherung vornehmen.</p>
+<p class="topic">Filter</p>
+<blockquote>
+  <p>Verwenden Sie diese Funktion, um die Dateien präzise zu sichern. Das Ausschließen von Dateien mit bestimmten Präfixen oder Erweiterungen von der Datensicherungsliste kann Ihnen dabei helfen, den Vorgang zu beschleunigen. Befolgen Sie die Schritte, um fortzufahren:</p>
+  <ol>
+    <li>Klicken Sie auf <b>Filter</b>.</li>
+    <li>Klicken Sie rechts in der "Erweiterung" oder "Prefix" Option auf <b>Hinzufügen</b>. </li>
+    <li>Geben Sie festgelegtes Kriterium, zum Beispiel ".exe" für Erweiterung oder "~" für Präfix ein. </li>
+    <li>Klicken Sie <b>OK</b>, um das Einrichtungsdialogfenster zu schließen und nochmals <b>OK</b>, um die Einstellungen zu speichern.</li>
+  </ol>
+</blockquote>
+<p class="topic">E-Mail-Benachrichtigungen aktivieren</p>
+<blockquote>
+  <p>Verwenden Sie diese Funktion, um Benachrichtigungen per E-Mail zu erhalten, nachdem die Datensicherung abgeschlossen wurde.</p>
+  <ol>
+    <li>Klicken Sie <b>SMTP-Einrichtung</b>. </li>
+    <li>Geben Sie eine gültige E-Mailadresse ein und klicken Sie <b>OK</b>, um abzuschließen.</li>
+  </ol>
+</blockquote>
+<p class="topic">Dateiversionen aktivieren</p>
+<blockquote>
+  <p class="style4">Wozu dient die Funktion Dateiversionen?</p>
+  <p>Die Aktivierung der Dateiversionsfunktion kann Ihnen dabei helfen, die History-Ausgaben der gleichen Datei beizubehalten.</p>
+  <p>Nachdem die erste Datensicherung abgeschlossen wurde, werden alle gesicherten Dateien im „latest” Ordner im Zielpfad gespeichert. Ab der nächsten Datensicherung prüft Data Replicator 3 automatisch, ob eine Datei mit dem gleichen Dateinamen bereits im „latest” Ordner existiert. Wenn der Inhalt der Datei allerdings anders ist, wird die zuvor gesicherte Datei aus dem „latest” Ordner als Datei mit älterer Version in den “past” Ordner verschoben, während die revidierte Datei auf Ihrem PC im „latest” Ordner gesichert wird, wo Sie stets die neuesten gesicherten Dateien finden können.</p>
+  <p class="notehead">Anmerkung:</p>
+  <p class="notecontent">Die o.g. Datei muss sich im gleichen Ordner befinden. Wenn Sie also das gleiche Konto verwenden, um den Ordner zu sichern, wird eine vergangene Version generiert.</p>
+  <p>Wenn die Dateiversionsfunktion aktiviert ist, und Sie fehlerhafte und nicht korrigierbare Bearbeitungen an Ihren aktuellen Dateien vorgenommen haben, können Sie die History-Dateien im Dateisicherungsordner finden und ganz einfach wiederherstellen.</p>
+  <p><b>Anzahl der vergangenen Versionen</b></p>
+  <p>Hier können Sie einstellen, wie viele der vergangenen gesicherten Dateiversionen Sie behalten möchten; es sind max. 20 Versionen. Der Dateiname von vergangenen Dateien wird dann mit “v00”, “v01”, usw. versehen. Je größer die Versionsnummer, desto neuer ist sie.</p>
+  <p>Stellen Sie eine Anzahl von vergangenen Versionen ein, um festzulegen, wie viele vorige Versionen im Zielpfad gespeichert bleiben. Befolgen Sie die Schritte, um fortzufahren:</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>Wählen Sie <v>Dateiversionen aktivieren</v>.</li>
+<li>Legen Sie eine Anzahl von vergangenen Versionen fest und klicken Sie <b>Anwenden</b>, um die Einstellungen zu speichern. </li>
+</ol>
+</blockquote>
+<p class="topic">Wiederherstellungpunkte</p>
+<blockquote>
+  <p class="style4">Was versteht man unter Wiederherstellungspunkten?</p>
+  <p>Jedes Mal, wenn eine Datensicherung abgeschlossen wurde, wird ein Ordner erstellt, der den Namen der Datensicherungs-Startzeit trägt und alle Dateien dieser Datensicherung enthält. Dies dient dann als Wiederherstellungspunkt.</p>
+  <p>Die nie veränderten Dateien erscheinen bei allen Datensicherungen als Wiederherstellungspunkt. Allerdings ist in Wirklichkeit nur eine Dateidiskgröße besetzt.</p>
+  <p><b>Anzahl der Wiederherstellungspunkte</b></p>
+  <p>Hier können Sie einstellen, wie viele Wiederherstellungspunkte Sie behalten möchten; es sind max. 128 Punkte. Wenn die Anzahl der Wiederherstellungspunkte den eingestellten Wert überschreitet, wird der älteste Wiederherstellungspunkt im Zielpfad nach der nächsten Datensicherung automatisch gelöscht.</p>
+</blockquote>
+<blockquote>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Unterstützung und Haftungsbeschränkungen</font></b>
+</center></td>
+</tr>
+<tr>
+<td>Die Wiederherstellungspunkt-Funktion wird nur von Windows 2000 / Windows XP / Windows 2003 / Windows Vista unterstützt.</td>
+</tr>
+</table>
+</blockquote>
+
+<p class="topic">Automatischer Start beim Anmelden</p>
+<blockquote>
+  <p>Sie können einstellen, dass Synology Data Replicator 3 automatisch gestartet wird, wenn Sie sich bei Windows anmelden. Befolgen Sie die Schritte, um fortzufahren:</p>
+  <ol>
+    <li>Aktivieren Sie das Kontrollkästchen <b>Data Replicator 3 beim Hochfahren von Windows automatisch starten</b>. </li>
+    <li>Klicken Sie auf <b>Anwenden</b>.</li>
+  </ol>
+</blockquote>
+
+<p class="topic">Datenkonsistenz vor Synchronisierung prüfen</p>
+<blockquote>
+  <p>Sie können entscheiden, ob Sie die Datenkonsistenz überprüfen möchten, ehe Data Replicator in den Synchronisationsmodus wechselt. Befolgen Sie die Schritte, um fortzufahren:</p>
+  <ol>
+    <li>Aktivieren Sie das Kontrollkästchen <b>Datenkonsistenz vor Synchronisierung prüfen</b>. </li>
+    <li>Klicken Sie auf <b>Anwenden</b>.</li>
+  </ol>
+  <p class="notehead">Anmerkung:</p>
+  <p class="notecontent">Wenn Sie diese Option deaktivieren und den Data Replicator schließen, werden hinzugefügte, entfernte oder geänderte Daten unter Umständen nicht mit dem Server synchronisiert, wenn Data Replicator das nächste Mal gestartet wird.</p>
+</blockquote>
+
+<p class="topic">Identische Dateien auf dem Zielserver speichern</p>
+<blockquote>
+  <p>Bei einer Datensicherung können Sie Ihre Dateien im „latest" Ordner speichern, damit diese identisch zu jenen auf Ihrem Computer sind. Befolgen Sie die Schritte, um fortzufahren:</p>
+  <ol>
+    <li>Das Kontrollkästchen <b>Beim Entfernen von lokalen Dateien gleichzeitig auch deren Pendants löschen</b> aktivieren.</li>
+    <li>Klicken Sie auf <b>Anwenden</b>. </li>
+  </ol>
+</blockquote>
+<hr>
+
+<p class=h1><a name=log></a>Protokoll</p>
+<p>Die maximale Protokolldatei beträgt 512KB; wenn die Protokolldatei das Limit erreicht, werden die ältesten 128KB gelöscht.</p>
+<ul>
+<li class=topic>Protokoll speichern</li>
+<ol>
+<li>Klicken Sie auf <b>Speichern</b>. </li>
+<li>Wählen Sie den Zielpfad und klicken Sie <b>Speichern</b> an, um den Vorgang abzuschließen.</li>
+</ol>
+<br>
+<li class=topic>Protokoll löschen</li>
+<ol>
+<li>Klicken Sie auf <b>Löschen</b>. </li>
+<li>Klicken Sie <b>Ja</b> im Bestätigungsdialog</li>
+</ol>
+</ul>
+
+</body>
+</html>

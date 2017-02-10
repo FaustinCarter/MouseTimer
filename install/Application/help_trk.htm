@@ -1,0 +1,315 @@
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Synology Data Replicator 3</title>
+<style type="text/css">
+<!--
+.head {
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.h1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.h2 {
+	font-weight: bold;
+	color: #FF3300;
+	font-size: 16px;
+}
+
+.topic {
+	font-family: "Geneva, Arial, Helvetica, sans-serif";
+	font-weight: bold;
+	color: #000000;
+	font-size: 16px;
+}
+
+body, td {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 10pt;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.notehead {
+	font-weight: bold;
+	font-size: 10pt;
+	color: #FF0000;
+}
+
+.notecontent {
+	font-size: 10pt;
+	color: #FF0000;
+}
+.style2 {font-size: 20px; font-weight: bold; color: #666666; 
+}
+.style4 {font-weight: bold; color: #0000FF; }
+-->
+</style>
+</head>
+<body>
+<p class="style2">Data Replicator 3 Kullanımı</p>
+<p>Data Replicator 3 hakkında bilgi almak için şu önemli özelliklere tıklayın.</p>
+<ul>
+<li><a href="#bkp">PC Veri Yedekleme</a> </li>
+<li><a href="#restore">Yedekleme Dosyalarının Geri Yüklenmesi</a> </li>
+<li><a href="#setting">Gelişmiş Ayarlar</a> </li>
+<li><a href="#log">Günlük</a> </li>
+</ul>
+<hr>
+<p class=h1><a name="bkp"></a>PC Veri Yedekleme</p>
+<p>Yedeklemelerinizi oluşturmak için lütfen şu adımları izleyin. Ayrıca <a href="#setting">Gelişmiş Ayarlar</a>'a giderek PC veri yedeklemenizi kişiselleştirmenize yardımcı olacak diğer ayarları öğrenebilirsiniz.</p>
+<ol>
+<li class=topic>Bir yedekleme hedefi seç</li>
+	<p>PC verilerinizi Synology sunucusuna veya diğer bir yere yedeklemeyi seçebilirsiniz. Yedekleme başarıyla yerine getirildikten sonra, yedekleme dosyalarınızı belirtilen klasörde bulabileceksiniz.</p>
+	<p>1.1	Bir Synology sunucusuna yedekleme</p>
+		<ol type="a">
+		<li><b>Seç</b>'e tıklayın.</li>
+		<li><b>Synology Sunucusu</b>'nu seçin ve <b>OK</b>'e tıklayın. </li>
+		<li>Sonraki pencerede, yedekleme için olan paylaşım klasörünün bulunduğu Synology sunucusuna tıklayın. Ardından <b>İleri</b>'ye tıklayın.</li>
+		<li>Seçtiğiniz paylaşımlı klasörü okuyabilen/yazabilen kullanıcı adını ve parolayı girin ve ardından <b>İleri</b>'ye tıklayın. </li>
+		<li>Yedeklemek için kullanmak istediğiniz paylaşımlı klasöre tıklayın ve B<b></b>itir'e tıklayın. </li>
+		</ol>
+  <p>1.2	Diğer yere yedekleme</p>
+		<ol type="a">
+		<li><b>Seç</b>'e tıklayın.</li>
+		<li><b>Diğer yer</b>'i seçin ve <b>Gözat</b>'a tıklayarak yedekleme yerini bulun.</li>
+		<li><b>TAMAM</b>'a tıklayarak bitirin.</li>
+  </ol>
+<BR>
+<li class=topic>Yedeklemek istediğiniz klasörleri işaretleyin</li>
+<BR>
+<li class=topic>Bir yedekleme modu seç</li>
+<p>Data Replicator 3 güvenli bir şekilde 3 yedekleme modu sunar, bunlar: <i><b>Acil</b></i>, <i><b>Senk</b></i> ve <i><b>Programla</b></i>.</p>
+	3.1	<b>Acil</b>
+  	<p>     <b>Acil</b> düğmesine tıklayarak seçilen yerel klasör(ler)deki tüm dosyalar yedek hedefe derhal yedeklenecektir.</p>
+	<p>3.2	<b>Senk</b>  </p>
+		<ul>
+		<li>Senk verileri izlenmeye başlanır</li>
+		<p><b>Senk</b> düğmesine tıkladığınızda Data Replicator 3 seçilen klasör(ler)deki tüm dosyaları yedekleme hedef yerine tam yedekleyecektir. Bunun ardından Data Replicator 3 bu klasör(ler)i izlemeye başlayacaktır. Değişiklik yaptığınızda Data Replicator 3 sadece değiştirilen dosyaları yedekleyecektir.</p>
+		<p class="notehead">Not:</p>
+		<ol class="notecontent">
+		<li>Data Replicator 3 izleme moduna geçtikten sonra, durduruncaya kadar çalışmaya devam edecektir.</li>
+		<li>Posta senkronizasyonu arasındaki zaman aralığı senkronizasyonun tamamlandığı zamandan bir sonraki senkronizasyonun başladığı zamana kadardır. Data Replicator 3 diğer dosyaları senkronize ederken görev ertelenebilir.</li>
+		</ol>
+		<br>
+		<li>İzlemeyi durdurma</li>
+		<p>İzlemeyi durdurmak için Data Replicator 3 programının penceresinden <b>Senk Durdur</b> düğmesine basın. Eğer program penceresi sistem tepsisine küçültülmüşse, lütfen açmak için Data Replicator 3 simgesine tıklayın.</p>
+  </ul>
+	    <p>3.3	<b>Zamanlama</b></p>
+	    <ul>
+	  <li>Program ayarlama</li>
+	  <p>Data Replicator 3 belirli aralıklarla düzenli olarak kendiliğinden yedek alması için ayarlanabilir. Bunu yapmak için:</p>
+	  <ol type="a">
+		<li><b>Programla</b>'ya tıklayın.</li>
+		<li>Yedekleme süresini ve Yedekleme Programının başlangıç zamanını ayarlayın ve <b>OK</b>'e tıklayın. </li>
+		<li>Kapatırken Program ayarlamak isterseniz, lütfen bu bilgisayara oturum açarken kullandığınız kullanıcı adını ve parolayı giriniz. Ardından <b>OK</b> tuşuna tıklayın.<br> Oturumu kapatırken Yedekleme programını ayarlamak istemiyorsanız, lütfen <b>Atla</b>'ya tıklayın.</li>
+	  </ol>
+	  <p class="notehead">Not:</p>
+	  <ol class="notecontent">
+		<li>Oturumu kapatırken yedekleme almak için, kullanıcı parolası boş olamaz.</li>
+		<li>Windows 98 veya Windows ME kullanan kullanıcılar için oturum kapatırken Programlı Yedekleme yapılabilir.</li>
+	  </ol>
+	  <p>Programlı kurulum tamamlandıktan sonra, Synology Data Replicator 3'ten çıkabilir veya program penceresini sistem tepsisine küçültebilirsiniz. Synology Data Replicator 3 zaman geldiğinde Programlı Yedeklemeyi kendiliğinden yapacaktır.</p>
+	  <li>Programı Sil</li>
+	  <p><b>Programı Sil</b>'e tıklayarak Programlı Yedeklemeyi durdurun ve program ayarlarını kaldırın.</p>
+		</ul>
+<p>Outlook, Outlook Express veya Windows Mail dosyalarını yedeklemek isterken lütfen şunları not edin:</p>
+<ul>
+<li>Windows XP, Windows 2003 veya Windows Vista kullanıyorsanız, </li>
+	<ol type="a">
+	<li>PC'nizdeki sürücülerden en az biri NTFS formatında olmalıdır. </li>
+	<li>Outlook/Windows Mail dosyaları yerel sürücülerde olmalıdır. </li>
+	<li>PC yöneticisi olarak oturum açmalısınız.</li>
+	</ol>
+<li>Windows XP ve Windows 2003'ün dışında bir işletim sistemi kullanıyorsanız, lütfen Outlook'u yedeklemeden önce Outlook'u kapatın.</li>
+<br>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Destek ve Sınırlar</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<ol>
+<li>Synology Data Replicator 3 hedef sunucuyu ararken 9999 veya 9998 veya 9997 portunu kullanacaktır. </li>
+<li>Sıkıştırılan dosyalar ve şifrelenen dosyalar yedeklendikten sonra düzenli dosyalar olacaktır. Dosya özelliği silinecektir. </li>
+<li>Dosya adının uzunluğu için Synology Data Replicator 3 240 byte'a kadar destekler. </li>
+<li>PC'nizin bilgisayar adını değiştirirseniz, Data Replicator 3'ün doğru çalıştığından emin olmak için Programla Yedekleme ayarlarını yaparken PC'nizin admin oturum açma parolasını girmeniz gereklidir. Programlı yedeklemeyi daha önceden ayarlamışsanız, bu programı silin ve PC'nizin admin oturum açma parolasını kullanarak yenisini tekrar ayarlayın.</li>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name="restore"></a>Yedekleme Dosyalarının Geri Yüklenmesi</p>
+<p>Yedekleme dosyalarını geri yüklemek için ilk olarak bir yedekleme hedefi seçmeniz ve ardından yedekleme dosyalarını saklamak için aşağıdaki yöntemlerden birini seçmeniz gereklidir:</p>
+<ol>
+<li class=topic>Gözatarak geri yükle</li>
+<p>Birçok durumda  yedek dosyaların nerede olduğundan eminseniz, dosyalarınızı geri yüklemek için <i>Gözatarak Geri Yükle</i> kullanabilirsiniz:</p>
+	<ol>
+	<li><b>Başlat</b> düğmesine tıklayın, bu düğme <i>Gözatarak Geri yükle</i> altındadır. </li>
+	<li><b>İleri</b> üzerine tıklayın.</li>
+	<li>Geri yükleme kaynağını seçmek için tıklayın ve <b>İleri</b>'ye tıklayın. </li>
+	<li>Dosyaları <b>Sürüme göre</b> veya <b>Geri yükleme noktasına göre</b>'den birini seçerek listeleyin. </li>
+	<li>Geri yüklemek istediğiniz klasör(leri) işaretleyin ve <b>İleri</b>'ye tıklayın. </li>
+	<li>Yedek dosyalarının geri yükleneceği yeri seçin. Ardından <b>Bitir</b>'e tıklayın.</li>
+	</ol>
+    <br>
+<li class=topic>Arayarak gözatın</li>
+<p>Yedek dosyaların nerede olduğundan emin değilseniz veya belirli anahtar sözcükler içeren dosyaları geri yüklemek istiyorsanız, lütfen geri yüklemek için şu adımları izleyin:</p>
+	<ol>
+	<li>Arayarak Geri Yükle altındaki <b>Başlat</b> düğmesine tıklayın. </li>
+	<li><b>İleri</b> üzerine tıklayın.</li>
+	<li>Geri yükleme kaynağını seçmek için tıklayın ve <b>İleri</b>'ye tıklayın. </li>
+	<li>Aramak istediğiniz anahtar sözcüğü "Anahtar sözcük:" kısmına girin metin alanı. </li>
+	<li>Yedekleme klasörünü "Yedeklemeler:" indirmeli menüsünden seçin. </li>
+	<li><b>Ara</b>'ya tıklayın.</li>
+	<li>Sağ taraftaki karede geri yüklemek istediğiniz dosyaları ve klasörleri seçin ve <b>İleri</b>'ye tıklayın.</li>
+	<li>Yedek dosyalarının geri yükleneceği yeri seçin. Ardından <b>Bitir</b>'e tıklayın.</li>
+	</ol>
+<br>
+<table width="550" border="0" bgcolor="#FFCCFF">
+<tr>
+<td><center>
+<b><font size="3">Outlook, Outlook Express ve Windows Mail Dosyalarının Geri Yüklenmesi hakkında ipuçları</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<p>     Hedef bir yol seçerken, şunları seçebilirsiniz:</p>
+<ol>
+<b><li>İlk yol</li></b>
+	<p>Bu seçeneği seçerek posta ve adres defterini manuel olarak alamazsınız, PC verileri geri yüklenen dosyaların yerini alacaktır.</p>
+<b><li>Yeni yol</li></b>
+	<p>BU seçeneği seçerek verileri belirtilen yola geri yükleyebilir ve posta ve adres defterini Outlook/Outlook Express/Windows Mail ile manuel olarak alabilirsiniz.</p>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name=setting></a>Gelişmiş Ayarlar</p>
+<p>Bu Seçenekler bölümünde gelişmiş yedek ayarlarını şu şekilde ayarlayabilirsiniz.</p>
+<p class="topic">Filtre</p>
+<blockquote>
+  <p>Bu işlevi kullanarak dosyaları hassas bir şekilde yedekleyin. Belirli önek veya uzantısı bulunan bazı dosyaları yedek listesinden çıkarmanız yedek almanızı hızlandıracaktır. İlerlemek için şu adımları izleyin:</p>
+  <ol>
+    <li><b>Filtre</b>'ye tıklayın.</li>
+    <li>"Uzantı" veya "Prefix" seçeneğinin sağ tarafındaki <b>Ekle</b>'ye tıklayın. </li>
+    <li>Belirtilen kriteri girin, örneğin, uzantı için ".exe" veya önek için "~". </li>
+    <li><b>OK</b>'e tıklayarak kurulum iletişim kutusunu kapatın ve <b>OK</b>'e tekrar tıklayarak ayarları kaydedin.</li>
+  </ol>
+</blockquote>
+<p class="topic">E-posta bildirimini etkinleştir</p>
+<blockquote>
+  <p>Bu işlevi kullanarak Programla Yedekle tamamlandıktan sonra yedek ayrıntılarını eposta ile alın.</p>
+  <ol>
+    <li><b>SMTP Kurulumu</b>'na tıklayın. </li>
+    <li>Geçerli bir eposta bilgisi girin ve <b>OK</b>'e tıklayarak bitirin.</li>
+  </ol>
+</blockquote>
+<p class="topic">Dosya sürümlerini etkinleştir</p>
+<blockquote>
+  <p class="style4">Dosya sürüm işlevi ne içindir?</p>
+  <p>Dosya sürümleri işlevini etkinleştirmeniz aynı dosyanın geçmiş sürümlerini korumanıza yardım eder.</p>
+  <p>İlk kez yedekleme tamamlandıktan sonra, yedeklenen tüm dosyalar yedek hedef yerindeki ''latest'' klasörüne geri yüklenecektir. Bir sonraki yedeklemeden sonra Data Replicator 3 "latest" klasöründe aynı ada sahip başka bir dosya bulunup bulunmadığını kendiliğinden kontrol edecektir. Eğer varsa ve dosya içeriği değiştirilmişse, "latest" klasöründeki önceki yedek dosya eski sürüm olarak "past" klasörüne alınacaktır, ancak bilgisayarınızdaki dosya "latest" klasörüne yedeklenecektir, burada en yeni yedekleme dosyalarının tamamını bulabilirsiniz.</p>
+  <p class="notehead">Not:</p>
+  <p class="notecontent">Yukarıda gösterilen dosya aynı klasörde olmalıdır. Dolayısıyla klasörü yedeklemek için aynı hesabı kullanırken, eski sürümler üretilmiş olacaktır.</p>
+  <p>Dosya sürüm işlevi etkinleştirildiğinde ve yerel dosyalarınızda yanlış ve geri dönüşü olmayan düzenlemeler yaptığınızda, geçmiş dosyaları yedek hedefinde bulabilirsiniz ve dosyaları kolaylıkla geri yükleyebilirsiniz.</p>
+  <p><b>Eski sürüm sayısı</b></p>
+  <p>Saklamak istediğiniz yedek dosyalarının ne kadarının geçmiş sürüm olduğunu burada ayarlayabilirsiniz, en fazla 20 sürümdür. Geçmiş sürüm dosyalarının dosya adı "v00", "v01" ve benzeri ile eklenecektir. Numara ne kadar büyükse sürüm o kadar yenidir.</p>
+  <p>Yedek hedef yerinde önceki sürümlerden ne kadar saklanacağına karar vermek için eski sürümlerin sayısını belirleyin. İlerlemek için şu adımları izleyin:</p>
+</blockquote>
+<blockquote>
+<ol>
+<li><v>Dosya sürümlerini etkinleştir</v>'i işaretleyin.</li>
+<li>Eski sürümlerin sayısını ayarlayın ve <b>Uygula</b>'ya tıklayarak ayarları kaydedin. </li>
+</ol>
+</blockquote>
+<p class="topic">Geri yükleme noktaları</p>
+<blockquote>
+  <p class="style4">Geri yükleme noktaları nedir?</p>
+  <p>Yedekleme yapıldıktan sonra her defasında bu yedeklemenin tüm dosyalarının bulunduğu bir dosya olacak ve bu dosyanın adı yedekleme başlangıç zamanı olacaktır. Bu bir geri yükleme noktasıdır.</p>
+  <p>Daha önce hiç değiştirilmeyen dosya her yedekleme sonrası her bir geri yükleme noktasında belirecektir. Bununla birlikte gerçekte sadece bir dosya disk boyutu yer kaplayacaktır.</p>
+  <p><b>Geri yükleme noktası sayısı</b></p>
+  <p>Ne kadar geri yükleme noktası saklamak istediğinizi ayarlayabilirsiniz, en fazla 128 geri yükleme noktası ayarlanabilir. Geri yükleme noktası sayısı ayarlanan değeri aştığında, yedekleme hedefindeki en eski geri yükleme noktası sonraki yedeklemenin ardından kendiliğinden silinecektir.</p>
+</blockquote>
+<blockquote>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Destek ve Sınırlar</font></b>
+</center></td>
+</tr>
+<tr>
+<td>Geri yükleme nokta işlevi sadece Windows 2000 / Windows XP / Windows 2003 / Windows Vista'da desteklenmektedir.</td>
+</tr>
+</table>
+</blockquote>
+
+<p class="topic">Oturum Açıldığında Oto Başlat</p>
+<blockquote>
+  <p>Synology Data Replicator 3'ü Windows'a oturum açtığınızda kendiliğinden açılacak şekilde ayarlayabilirsiniz. İlerlemek için şu adımları izleyin:</p>
+  <ol>
+    <li><b>Windows Başlat'ta Data Replicator 3'ü Oto Başlat</b>'ı işaretleyin. </li>
+    <li><b>Uygula</b>'ya tıklayın.</li>
+  </ol>
+</blockquote>
+
+<p class="topic">Senkronizasyon öncesinde veri tutarlılığını kontrol et</p>
+<blockquote>
+  <p>Veri tutarlılığının Data Replicator senk moduna girmeden önce kontrol edilip edilmeyeceğine karar verebilirsiniz. İlerlemek için şu adımları izleyin:</p>
+  <ol>
+    <li> <b>Senkronizasyon öncesinde veri tutarlılığını kontrol et</b> seçeneğini işaretleyin. </li>
+    <li><b>Uygula</b>'ya tıklayın.</li>
+  </ol>
+  <p class="notehead">Not:</p>
+  <p class="notecontent">Bu seçeneğin işaretini kaldırır ve Data Replicator'u kapatırsanız, gelecek sefer başlattığınızda eklenen, kaldırılan veya değiştirilen veriler sunucuyla senkronize edilmeyebilir.</p>
+</blockquote>
+
+<p class="topic">Aynı dosyaları hedef klasörde tutun</p>
+<blockquote>
+  <p>Eğer "latest" klasöründe tutulacak dosyaları yerel bilgisayarınızdakiler ile aynı olması için ayarlayabilirseniz. İlerlemek için şu adımları izleyin:</p>
+  <ol>
+    <li><b>Yerel dosyalar silindiğinde, aynı zamanda karşı yedek dosyaları da sil</b>'i işaretleyin.</li>
+    <li><b>Uygula</b>'ya tıklayın. </li>
+  </ol>
+</blockquote>
+<hr>
+
+<p class=h1><a name=log></a>Günlük</p>
+<p>Maksimum kayıt dosyası boyutu 512KB'dır; kayıt dosyası sınıra ulaştığında, en eski 128KB kaldırılacaktır.</p>
+<ul>
+<li class=topic>Günlüğü Kaydet</li>
+<ol>
+<li><b>Kaydet</b>'e tıklayın. </li>
+<li>Yedek hedefin yolunu seçin ve <b>Kaydet</b>'e tıklayarak bitirin.</li>
+</ol>
+<br>
+<li class=topic>Kaydı Temizle</li>
+<ol>
+<li><b>Temizle</b>'ye tıklayın. </li>
+<li>Onay iletişim kutusunda <b>Evet</b>'e tıklayın.</li>
+</ol>
+</ul>
+
+</body>
+</html>

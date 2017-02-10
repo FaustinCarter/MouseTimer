@@ -1,0 +1,315 @@
+﻿
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Synology Data Replicator 3</title>
+<style type="text/css">
+<!--
+.head {
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.h1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.h2 {
+	font-weight: bold;
+	color: #FF3300;
+	font-size: 16px;
+}
+
+.topic {
+	font-family: "Geneva, Arial, Helvetica, sans-serif";
+	font-weight: bold;
+	color: #000000;
+	font-size: 16px;
+}
+
+body, td {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 10pt;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.notehead {
+	font-weight: bold;
+	font-size: 10pt;
+	color: #FF0000;
+}
+
+.notecontent {
+	font-size: 10pt;
+	color: #FF0000;
+}
+.style2 {font-size: 20px; font-weight: bold; color: #666666; 
+}
+.style4 {font-weight: bold; color: #0000FF; }
+-->
+</style>
+</head>
+<body>
+<p class="style2">Používání aplikace Data Replicator 3</p>
+<p>S aplikací Data Replicator 3 se můžete seznámit klepnutím na následující hlavní funkce.</p>
+<ul>
+<li><a href="#bkp">Zálohovaní dat z PC</a> </li>
+<li><a href="#restore">Obnovení zálohovaných souborů</a> </li>
+<li><a href="#setting">Rozšířená nastavení</a> </li>
+<li><a href="#log">Protokol</a> </li>
+</ul>
+<hr>
+<p class=h1><a name="bkp"></a>Zálohovaní dat z PC</p>
+<p>Zálohování můžete připravit podle následujících pokynů. Můžete také přejít k části <a href="#setting">Rozšířená nastavení</a>, ve které najdete další nastavení, pomocí kterých lze upravit zálohování dat z PC.</p>
+<ol>
+<li class=topic>Vyberte cíl zálohy</li>
+	<p>Data z PC můžete zálohovat na server Synology nebo na jiné místo. Po úspěšném provedení zálohování budete moci najít zálohované soubory ve vybrané složce.</p>
+	<p>1.1	Zálohování na server Synology</p>
+		<ol type="a">
+		<li>Klepněte na možnost <b>Vybrat</b>.</li>
+		<li>Vyberte možnost <b>Server Synology</b> a klepněte na tlačítko <b>OK</b>. </li>
+		<li>V dalším okně klepněte na server Synology, na kterém se nachází sdílená složka pro zálohu. Potom klepněte na možnost <b>Další</b>.</li>
+		<li>Zadejte uživatelské jméno a heslo, se kterými lze číst/zapisovat do vybrané sdílené složky, a klepněte na možnost <b>Další</b>. </li>
+		<li>Klepněte na sdílenou složku, kterou chcete použít k zálohování, a klepněte na možnost <b>Dokončit</b>. </li>
+		</ol>
+  <p>1.2	Zálohování do jiného umístění</p>
+		<ol type="a">
+		<li>Klepněte na možnost <b>Vybrat</b>.</li>
+		<li>Vyberte možnost <b>Jiné umístění</b> a klepnutím na možnost <b>Procházet</b> vyhledejte umístění pro zálohu.</li>
+		<li>Dokončete postup klepnutím na tlačítko <b>OK</b>.</li>
+  </ol>
+<BR>
+<li class=topic>Zaškrtněte složky, které chcete zálohovat</li>
+<BR>
+<li class=topic>Vyberte režim zálohování</li>
+<p>Aplikace Data Replicator 3 nabízí 3 režimy zálohování: <i><b>okamžité</b></i>, <i><b>synchronizované</b></i> a <i><b>plánované</b></i> zálohování.</p>
+	3.1	<b>Okamžité zálohování</b>
+  	<p>     Klepnutím na tlačítko <b>Okamžitá</b> okamžitě zálohujete všechny soubory ve vybraných místních složkách do umístění pro zálohu.</p>
+	<p>3.2	<b>Synchronizace</b>  </p>
+		<ul>
+		<li>Synchronizace dat a zahájení sledování</li>
+		<p>Po klepnutí na tlačítko <b>Synchronizace</b> aplikace Data Replicator 3 vytvoří úplnou zálohu všech souborů ve vybraných složkách a zálohu uloží do cílového umístění. Poté aplikace Data Replicator 3 začne tyto složky sledovat. Při provedení změn aplikace Data Replicator 3 zálohuje pouze soubory, které byly změněny.</p>
+		<p class="notehead">Poznámka:</p>
+		<ol class="notecontent">
+		<li>Poté, co aplikace Data Replicator 3 přejde do režimu sledování, bude ve sledování pokračovat, dokud ji nezastavíte.</li>
+		<li>Časový interval pro synchronizaci pošty je doba od dokončení synchronizace do zahájení příští synchronizace. Pokud aplikace Data Replicator 3 synchronizuje jiné soubory, můžete úlohu odložit.</li>
+		</ol>
+		<br>
+		<li>Zastavení sledování</li>
+		<p>Chcete-li zastavit sledování, klepněte na tlačítko <b>Zastavit synchronizaci</b> v okně aplikace Data Replicator 3. Je-li okno aplikace minimalizováno do hlavního panelu, můžete jej otevřít poklepáním na ikonu Data Replicator 3.</p>
+  </ul>
+	    <p>3.3	<b>Plán</b></p>
+	    <ul>
+	  <li>Nastavení plánu</li>
+	  <p>Aplikaci Data Replicator 3 lze nastavit tak, aby pravidelně ve stanovený čas prováděla automatické zálohování. Postupujte takto:</p>
+	  <ol type="a">
+		<li>Klepněte na možnost <b>Plán</b>.</li>
+		<li>Nastavte zálohovací období a počáteční čas pro plánované zálohování a klepněte na tlačítko <b>OK</b>. </li>
+		<li>Chcete-li plánované zálohování provádět během odhlášení, zadejte uživatelské jméno a heslo, které používáte k přihlášení k tomuto počítači. Potom klepněte na tlačítko <b>OK</b>.<br> Pokud plánované zálohování nechcete provádět během odhlášení, klepněte na možnost <b>Přeskočit</b>.</li>
+	  </ol>
+	  <p class="notehead">Poznámka:</p>
+	  <ol class="notecontent">
+		<li>Chcete-li provádět zálohování během odhlášení, uživatelské heslo nemůže být prázdné.</li>
+		<li>Pro uživatele systémů Windows 98 a Windows ME: plánované zálohování lze provádět během odhlášení.</li>
+	  </ol>
+	  <p>Po nastavení plánu můžete ukončit aplikaci Synology Data Replicator 3 nebo ji minimalizovat do hlavního panelu. Synology Data Replicator 3 provede plánované zálohování automaticky ve stanovený čas.</p>
+	  <li>Odstranění plánu</li>
+	  <p>Klepnutím na možnost <b>Odstranit plán</b> můžete zastavit plánované zálohování a odstranit nastavení plánu.</p>
+		</ul>
+<p>Chcete-li zálohovat soubory aplikace Outlook, Outlook Express nebo Windows Mail:</p>
+<ul>
+<li>Pokud používáte systém Windows XP, Windows 2003 nebo Windows Vista: </li>
+	<ol type="a">
+	<li>alespoň jedna z jednotek v počítači musí být ve formátu NTFS; </li>
+	<li>soubory aplikace Outlook/Windows Mail musí být na místních jednotkách; </li>
+	<li>musíte se přihlásit jako správce počítače.</li>
+	</ol>
+<li>Pokud používáte jiný operační systém než Windows XP nebo Windows 2003, před zálohováním dat aplikace Outlook aplikaci Outlook ukončete.</li>
+<br>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Podpora a omezení</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<ol>
+<li>Při hledání cílového serveru aplikace Synology Data Replicator 3 použije port 9999 nebo 9998 nebo 9997. </li>
+<li>Komprimované soubory a šifrované soubory budou po zálohování běžné soubory. Vlastnost souboru bude vymazána. </li>
+<li>Aplikace Synology Data Replicator 3 podporuje názvy souborů o maximální délce 240 bajtů. </li>
+<li>Pokud změníte název svého počítače, musíte při nastavování plánovaného zálohování zadat přihlašovací heslo účtu admin, abyste zajistili, že aplikace Data Replicator 3 bude fungovat správně. Pokud jste už nastavili plán zálohování, odstraňte tento plán a nastavte nový pomocí přihlašovacího hesla účtu admin ze svého počítače.</li>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name="restore"></a>Obnovení zálohovaných souborů</p>
+<p>Chcete-li obnovit zálohované soubory, musíte nejdříve vybrat cíl zálohy a potom zvolit jeden z následujících způsobů obnovení zálohovaných souborů:</p>
+<ol>
+<li class=topic>Obnovit procházením</li>
+<p>Ve většině situací, když víte, kde se nacházejí zálohované soubory, můžete obnovit soubory pomocí funkce <i>Obnovit procházením</i>:</p>
+	<ol>
+	<li>Klepněte na tlačítko <b>Spustit</b> v části <i>Obnovit procházením</i>. </li>
+	<li>Klepněte na možnost <b>Další</b>.</li>
+	<li>Klepnutím vyberte zdroj pro obnovení a potom klepněte na možnost <b>Další</b>. </li>
+	<li>Zobrazte soubory <b>Podle verze</b> nebo <b>Podle bodu obnovení</b>. </li>
+	<li>Zaškrtněte složky, které chcete obnovit, a potom klepněte na možnost <b>Další</b>. </li>
+	<li>Zvolte umístění, do kterého chcete zálohované soubory obnovit. Potom klepněte na možnost <b>Dokončit</b>.</li>
+	</ol>
+    <br>
+<li class=topic>Obnovit hledáním</li>
+<p>Pokud si nejste jistí, kde se zálohované soubory nacházejí, nebo pokud chcete obnovit pouze soubory s určitým klíčovým slovem, proveďte obnovení takto:</p>
+	<ol>
+	<li>Klepněte na tlačítko <b>Spustit</b> v části Obnovit hledáním. </li>
+	<li>Klepněte na možnost <b>Další</b>.</li>
+	<li>Klepnutím vyberte zdroj pro obnovení a potom klepněte na možnost <b>Další</b>. </li>
+	<li>Zadejte klíčové slovo, které chcete vyhledat, do pole „Klíčové slovo:“. </li>
+	<li>Zvolte složku zálohy z rozevírací nabídky „Zálohy:“. </li>
+	<li>Klepněte na možnost <b>Hledat</b>.</li>
+	<li>V pravém podokně vyberte soubory a složky, které chcete obnovit, a potom klepněte na možnost <b>Další</b>.</li>
+	<li>Zvolte umístění, do kterého chcete zálohované soubory obnovit. Potom klepněte na možnost <b>Dokončit</b>.</li>
+	</ol>
+<br>
+<table width="550" border="0" bgcolor="#FFCCFF">
+<tr>
+<td><center>
+<b><font size="3">Rada k obnovení souborů aplikací Outlook, Outlook Express a Windows Mail</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<p>     Při výběru cílové cesty můžete zvolit tyto možnosti:</p>
+<ol>
+<b><li>Původní cesta</li></b>
+	<p>Zvolíte-li tuto možnost, nemusíte ručně importovat poštu a adresář. Data v počítači budou nahrazena obnovenými soubory.</p>
+<b><li>Nová cesta</li></b>
+	<p>Zvolíte-li tuto možnost, můžete obnovit data do určitého umístění a importovat poštu a adresář ručně v aplikaci Outlook/Outlook Express/Windows Mail.</p>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name=setting></a>Rozšířená nastavení</p>
+<p>V sekci Možnosti můžete nastavit následující rozšířená nastavení pro zálohování.</p>
+<p class="topic">Filtr</p>
+<blockquote>
+  <p>Pomocí této funkce můžete přesněji určit soubory, které chcete zálohovat. Vyloučením souborů s určitou předponou nebo příponou ze seznamu pro zálohování můžete urychlit zálohování. Postupujte podle těchto pokynů:</p>
+  <ol>
+    <li>Klepněte na možnost <b>Filtr</b>.</li>
+    <li>Klepněte na možnost <b>Přidat</b> napravo od možnosti Přípona nebo možnosti Prefix. </li>
+    <li>Zadejte požadované kritérium, například příponu „.exe“ nebo předponu „~“. </li>
+    <li>Klepnutím na tlačítko <b>OK</b> zavřete dialogové okno nastavení a dalším klepnutím na tlačítko <b>OK</b> uložíte nastavení.</li>
+  </ol>
+</blockquote>
+<p class="topic">Povolit e-mailová upozornění</p>
+<blockquote>
+  <p>Pomocí této funkce můžete dostávat e-mailem informace o zálohování, které budou zasílány po dokončení plánovaného zálohování.</p>
+  <ol>
+    <li>Klepněte na možnost <b>Nastavení SMTP</b>. </li>
+    <li>Zadejte e-mailové údaje a dokončete nastavení klepnutím na tlačítko <b>OK</b>.</li>
+  </ol>
+</blockquote>
+<p class="topic">Povolit verze souborů</p>
+<blockquote>
+  <p class="style4">K čemu slouží verze souborů?</p>
+  <p>Povolením verzí souborů můžete uchovat historii změn jednotlivých souborů.</p>
+  <p>Po dokončení prvního zálohování budou všechny zálohované soubory uloženy ve složce „latest“. Při příštím zálohování aplikace Data Replicator 3 automaticky zkontroluje, zda ve složce „latest“ neexistují soubory se stejným názvem. Pokud ano a obsah souborů se změnil, dříve zálohovaný soubor ze složky „latest“ bude přesunut do složky „past“ jako starší verze, zatímco soubor z počítače bude zálohován do složky „latest“, ve které můžete vždy nalézt nejnovější zálohované soubory.</p>
+  <p class="notehead">Poznámka:</p>
+  <p class="notecontent">Příslušný soubor musí být ve stejné složce. Pokud tedy při zálohování složky použijete stejný účet, bude vytvořena minulá verze.</p>
+  <p>Dojde-li k nesprávné nebo nevratné změně místních souborů, zatímco jsou povoleny verze souborů, můžete najít starší soubory v záloze a soubory jednoduše obnovit.</p>
+  <p><b>Počet minulých verzí</b></p>
+  <p>Zde můžete nastavit, kolik minulých verzí zálohovaných souborů chcete uchovávat. Maximálně lze uchovávat 20 verzí. K názvům starších verzí souborů bude přidáno „v00“, „v01“ a tak dále. Čím vyšší číslo, tím novější verze.</p>
+  <p>Nastavte počet minulých verzí, které chcete uchovávat v záloze. Postupujte podle těchto pokynů:</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>Zaškrtněte možnost <v>Povolit verze souborů</v>.</li>
+<li>Nastavte počet minulých verzí a uložte nastavení klepnutím na možnost <b>Použít</b>. </li>
+</ol>
+</blockquote>
+<p class="topic">Body obnovení</p>
+<blockquote>
+  <p class="style4">Co jsou to body obnovení?</p>
+  <p>Při každém zálohování bude vytvořena složka, jejíž název bude odpovídat času zahájení zálohování. V této složce budou umístěny všechny zálohované soubory. Toto bude bod obnovení.</p>
+  <p>Soubor, který nebyl nikdy změněn, se bude nacházet v každém bodu obnovení po každém zálohování. Soubor ale bude na disku zabírat jen místo jednoho souboru.</p>
+  <p><b>Počet bodů obnovení</b></p>
+  <p>Zde můžete nastavit, kolik bodů obnovení chcete uchovávat. Maximálně lze uchovávat 128 bodů obnovení. Pokud počet bodů obnovení překročí nastavenou hodnotu, nejstarší body obnovení budou při příštím zálohování automaticky odstraněny.</p>
+</blockquote>
+<blockquote>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Podpora a omezení</font></b>
+</center></td>
+</tr>
+<tr>
+<td>Body obnovení jsou podporovány pouze v systémech Windows 2000/Windows XP/Windows 2003/Windows Vista.</td>
+</tr>
+</table>
+</blockquote>
+
+<p class="topic">Automatické spuštění při přihlášení</p>
+<blockquote>
+  <p>Můžete nastavit, aby se aplikace Synology Data Replicator 3 automaticky spustila, když se přihlásíte do systému Windows. Postupujte podle těchto pokynů:</p>
+  <ol>
+    <li>Zaškrtněte možnost <b>Spustit aplikaci Data Replicator 3 automaticky při spuštění systému Windows</b>. </li>
+    <li>Klepněte na možnost <b>Použít</b>.</li>
+  </ol>
+</blockquote>
+
+<p class="topic">Kontrola konzistence dat před synchronizací</p>
+<blockquote>
+  <p>Můžete se rozhodnout, zda chcete zkontrolovat konzistenci dat předtím, než aplikace Data Replicator přejde do synchronizovaného režimu. Postupujte podle těchto pokynů:</p>
+  <ol>
+    <li>Zaškrtněte možnost <b>Zkontrolovat konzistenci dat před zahájením synchronizace</b>. </li>
+    <li>Klepněte na možnost <b>Použít</b>.</li>
+  </ol>
+  <p class="notehead">Poznámka:</p>
+  <p class="notecontent">Pokud zrušíte zaškrtnutí této možnosti a aplikaci Data Replicator ukončíte, přidaná, odstraněná nebo upravená data nemusí být při příštím spuštění aplikace Data Replicator synchronizována se serverem.</p>
+</blockquote>
+
+<p class="topic">Zachování stejných souborů na cílovém serveru</p>
+<blockquote>
+  <p>Můžete nastavit, aby se ve složce „latest“ uchovávaly stejné soubory jako v místním počítači. Postupujte podle těchto pokynů:</p>
+  <ol>
+    <li>Zaškrtněte možnost <b>Při odstranění místních souborů odstranit také příslušné zálohované soubory</b>.</li>
+    <li>Klepněte na možnost <b>Použít</b>. </li>
+  </ol>
+</blockquote>
+<hr>
+
+<p class=h1><a name=log></a>Protokol</p>
+<p>Maximální velikost souboru protokolu je 512 kB; když soubor dosáhne limitu, nejstarších 128 kB bude odstraněno.</p>
+<ul>
+<li class=topic>Uložení protokolu</li>
+<ol>
+<li>Klepněte na možnost <b>Uložit</b>. </li>
+<li>Vyberte umístění a dokončete postup klepnutím na možnost <b>Uložit</b>.</li>
+</ol>
+<br>
+<li class=topic>Vymazání protokolu</li>
+<ol>
+<li>Klepněte na možnost <b>Vymazat</b>. </li>
+<li>V okně s potvrzením klepněte na možnost <b>Ano</b>.</li>
+</ol>
+</ul>
+
+</body>
+</html>

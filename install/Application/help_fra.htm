@@ -1,0 +1,315 @@
+﻿
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Synology Data Replicator 3</title>
+<style type="text/css">
+<!--
+.head {
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.h1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.h2 {
+	font-weight: bold;
+	color: #FF3300;
+	font-size: 16px;
+}
+
+.topic {
+	font-family: "Geneva, Arial, Helvetica, sans-serif";
+	font-weight: bold;
+	color: #000000;
+	font-size: 16px;
+}
+
+body, td {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 10pt;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.notehead {
+	font-weight: bold;
+	font-size: 10pt;
+	color: #FF0000;
+}
+
+.notecontent {
+	font-size: 10pt;
+	color: #FF0000;
+}
+.style2 {font-size: 20px; font-weight: bold; color: #666666; 
+}
+.style4 {font-weight: bold; color: #0000FF; }
+-->
+</style>
+</head>
+<body>
+<p class="style2">Utilisation de Data Replicator 3</p>
+<p>Cliquez sur les principales fonctions suivantes afin d’apprendre à connaître Data Replicator 3.</p>
+<ul>
+<li><a href="#bkp">Sauvegarde des données d’un PC</a> </li>
+<li><a href="#restore">Restauration des fichiers de sauvegarde</a> </li>
+<li><a href="#setting">Paramètres avancés</a> </li>
+<li><a href="#log">Journal</a> </li>
+</ul>
+<hr>
+<p class=h1><a name="bkp"></a>Sauvegarde des données d’un PC</p>
+<p>Veuillez utiliser les étapes suivantes pour configurer votre sauvegarde. Vous pouvez également consulter <a href="#setting">Paramètres avancés</a> pour en apprendre davantage sur les paramètres supplémentaires qui vous aideront à personnaliser la sauvegarde des données de votre PC.</p>
+<ol>
+<li class=topic>Sélectionnez une destination de sauvegarde</li>
+	<p>Vous pouvez choisir de sauvegarder les données de votre PC sur un serveur Synology ou dans un autre emplacement. Après avoir terminé avec succès la sauvegarde, vous serez en mesure de trouver les fichiers de sauvegarde dans le dossier assigné.</p>
+	<p>1.1	Sauvegarde sur un serveur Synology</p>
+		<ol type="a">
+		<li>Cliquez sur <b>Sélectionner</b>.</li>
+		<li>Sélectionnez <b>Serveur Synology</b>, et cliquez sur <b>OK</b>. </li>
+		<li>Dans la fenêtre suivante, cliquez sur le serveur Synology où le dossier partagé de la sauvegarde se trouve. Puis cliquez sur <b>Suivant</b>.</li>
+		<li>Entrez le nom d’utilisateur et le mot de passe ayant un accès en lecture/écriture au dossier partagé que vous venez de sélectionner et cliquez sur <b>Suivant</b>. </li>
+		<li>Cliquez sur le dossier partagé que vous souhaitez utiliser pour la sauvegarde et cliquez sur <b>Terminer</b>. </li>
+		</ol>
+  <p>1.2	Sauvegarde dans un autre emplacement</p>
+		<ol type="a">
+		<li>Cliquez sur <b>Sélectionner</b>.</li>
+		<li>Sélectionnez <b>Autre emplacement</b> et cliquez sur <b>Parcourir</b> afin de localiser l'emplacement de sauvegarde.</li>
+		<li>Cliquez sur <b>OK</b> pour terminer.</li>
+  </ol>
+<BR>
+<li class=topic>Sélectionner les dossiers à sauvegarder</li>
+<BR>
+<li class=topic>Choisir un mode de sauvegarde</li>
+<p>Data Replicator 3 fournit les 3 modes de sauvegarde suivants pour plus de commodité : <i><b>Immédiat</b></i>, <i><b>Sync</b></i> et <i><b>Planifié</b></i>.</p>
+	3.1	<b>Immédiat</b>
+  	<p>	Si vous cliquez sur le bouton <b>Immédiat</b>, tous les fichiers sélectionnés dans le ou les dossiers locaux seront immédiatement sauvegardés dans l'emplacement de sauvegarde.</p>
+	<p>3.2	<b>Sync</b>  </p>
+		<ul>
+		<li>Synchroniser les données maintenant et commencer la surveillance</li>
+		<p>Cliquez sur le bouton <b>Sync</b> et Data Replicator 3 crée une sauvegarde complète de tous les fichiers du dossier sélectionné dans l'emplacement de sauvegarde. Data Replicator 3 commencera ensuite la surveillance de ces dossiers. Lorsque vous modifiez des fichiers, Data Replicator 3 les sauvegarde.</p>
+		<p class="notehead">Remarque :</p>
+		<ol class="notecontent">
+		<li>Une fois que Data Replicator 3 est entré en mode de surveillance, il continuera à fonctionner jusqu’à ce que vous l’arrêtiez.</li>
+		<li>L’intervalle entre deux synchronisation du courrier est le temps entre la fin d’une opération et le début de la suivante. Cette tâche peut être reportée lorsque Data Replicator 3 synchronise d’autre fichiers.</li>
+		</ol>
+		<br>
+		<li>Arrêter la surveillance</li>
+		<p>Pour arrêter la surveillance, cliquez sur le bouton <b>Arrêter synchronisation</b> sur la fenêtre de Data Replicator 3. Si vous avez réduit la fenêtre du programme dans la barre d'état système, veuillez double-cliquer sur l'icône de Data Replicator 3 pour l'ouvrir.</p>
+  </ul>
+	    <p>3.3	<b>Programmée</b></p>
+	    <ul>
+	  <li>Définir la programmation</li>
+	  <p>Data Replicator 3 peut créer des sauvegardes automatiques à des intervalles réguliers. Pour ce faire :</p>
+	  <ol type="a">
+		<li>Cliquez sur <b>Planification</b>.</li>
+		<li>Sélectionnez le moment et l'heure de début de la sauvegarde pour la sauvegarde programmée. Cliquez sur <b>OK</b>. </li>
+		<li>Si vous voulez effectuer une sauvegarde programmée en étant déconnecté, veuillez entrer le nom d’utilisateur et le mot de passe que vous utilisez pour la connexion à cet ordinateur. Cliquez ensuite sur <b>OK</b>.<br> Si vous ne désirez pas effectuer de sauvegarde programmée en étant déconnecté, veuillez cliquer sur <b>Ignorer</b>.</li>
+	  </ol>
+	  <p class="notehead">Remarque :</p>
+	  <ol class="notecontent">
+		<li>Pour effectuer la sauvegarde en état de déconnexion, le mot de passe utilisateur ne peut pas être vide.</li>
+		<li>Pour les utilisateurs sous Windows 98 ou Windows Me, une sauvegarde programmée peut être effectuée en état de déconnexion en raison de la conception du système d’exploitation.</li>
+	  </ol>
+	  <p>Lorsque la configuration du programme est terminée, vous pouvez quitter Synology Data Replicator 3 ou réduire la fenêtre du programme dans la zone de notification. Synology Data Replicator 3 effectuera la sauvegarde programmée lorsque le temps se sera écoulé.</p>
+	  <li>Supp. planification</li>
+	  <p>Cliquez sur <b>Supp. planification</b> pour arrêter la sauvegarde programmée et pour supprimer les paramètres du programme.</p>
+		</ul>
+<p>Lorsque vous souhaitez sauvegarder Outlook, Outlook Express ou les fichiers Windows Mail, veuillez prêter attention aux remarques suivantes :</p>
+<ul>
+<li>Si votre système utilise Windows XP, Windows 2003 ou Windows Vista, </li>
+	<ol type="a">
+	<li>Au moins un des disques de votre ordinateur doit être au format NTFS. </li>
+	<li>Les fichiers Outlook/Windows Mail doivent se trouver sur les disques locaux. </li>
+	<li>L'utilisateur doit se connecter en tant qu'administrateur de l'ordinateur.</li>
+	</ol>
+<li>Si vous utilisez des systèmes d'exploitation autre que Windows XP et Windows 2003, veuillez fermer Outlook avant d'effectuer sa sauvegarde.</li>
+<br>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Prise en charge et limitations</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<ol>
+<li>Lors de la recherche du serveur cible, Synology Data Replicator 3 utilisera le port 9999, 9998 ou 9997. </li>
+<li>Les fichiers comprimés et les fichiers cryptés deviendront des fichiers normaux après la sauvegarde. La propriété de fichier sera effacée. </li>
+<li>Pour la longueur du nom de fichier, Synology Data Replicator 3 prend en charge jusqu'à 240 octets. </li>
+<li>Si vous changez le nom de votre ordinateur, vous devez entrer le mot de passe administrateur de votre PC lors de la configuration d'une sauvegarde programmée afin d'assurer que Data Replicator 3 fonctionne correctement. Si vous avez déjà configuré un programme de sauvegarde, supprimez-le et utilisez le mot de passe administrateur de votre PC pour en définir un nouveau.</li>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name="restore"></a>Restauration des fichiers de sauvegarde</p>
+<p>Pour restaurer des fichiers de sauvegarde, vous devez d’abord sélectionner un emplacement de sauvegarde et ensuite choisir une des méthodes suivantes afin de restaurer vos fichiers de sauvegarde :</p>
+<ol>
+<li class=topic>Restaurer par navigation</li>
+<p>Dans la plupart des situations, si vous êtes certain de l’emplacement des fichiers, vous pouvez utiliser l’option <i>Restaurer par navigation</i> pour restaurer vos fichiers :</p>
+	<ol>
+	<li>Cliquez sur le bouton <b>Démarrer</b> sous <i>Restaurer par navigation</i>. </li>
+	<li>Cliquez sur <b>Suivant</b>.</li>
+	<li>Cliquez pour sélectionner la source de restauration et cliquez sur <b>Suivant</b>. </li>
+	<li>Vous pouvez choisir de lister les fichiers <b>Par version</b> ou <b>Par point de restauration</b>. </li>
+	<li>Sélectionnez le ou les dossiers que vous voulez restaurer et cliquez sur <b>Suivant</b>. </li>
+	<li>Choisissez l’emplacement où les fichiers de sauvegarde seront restaurés. Cliquez ensuite sur <b>Terminer</b>.</li>
+	</ol>
+    <br>
+<li class=topic>Restaurer par recherche</li>
+<p>Si vous n’êtes pas sûr de l’endroit où se trouvent les fichiers de sauvegarde, ou si vous voulez uniquement restaurer les fichiers correspondants à un certain mot clé, veuillez suivre les étapes suivantes :</p>
+	<ol>
+	<li>Cliquez sur le bouton <b>Démarrer</b> sous Restaurer par recherche. </li>
+	<li>Cliquez sur <b>Suivant</b>.</li>
+	<li>Cliquez pour sélectionner la source de restauration et cliquez sur <b>Suivant</b>. </li>
+	<li>Saisissez le mot-clé à rechercher dans le champ « Mot-clé » : champ texte.  </li>
+	<li>Choisissez le dossier de sauvegarde dans le menu déroulant « Sauvegardes » : menu déroulant. </li>
+	<li>Cliquez sur <b>Recherche</b>.</li>
+	<li>Sélectionnez les fichiers et dossiers que vous voulez restaurer dans le cadre de droite et cliquez sur <b>Suivant</b>.</li>
+	<li>Choisissez l’emplacement où les fichiers de sauvegarde seront restaurés. Cliquez ensuite sur <b>Terminer</b>.</li>
+	</ol>
+<br>
+<table width="550" border="0" bgcolor="#FFCCFF">
+<tr>
+<td><center>
+<b><font size="3">Conseils pour la restauration de fichiers Outlook, Outlook Express et Windows Mail</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<p>	Lorsque vous choisissez un chemin cible, vous pouvez choisir parmi les options suivantes :</p>
+<ol>
+<b><li>Chemin d’origine</li></b>
+	<p>Lorsque vous choisissez cette option, vous ne devez pas importer les messages et le carnet d'adresses manuellement, ces données sont remplacées par les fichiers restaurés.</p>
+<b><li>Nouveau chemin</li></b>
+	<p>Lorsque vous choisissez cette option, vous pouvez restaurer les données dans un emplacement précisé et importer les messages et le carnet d'adresses manuellement dans Outlook/Outlook Express/Windows Mail.</p>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name=setting></a>Paramètres avancés</p>
+<p>Dans la section Options, il vous est possible de configurer les paramètres de sauvegarde avancés suivants :</p>
+<p class="topic">Filtrer</p>
+<blockquote>
+  <p>Utilisez cette fonction pour sauvegarder des fichiers de manière précise. L’exclusion de fichiers comprenant certains préfixes ou extension de la liste de sauvegarde peut vous aider à accélérer la sauvegarde. Procédez comme suit :</p>
+  <ol>
+    <li>Cliquez sur <b>Filtre</b>.</li>
+    <li>Cliquez sur <b>Ajouter</b> à droite de l'option « Extension » ou « Prefix ». </li>
+    <li>Saisissez un critère, par exemple « .exe » pour une extension ou « ~ » comme préfixe. </li>
+    <li>Cliquez sur <b>OK</b> pour fermer la boîte de dialogue de configuration et cliquez sur <b>OK</b> à nouveau pour enregistrer les paramètres.</li>
+  </ol>
+</blockquote>
+<p class="topic">Activer la notification par courriel</p>
+<blockquote>
+  <p>Utilisez cette fonction pour recevoir les informations détaillées au sujet d’une sauvegarde programmée après qu’elle ait été réalisée.</p>
+  <ol>
+    <li>Cliquez sur <b>Configuration SMTP</b>. </li>
+    <li>Entrez des informations de courrier électronique valides et cliquez sur <b>OK</b> pour terminer.</li>
+  </ol>
+</blockquote>
+<p class="topic">Activer versions de fichier</p>
+<blockquote>
+  <p class="style4">À quoi sert la fonction versions de fichier ?</p>
+  <p>Lorsque vous activez la fonction versions de fichier, cela peut vous aider à garder l’historique des éditions d’un même fichier.</p>
+  <p>Après avoir terminé la première sauvegarde, tous les fichiers de sauvegarde seront stockés dans le dossier « latest » de l'emplacement de sauvegarde. A partir de la seconde sauvegarde, Data Replicator 3 vérifiera automatiquement si un fichier avec le même nom existe déjà dans le dossier « latest ». S'il existe et si son contenu a changé, le fichier se trouvant dans le dossier « latest » est déplacé dans le dossier « past » et le fichier sur votre ordinateur est sauvegardé dans le dossier « latest », qui contient toujours la version la plus récente de tous les fichiers.</p>
+  <p class="notehead">Remarque :</p>
+  <p class="notecontent">Le fichier auquel on se rapporte ci-dessus doit être dans le même dossier. Par conséquent, lorsque vous utilisez le même compte pour sauvegarder un dossier, une ancienne version sera générée.</p>
+  <p>Si la fonction versions de fichier est activée, lorsque des fichiers locaux ont été modifiés de manière irréversible et inadéquate, vous pouvez en retrouver l'historique dans l’emplacement de sauvegarde et les restaurer sans problèmes.</p>
+  <p><b>Nombre de versions précédentes</b></p>
+  <p>Cette option vous permet de définir le nombre de versions précédentes de fichiers de sauvegarde vous souhaitez garder, 20 versions correspond au maximum. L'inscription v00, v01, etc. sera ajouté aux noms de fichier correspondant à une version précédente. Plus le numéro de version est élevé, plus le fichier est récent.</p>
+  <p>Définissez un nombre de versions précédentes pour déterminer le nombre de copies conservées dans l'emplacement de sauvegarde. Procédez comme suit :</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>Cochez <v>Activer versions de fichier</v>.</li>
+<li>Définissez un nombre de versions précédentes et cliquez sur <b>Appliquer</b> pour enregistrer les paramètres. </li>
+</ol>
+</blockquote>
+<p class="topic">Points de restauration</p>
+<blockquote>
+  <p class="style4">Qu’est-ce qu’un point de restauration ?</p>
+  <p>Chaque fois qu’une sauvegarde est effectuée, un dossier sera nommé selon l’heure de départ de la sauvegarde. Ce dossier contient tous les fichiers de cette sauvegarde. Il s’agit d’un point de restauration.</p>
+  <p>Le fichier qui n’a jamais été modifié s'affichera dans chaque point de restauration après chaque sauvegarde. Cependant, il occupera l'espace d'un seul fichier.</p>
+  <p><b>Nombre de points de restauration</b></p>
+  <p>Cette option vous permet de définir le nombre de points de restauration à conserver, 128 constitue le maximum. Lorsque le nombre de points de restauration excède la valeur définie, les copies les plus anciennes seront automatiquement supprimées après chaque sauvegarde.</p>
+</blockquote>
+<blockquote>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Prise en charge et limitations</font></b>
+</center></td>
+</tr>
+<tr>
+<td>La fonction de point de restauration n'est prise en charge que par Windows 2000 / Windows XP / Windows 2003 / Windows Vista.</td>
+</tr>
+</table>
+</blockquote>
+
+<p class="topic">Démarrage automatique lors de l'identification</p>
+<blockquote>
+  <p>Vous pouvez démarrer Synology Data Replicator 3 automatiquement au démarrage de Windows. Procédez comme suit :</p>
+  <ol>
+    <li>Cochez <b>Exécuter Data Replicator 3 automatiquement à l’ouverture de ma session Windows</b>. </li>
+    <li>Cliquez sur <b>Appliquer</b>.</li>
+  </ol>
+</blockquote>
+
+<p class="topic">Contrôlez la parité des données avant la synchronisation</p>
+<blockquote>
+  <p>Vous pouvez décider de contrôler la parité des données avant que Data Replicator entre en mode synchronisé. Procédez comme suit :</p>
+  <ol>
+    <li>Cochez <b>Contrôler la parité des données avant de commencer la synchronisation</b>. </li>
+    <li>Cliquez sur <b>Appliquer</b>.</li>
+  </ol>
+  <p class="notehead">Remarque :</p>
+  <p class="notecontent">Si vous décochez cette option et que vous fermez Data Replicator, les données ajoutées, supprimées, ou modifiées peuvent ne pas être synchronisées avec le serveur la prochaine fois que vous lancerez Data Replicator.</p>
+</blockquote>
+
+<p class="topic">Garder les fichiers identiques sur le serveur de destination</p>
+<blockquote>
+  <p>Vous pouvez choisir de conserver les fichiers dans le dossier « latest » pour qu'ils soient identiques à ceux sur votre ordinateur local. Procédez comme suit :</p>
+  <ol>
+    <li>Cochez <b>Lorsque des fichiers locaux sont éliminés, supprimer également au même moment les fichiers de sauvegarde correspondants</b>.</li>
+    <li>Cliquez sur <b>Appliquer</b>. </li>
+  </ol>
+</blockquote>
+<hr>
+
+<p class=h1><a name=log></a>Journal</p>
+<p>La taille maximale du journal est de 512 Ko, lorsque le journal atteint cette limite, les premiers 128 Ko sont supprimés.</p>
+<ul>
+<li class=topic>Enregistrer le journal</li>
+<ol>
+<li>Cliquez sur <b>Sauvegarder</b>. </li>
+<li>Choisissez l'emplacement de la destination de sauvegarde et cliquez sur <b>Enregistrer</b> pour terminer.</li>
+</ol>
+<br>
+<li class=topic>Effacer le journal</li>
+<ol>
+<li>Cliquez sur <b>Effacer</b>. </li>
+<li>Cliquez sur <b>Oui</b> sur la boîte de dialogue de confirmation.</li>
+</ol>
+</ul>
+
+</body>
+</html>

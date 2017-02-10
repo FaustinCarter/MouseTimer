@@ -1,0 +1,19 @@
+{??? Undefined function or variable "t".
+
+Error in ==> mousetimer>delete_figure at 552
+
+
+} 
+??? Error using ==> delete
+Error while evaluating figure DeleteFcn
+
+{??? Error using ==> listdlg at 119
+ListString parameter is required.
+
+Error in ==> mousetimer at 43
+
+
+} 
+Error using ==> listdlg at 119
+ListString parameter is required.
+MATLAB:listdlg:NeedParameter

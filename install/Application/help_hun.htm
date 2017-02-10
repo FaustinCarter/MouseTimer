@@ -1,0 +1,315 @@
+﻿
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Synology Data Replicator 3</title>
+<style type="text/css">
+<!--
+.head {
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.h1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.h2 {
+	font-weight: bold;
+	color: #FF3300;
+	font-size: 16px;
+}
+
+.topic {
+	font-family: "Geneva, Arial, Helvetica, sans-serif";
+	font-weight: bold;
+	color: #000000;
+	font-size: 16px;
+}
+
+body, td {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 10pt;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.notehead {
+	font-weight: bold;
+	font-size: 10pt;
+	color: #FF0000;
+}
+
+.notecontent {
+	font-size: 10pt;
+	color: #FF0000;
+}
+.style2 {font-size: 20px; font-weight: bold; color: #666666; 
+}
+.style4 {font-weight: bold; color: #0000FF; }
+-->
+</style>
+</head>
+<body>
+<p class="style2">Synology Data Replicator 3 használata</p>
+<p>A Data Replicator 3 megismeréséhez kattintson a következő főbb funkciókra.</p>
+<ul>
+<li><a href="#bkp">PC biztonsági adatmentés</a> </li>
+<li><a href="#restore">Biztonsági mentés fájlok visszaállítása</a> </li>
+<li><a href="#setting">Magas szintű beállítás</a> </li>
+<li><a href="#log">Napló</a> </li>
+</ul>
+<hr>
+<p class=h1><a name="bkp"></a>PC biztonsági adatmentés</p>
+<p>Kérjük, hogy a biztonsági mentés felállításához kövesse az alábbi lépéseket. Ellátogathat a <a href="#setting">Magas szintű beállítás</a> részhez is, hogy megismerjen más olyan beállításokat is, amelyek segítenek önnek PC biztonsági adatmentésének személyre szabásában.</p>
+<ol>
+<li class=topic>Biztonsági másolat céljának kiválasztása</li>
+	<p>Választhatja azt, hogy PC adatairól egy Synology szerverre vagy egyéb helyre készít biztonsági mentést. A biztonsági mentés sikeres végrehajtását követően ön a hozzárendelt mappában találhatja meg a biztonsági másolat fájlokat.</p>
+	<p>1.1	Biztonsági mentés egy Synology szerverre</p>
+		<ol type="a">
+		<li>Kattintson a <b>Kiválasztás</b> gombra.</li>
+		<li>Válassza a <b>Synology szerver</b> lehetőséget, majd kattintson az <b>OK</b> gombra. </li>
+		<li>A következő ablakban kattintson arra a Synology szerverre, ahol a biztonsági mentésre szolgáló megosztott mappa található. Majd kattintson a <b>Tovább</b> gombra.</li>
+		<li>Adja meg az éppen kiválasztott megosztott mappában olvasási/írási jogokat biztosító felhasználónevet és jelszót, majd kattintson a <b>Tovább</b> gombra. </li>
+		<li>Kattintson a biztonsági mentéshez használni kívánt megosztott mappára, majd kattintson a <b>Befejezés</b> gombra. </li>
+		</ol>
+  <p>1.2	Biztonsági mentés egyéb helyre</p>
+		<ol type="a">
+		<li>Kattintson a <b>Kiválasztás</b> gombra.</li>
+		<li>Válassza az <b>Egyéb hely</b> lehetőséget, majd a biztonsági mentés céljának meghatározásához kattintson a <b>Tallózás</b> gombra.</li>
+		<li>A befejezéshez kattintson az <b>OK</b> gombra.</li>
+  </ol>
+<BR>
+<li class=topic>Jelölje be a biztonsági mentésbe foglalni kívánt mappákat</li>
+<BR>
+<li class=topic>Biztonsági mentés üzemmódjának kiválasztása</li>
+<p>A Data Replicator 3 az ön kényelme érdekében 3 biztonsági mentési üzemmódot biztosít, amelyek a következők: <i><b>Azonnali</b></i>, <i><b>Szinkronizált</b></i>, és <i><b>Időzített</b></i>.</p>
+	3.1	<b>Azonnali</b>
+  	<p>     Az <b>Azonnali</b> gombra kattintva a kiválasztott helyi mappá(k)ban lévő összes fájl azonnal biztonsági mentésre kerül a biztonsági mentés céljába.</p>
+	<p>3.2	<b>Szinkronizált</b>  </p>
+		<ul>
+		<li>Szinkronizálja az adatokat most, és megkezdi a monitorozást</li>
+		<p>Kattintson a <b>Szinkronizált</b> gombra, a Data Replicator 3 teljes biztonsági mentést készít a biztonsági mentés céljába a kiválasztott mappá(k)ban lévő összes fájlról. Ezt követően a Data Replicator 3 megkezdi azoknak a mappáknak a monitorozását. Amint ön változtatásokat eszközöl, a Data Replicator 3 csak a megváltozott fájlokról készít biztonsági másolatot.</p>
+		<p class="notehead">Megjegyzés:</p>
+		<ol class="notecontent">
+		<li>Miután a Data Replicator 3 monitorozó üzemmódba lép, dolgozni fog, amíg csak le nem állítja.</li>
+		<li>A levelezés szinkronizálása közti időintervallum alatt a szinkronizálás befejezésétől a következő szimkronizálás megkezdéséig eltelt idő értendő. A feladat esetleg elhalasztódhat, ha a Data Replicator 3 éppen egyéb fájlok szinkronizálását végzi.</li>
+		</ol>
+		<br>
+		<li>A monitorozás leállítása</li>
+		<p>A monitorozás leállításához kattintson a <b>Szinkronizálás leállítása</b> gombra a Data Replicator 3 program ablakában. Ha a program ablak össze van csukva a tálcára, akkor kérjük, hogy a kinyitásához kattintson duplán a Data Replicator 3 ikonra.</p>
+  </ul>
+	    <p>3.3	<b>Ütemezés</b></p>
+	    <ul>
+	  <li>Időzítés beállítása</li>
+	  <p>A Data Replicator 3 beállítható arra, hogy meghatározott időközönként automatikus biztonsági mentéseket végezzen. Ennek megtételéhez:</p>
+	  <ol type="a">
+		<li>Kattintson az <b>Időzítés</b> gombra.</li>
+		<li>Adja meg az időzített biztonsági mentéshez a biztonsági mentések periódusát és kezdési idejét, majd kattintson az <b>OK</b> gombra. </li>
+		<li>Ha kijelentkezés közben szeretne időzetett biztonsági mentést végrehajtani, akkor kérjük, adja meg az erre a számítógépre történő bejelentkezéshez használt felhasználónevét és jelszavát. Majd kattintson az <b>OK</b> gombra.<br> Ha kijelentkezve nem szeretne időzített biztonsági mentést végrehajtani, akkor kérjük, kattintson a <b>Kihagyás</b> gombra.</li>
+	  </ol>
+	  <p class="notehead">Megjegyzés:</p>
+	  <ol class="notecontent">
+		<li>A kijelentkezve elvégzett biztonsági mentéskor a felhasználói jelszó nem lehet üres.</li>
+		<li>A Windows 98 vagy Windows ME programot használó felhasználók esetén az időzített biztonsági mentés kijelentkezve szándékosan végrehajtható.</li>
+	  </ol>
+	  <p>Miután kész az időzítés beállítása, kiléphet a Synology Data Replicator 3 programból, vagy összecsukhatja a program ablakot a tálcára. A Synology Data Replicator 3 a beállított időben automatikusan végrehajtja az időzített biztonsági mentést.</p>
+	  <li>Időzítés törlése</li>
+	  <p>Az időzített biztonsági mentés leállításához, és az időzítési beállítások eltávolításához kattintson az <b>Időzítés törlése</b> gombra.</p>
+		</ul>
+<p>Ha Outlook, Outlook Express, vagy Windows Mail fájlokról szeretne biztonsági másolatot készíteni, kérjük, ügyeljen a következőkre:</p>
+<ul>
+<li>Ha Windows XP, Windows 2003, vagy Windows Vista proghramot futtat,</li>
+	<ol type="a">
+	<li>A számítógépén legalább az egyik meghajtónak NTFS formátumúnak kell lennie. </li>
+	<li>Az Outlook/Windows Mail fájloknak a helyi meghajtókon kell lenniük. </li>
+	<li>A számítógép adminisztrátoraként kell bejelentkeznie.</li>
+	</ol>
+<li>Ha nem Windows XP és Windows 2003 operációs rendszert futtat, kérjük, hogy az Outlook biztonsági mentése előtt zárja be az Outlook programot.</li>
+<br>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Támogatás és korlátozás</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<ol>
+<li>A célszerver keresése közben a Synology Data Replicator 3 a következő portokat használja: 9999, vagy 9998, vagy 9997.</li>
+<li>A biztonsági mentés után a tömörített fájlok és kódolt fájlok rendes fájlokká válnak. A fájl tulajdonjoga törlésre kerül. </li>
+<li>Ami a fájlnév hosszát illeti, a Synology Data Replicator 3 maximum 240 bájtig támogatja. </li>
+<li>Ha megváltoztatja a számítógépe nevét, akkor a Data Replicator 3 megfelelő működésének biztosítása érdekében az időzített biztonsági mentés beállításakor meg kell adnia a számítógép admin bejelentkezési jelszavát. Ha már beállított egy időzítést a biztonsági mentéshez, akkor törölje azt az időzítést, és egy új ismételt beállításához használja a számítógép admin bejeletkezési jelszavát.</li>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name="restore"></a>Biztonsági mentés fájlok visszaállítása</p>
+<p>A biztonsági mentés fájlok visszaállításához először ki kell választania egy célt a biztonsági mentéshez, majd a biztonsági mentés fájlok visszaállításához válassza ki a következő módszerek egyikét:</p>
+<ol>
+<li class=topic>Visszaállítás böngészéssel</li>
+<p>Az esetek többségében, ha biztos benne, hogy hol vannak a biztonsági mentés fájlok, a fájlok visszaállítására használhatja a <i>Visszaállítás böngészéssel</i> lehetőséget:</p>
+	<ol>
+	<li>Kattintson a <b>Kezdés</b> gombra a következőben: <i>Visszaállítás böngészéssel</i>. </li>
+	<li>Kattintson a <b>Tovább</b> gombra.</li>
+	<li>Kattintson a forrás visszaállítása kiválasztásához, majd kattintson a <b>Tovább</b> gombra. </li>
+	<li>Válassza ki a fájlok listázásához a <b>Verzió szerint</b> vagy a <b>Visszaállítási pont szerint</b> lehetőséget. </li>
+	<li>Jelölje be a visszaállítani kívánt mappá(ka)t, majd kattintson a <b>Tovább</b> gombra. </li>
+	<li>Válassza ki a helyet, ahová a biztonsági mentés fájlok visszaállításra kerülnek. Majd kattintson a <b>Befejezés</b> gombra.</li>
+	</ol>
+    <br>
+<li class=topic>Visszaállítás kereséssel</li>
+<p>Ha nem biztos benne, hogy hol vannak a biztonsági mentés fájlok, vagy ha csak a bizonyos kulcsszót tartalmazó fájlokat szeretné visszaállítani, akkor kérjük, hogy a visszaállításhoz tegye meg a következő lépéseket:</p>
+	<ol>
+	<li>Kattintson a <b>Kezdés</b> gombra a következőben: Visszaállítás kereséssel. </li>
+	<li>Kattintson a <b>Tovább</b> gombra.</li>
+	<li>Kattintson a forrás visszaállítása kiválasztásához, majd kattintson a <b>Tovább</b> gombra. </li>
+	<li>Gépelje be a keresni kívánt kulcsszót a "Kulcsszó:" szövegmezőbe. </li>
+	<li>Válassza ki a biztonsági mentés mappát a "Biztonsági mentések:" legördülő menüből. </li>
+	<li>Kattintson a <b>Keresés</b> gombra.</li>
+	<li>Válassza ki a jobboldali keretben a visszaállítani kívánt fájlokat és mappákat, majd kattintson a <b>Tovább</b> gombot.</li>
+	<li>Válassza ki a helyet, ahová a biztonsági mentés fájlok visszaállításra kerülnek. Majd kattintson a <b>Befejezés</b> gombra.</li>
+	</ol>
+<br>
+<table width="550" border="0" bgcolor="#FFCCFF">
+<tr>
+<td><center>
+<b><font size="3">Tipp az Outlook, Outlook Express, és Windows Mail fájlok visszaállításához</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<p>     Célútvonal kiválasztásakor választhat:</p>
+<ol>
+<b><li>Eredeti útvonal</li></b>
+	<p>Ennek a lehetőségnek a kiválasztásakor nem szükséges manuálisan importálnia a levelezést és a címjegyzéket, a visszaállított fájlok felváltják a számítógép adatait.</p>
+<b><li>Új útvonal</li></b>
+	<p>Ennek a lehetőségnek a kiválasztásakor ön egy meghatározott útvonalra állíthatja vissza az adatokat, és manuálisan importálhatja a levelezést és a címjegyzéket a következőkhöz: Outlook/Outlook Express/Windows Mail.</p>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name=setting></a>Magas szintű beállítás</p>
+<p>Az Opciók részben ön a következők szerint magasabb szintű biztonsági mentés beállításokat is beállíthat.</p>
+<p class="topic">Szurés</p>
+<blockquote>
+  <p>Használja ezt a funkciót a fájlok precíz biztonsági mentéséhez. A bizonyos előtagokkal vagy kiterjesztésekkel rendelkező fájlok kizárása a biztonsági mentés listájáról segít önnek meggyorsítani a biztonsági mentést. A folytatáshoz kövesse a következő lépéseket:</p>
+  <ol>
+    <li>Kattintson a <b>Szűrő</b> gombra.</li>
+    <li>Kattintson a <b>Hozzáadás</b> gombra a "Kiterjesztés" vagy a "Prefix" opció jobboldalán. </li>
+    <li>Adjon meg meghatározott ismérveket, például ".exe" a kiterjesztésnek, vagy "~" az előtagnak. </li>
+    <li>Kattintson az <b>OK</b> gombra a beállítási párbeszédpanel bezárásához, majd kattintson újra az <b>OK</b> gombra a beállítások elmentéséhez.</li>
+  </ol>
+</blockquote>
+<p class="topic">E-mail emlékeztető engedélyezése</p>
+<blockquote>
+  <p>Használja ezt a funkciót, ha az időzített biztonsági mentés befejezése után emailben részletes adatokat szeretne kapni a biztonsági mentésről.</p>
+  <ol>
+    <li>Kattintson az <b>SMTP beállítás</b> gombra. </li>
+    <li>Adjon meg érvényes email információt, majd kattintson az <b>OK</b> gombra a befejezéshez.</li>
+  </ol>
+</blockquote>
+<p class="topic">Fájlverziók engedélyezése</p>
+<blockquote>
+  <p class="style4">Mire való a fájlverziók funkció?</p>
+  <p>A fájlverziók engedélyezése funkció segíthet önnek egyazon fájl több régi változatának a megtartásában.</p>
+  <p>Az első biztonsági mentés befejezése után az összes biztonsági másolat fájl a biztonsági mentés céljában lévő "latest" mappában kerül tárolásra. A következő biztonsági mentéstől kezdve a Data Replicator 3 automatikusan ellenőrzi, hogy bármelyik fájl létezik-e már ugyanazon a fájlnéven a "latest" mappában. Ha igen, és ha a fájlok tartalma megváltozott, akkor a "latest" mappában lévő előző biztonsági másolat fájl régebbi verzióként átkerül a "past" mappába, míg a számítógépen lévő fájl a "latest" mappába kerül biztonsági mentésre, ahol mindig megtalálhatja mind a legutóbbi biztonsági másolat fájlokat.</p>
+  <p class="notehead">Megjegyzés:</p>
+  <p class="notecontent">A fent hivatkozott fájlnak ugyanabban a mappában kell lennie. Tehát amikor ugyanazt a fiókot használja a mappa biztonsági mentésére, generálódik egy régi verzió.</p>
+  <p>Ha a fájlverzió funkció engedélyezve van, és helytelen vagy visszafordíthatatlan szerkesztést tapasztal a helyi fájljain, akkor a biztonsági mentés céljában megtalálhatja a régi fájlokat, és könnyedén visszaállíthatja a fájlokat.</p>
+  <p><b>Régi változatok száma</b></p>
+  <p>Itt beállíthatja, hogy a biztonsági másolat fájlok hány régi változatát kívánja megtartani, 20 változat a maximum. A régi fájlváltozatok fájlneve kiegészül a következőkkel: "v00", "v01", és így tovább. Minél nagyobb a szám, annál újabb a változat.</p>
+  <p>Állítsa be a régi változatok számát annak eldöntéséhez, hogy hány előző változat kerüljön megtartásra a biztonsági mentés céljában. A folytatáshoz kövesse a következő lépéseket:</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>Jelölje be a <v>Fájlverziók engedélyezése</v> lehetőséget.</li>
+<li>Állítsa be a régi változatok számát, majd a beállítások mentéséhez kattintson az <b>Alkalmazás</b> gombra. </li>
+</ol>
+</blockquote>
+<p class="topic">Visszaállítási pontok</p>
+<blockquote>
+  <p class="style4">Mik a visszaállítási pontok?</p>
+  <p>A biztonsági mentés végrehajtása után minden alkalommal lesz egy mappa, aminek neve a biztonsági mentés kezdési időpontja, és ami tartalmazza ennek a biztonsági mentésnek valamennyi fájlját. Ez lesz egy visszaállítási pont.</p>
+  <p>Az a fájl, amit soha nem módosítottak, minden egyes biztonsági mentés után fel fog tűnni minden visszaállítási pontban. Ténylegesen azonban csak egyetlen fájlnyi lemezterület van lefoglalva.</p>
+  <p><b>Visszaállítási pontok száma</b></p>
+  <p>Itt beállíthatja, hogy hány visszaállítási pontot kíván megtartani, 128 visszaállítási pont a maximum. Ha a visszaállítási pontok száma túllépi a beállított értéket, akkor a biztonsági mentés céljában található legrégebbi visszaállítási pontok a következő biztonsági mentés után automatikusan törlődnek.</p>
+</blockquote>
+<blockquote>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Támogatás és korlátozás</font></b>
+</center></td>
+</tr>
+<tr>
+<td>A visszaállítási pont funkciót csak a Windows 2000 / Windows XP / Windows 2003 / Windows Vista támogatja.</td>
+</tr>
+</table>
+</blockquote>
+
+<p class="topic">Automatikus indítás bejelentkezéskor</p>
+<blockquote>
+  <p>Beállíthatja, hogy a Synology Data Replicator 3 automatikusan elinduljon, amikor ön bejelentkezik a Windows-ba. A folytatáshoz kövesse a következő lépéseket:</p>
+  <ol>
+    <li>Jelölje be a <b>Data Replicator 3 automatikus indítása a Windows indításakor</b> lehetőséget. </li>
+    <li>Kattintson az <b>Alkalmazás</b> gombra.</li>
+  </ol>
+</blockquote>
+
+<p class="topic">Szinkronizálás előtt ellenőrizze az edatok állapotát</p>
+<blockquote>
+  <p>Eldöntheti, hogy ellenőrzi-e az adatok állapotát, mielőtt a Data Replicator szinkron üzemmódba lép. A folytatáshoz kövesse a következő lépéseket:</p>
+  <ol>
+    <li>Jelölje be az <b>Adatállapot ellenőrzése a szinkronizálás megkezdése előtt</b> lehetőséget. </li>
+    <li>Kattintson az <b>Alkalmazás</b> gombra.</li>
+  </ol>
+  <p class="notehead">Megjegyzés:</p>
+  <p class="notecontent">Ha törli ennek az opciónak a bejelöltségét és bezárja a Data Replicatort, a hozzáadott, eltávolított vagy módosított adatok esetleg nem kerülnek szinkronizálásra a szerverrel a Data Replicator következő indításakor.</p>
+</blockquote>
+
+<p class="topic">Azonos fájlok megtartása a célszerveren</p>
+<blockquote>
+  <p>Beállíthatja a helyi számítógépén lévő fájlokkal azonos fájlok megtartását a "latest" mappában. A folytatáshoz kövesse a következő lépéseket:</p>
+  <ol>
+    <li>Jelölje be az <b>A helyi fájlok törlésekor, törölje egyidejűleg a megfelelő biztonsági másolat fájlokat is</b> lehetőséget.</li>
+    <li>Kattintson az <b>Alkalmazás</b> gombra. </li>
+  </ol>
+</blockquote>
+<hr>
+
+<p class=h1><a name=log></a>Napló</p>
+<p>A naplófájl maximális mérete 512KB; ha a naplófájl eléri a határt, a legrégebbi 128KB eltávolításra kerül.</p>
+<ul>
+<li class=topic>Napló mentése</li>
+<ol>
+<li>Kattintson a <b>Mentés</b> gombra. </li>
+<li>Válassza ki a biztonsági mentés céljának útvonalát, majd kattintson a <b>Mentés</b> gombra a befejezéshez.</li>
+</ol>
+<br>
+<li class=topic>Napló törlése</li>
+<ol>
+<li>Kattintson a <b>Törlés</b> gombra. </li>
+<li>Kattintson az <b>Igen</b>-re a megerősítő párbeszédablakban.</li>
+</ol>
+</ul>
+
+</body>
+</html>

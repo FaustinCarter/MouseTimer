@@ -1,0 +1,315 @@
+﻿
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Synology Data Replicator 3</title>
+<style type="text/css">
+<!--
+.head {
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.h1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.h2 {
+	font-weight: bold;
+	color: #FF3300;
+	font-size: 16px;
+}
+
+.topic {
+	font-family: "Geneva, Arial, Helvetica, sans-serif";
+	font-weight: bold;
+	color: #000000;
+	font-size: 16px;
+}
+
+body, td {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 10pt;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.notehead {
+	font-weight: bold;
+	font-size: 10pt;
+	color: #FF0000;
+}
+
+.notecontent {
+	font-size: 10pt;
+	color: #FF0000;
+}
+.style2 {font-size: 20px; font-weight: bold; color: #666666; 
+}
+.style4 {font-weight: bold; color: #0000FF; }
+-->
+</style>
+</head>
+<body>
+<p class="style2">Brug af Data Replicator 3</p>
+<p>Klik på følgende vigtige funktioner for at få mere at vide om Data Replicator 3.</p>
+<ul>
+<li><a href="#bkp">Sikkerhedskopiering af PC-data</a> </li>
+<li><a href="#restore">Gendannelse af sikkerhedskopierede filer</a> </li>
+<li><a href="#setting">Avancerede indstillinger</a> </li>
+<li><a href="#log">Log</a> </li>
+</ul>
+<hr>
+<p class=h1><a name="bkp"></a>Sikkerhedskopiering af PC-data</p>
+<p>Følg nedenstående trin for at definere din sikkerhedskopiering. Du kan også gå til <a href="#setting">Avancerede indstillinger</a> for at få mere at vide om andre indstillinger, der kan hjælpe med at personalisere din sikkerhedskopiering af PC-data.</p>
+<ol>
+<li class=topic>Vælg en destination for sikkerhedskopieringen</li>
+	<p>Du kan vælge at sikkerhedskopiere dine PC-data til en Synology-server eller en anden placering. Når sikkerhedskopiering er fuldført, kan du finde de sikkerhedskopierede filer i den angivne mappe.</p>
+	<p>1.1	Sikkerhedskopier til en Synology-server</p>
+		<ol type="a">
+		<li>Klik på <b>Vælg</b>.</li>
+		<li>Vælg  <b>Synology-server</b>, og klik på <b>OK</b>. </li>
+		<li>I den næste vindue klikker du på den Synology-server, hvor den delte mappe til sikkerhedskopiering findes. Klik så på <b>Næste</b>.</li>
+		<li>Indtast det brugernavn og den adgangskode, der kan læse/skrive den delte mappe, du lige har valgt, og klik på <b>Næste</b>. </li>
+		<li>Klik på den delte mappe, som skal bruges til sikkerhedskopiering, og klik på <b>Udfør</b>. </li>
+		</ol>
+  <p>1.2	Sikkerhedskopier til et andet sted</p>
+		<ol type="a">
+		<li>Klik på <b>Vælg</b>.</li>
+		<li>Vælg <b>Anden placering</b>, og klik på <b>Gennemgå</b> for at finde målet for sikkerhedskopieringen.</li>
+		<li>Klik på <b>OK</b> for af afslutte.</li>
+  </ol>
+<BR>
+<li class=topic>Marker de mapper, der skal sikkerhedskopieres</li>
+<BR>
+<li class=topic>Vælg en sikkerhedskopieringstilstand</li>
+<p>Data Replicator 3 indeholder 3 sikkerhedskopieringstilstande til dit brug. De er: <i><b>Øjeblikkelig</b></i>, <i><b>Synk</b></i>, og <i><b>Planlagt</b></i>.</p>
+	3.1	<b>Øjeblikkelig</b>
+  	<p>Ved at klikke på knappen <b>Øjeblikkelig</b>bliver alle filer i de(n) valgte mappe(r) øjeblikkeligt sikkerhedskopieret til destinationen.</p>
+	<p>3.2	<b>Synk</b>  </p>
+		<ul>
+		<li>Synkroniser data nu, og start overvågning</li>
+		<p>Klik på knappen <b>Synk</b>, hvorefter Data Replicator 3 vil foretage en fuld sikkerhedskopiering af alle filerne i de valgte mapper til sikkerhedskopieringsdestinationen. Derefter vil Data Replicator 3 begynde overvågningen af disse mapper. I takt med, at du foretage ændringer, vil Data Replicator 3 kun sikkerhedskopiere filer, der er ændret.</p>
+		<p class="notehead">Bemærk:</p>
+		<ol class="notecontent">
+		<li>Når Data Replicator 3 er gået i overvågningstilstand, vil den være aktiv, indtil du standser den.</li>
+		<li>Tidsintervallet mellem mail-synkronisering angiver den tid fra synkroniseringen afslutter til den næste synkronisering starter. Opgaven kan udsættes, når Data Replicator 3 behandler synkronisering af andre filer.</li>
+		</ol>
+		<br>
+		<li>Stands overvågning</li>
+		<p>Overvågning standses ved at klikke på knappen <b>Stop Synk</b> i programvinduet til Data Replicator 3. Hvis programvinduet er minimeret til systembakken, skal der dobbeltklikkes på ikonet Data Replicator 3 for at åbne det.</p>
+  </ul>
+	    <p>3.3	<b>Planlægning</b></p>
+	    <ul>
+	  <li>Angiv plan</li>
+	  <p>Data Replicator 3 kan indstilles til at foretage automatisk sikkerhedskopiering med bestemte tidsintervaller. Sådan gør du:</p>
+	  <ol type="a">
+		<li>Klik på <b>Plan</b>.</li>
+		<li>Angiv sikkerhedskopieringsperiode og starttidspunkt for planlagt sikkerhedskopiering, og klik på <b>OK</b>. </li>
+		<li>Hvis du vil udføre planlagt sikkerhedskopiering under log ud, skal du indtaste det brugernavn og den adgangskode, der bruges ved login på computeren. Klik derefter på <b>OK</b>.<br> Hvis du ikke vil udføre planlagt sikkerhedskopiering under log ud, skal du klikke på <b>Spring over</b>.</li>
+	  </ol>
+	  <p class="notehead">Bemærk:</p>
+	  <ol class="notecontent">
+		<li>Brugeradgangskode kan ikke være tom ved sikkerhedskopiering under log ud.</li>
+		<li>Brugere af Windows 98 eller Windows ME kan udføre planlagt sikkerhedskopiering under log ud efter design.</li>
+	  </ol>
+	  <p>Når planlægningsopsætningen er gennemført, kan du afslutte Synology Data Replicator 3 eller minimere programvinduet i systembakken. Synology Data Replicator 3 vil udføre planlagt sikkerhedskopiering automatisk, når tiden kommer.</p>
+	  <li>Slet plan</li>
+	  <p>Klik på <b>Slet plan</b> for at standse planlagt sikkerhedskopiering og fjerne planindstillingerne.</p>
+		</ul>
+<p>Når du vil sikkerhedskopiere filer i Outlook, Outlook Express eller Windows mail, skal du bemærke:</p>
+<ul>
+<li>Hvis du kører Windows XP, Windows 2003 eller Windows Vista, </li>
+	<ol type="a">
+	<li>Mindst et af drevene på din PC skal være i NTFS-formatet. </li>
+	<li>Outlook-/Windows Mail-filer bør være på lokale drev. </li>
+	<li>Du skal logge ind som PC'ens administrator.</li>
+	</ol>
+<li>Hvis du kører andre operativsystemer end Windows XP og Windows 2003, skal du lukke Outlook, før du sikkerhedskopierer Outlook.</li>
+<br>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Support og begrænsning</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<ol>
+<li>Når der søges efter destinationsserveren, vil Synology Data Replicator 3 bruge port 9999 eller 9998 eller 9997. </li>
+<li>Komprimerede filer og krypterede filer bliver almindelige filer efter sikkerhedskopiering. Filegenskaberne bliver slettet. </li>
+<li>Synology Data Replicator 3 understøtter op til 240 bytes til filnavnets længde. </li>
+<li>Hvis du ændrer din PC's navn, skal du indtaste adgangskode for admin-login på din PC, når du indstiller Planlagt sikkerhedskopiering for at sikre, at Data Replicator 3 kører korrekt. Hvis du allerede har indstillet en planlagt sikkerhedskopiering, skal du slette den plan og bruge adgangskoden for admin-login på din PC for at angive en ny igen.</li>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name="restore"></a>Gendannelse af sikkerhedskopierede filer</p>
+<p>Du skal først vælge en målplacering og derefter vælge én af følgende metoder til at gendanne dine sikkerhedskopierede filer:</p>
+<ol>
+<li class=topic>Gendan ved at gennemse</li>
+<p>I de fleste situationer, og hvis du er sikker på, hvor de sikkerhedskopierede filer er, kan du bruge <i>Gendan ved at gennemse</i> for at gendanne dine filer:</p>
+	<ol>
+	<li>Klik på knappen <b>Start</b> under <i>Gendan ved at gennemse</i>. </li>
+	<li>Klik på <b>Næste</b>.</li>
+	<li>Klik for at vælge gendannelseskilden, og klik på <b>Næste</b>. </li>
+	<li>Vælg at vise filer <b>Efter version</b> eller <b>Efter gendannelsespunkt</b>. </li>
+	<li>Marker de(n) mappe(r), der skal gendannes, og klik på <b>Næste</b>. </li>
+	<li>Vælg den placering, hvortil den sikkerhedskopierede filer gendannes. Klik derefter på <b>Udfør</b>.</li>
+	</ol>
+    <br>
+<li class=topic>Gendan ved at søge</li>
+<p>Hvis du ikke er sikker på, hvor de sikkerhedskopierede filer er, eller du vil gendanne filer med bestemte søgeord, skal du følge nedenstående trin:</p>
+	<ol>
+	<li>Klik på knappen <b>Start</b> under Gendan ved at søge. </li>
+	<li>Klik på <b>Næste</b>.</li>
+	<li>Klik for at vælge gendannelseskilden, og klik på <b>Næste</b>. </li>
+	<li>Indtast det søgeord, du vil søge efter i tekstfeltet "Søgeord": tekstfelt.   </li>
+	<li>Vælg sikkerhedskopieringsmappe fra rullemenuen "Sikkerhedskopieringer:" rullemenu.   </li>
+	<li>Klik på <b>Søg</b>.</li>
+	<li>Vælg de filer og mapper, der skal gendannes i ramme til højre, og klik på <b>Næste</b>.</li>
+	<li>Vælg den placering, hvortil den sikkerhedskopierede filer gendannes. Klik derefter på <b>Udfør</b>.</li>
+	</ol>
+<br>
+<table width="550" border="0" bgcolor="#FFCCFF">
+<tr>
+<td><center>
+<b><font size="3">Tip til gendannelse af Outlook-, Outlook Express- og Windows Mail-filer</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<p>Når du vælger en destinationssti, kan du vælge:</p>
+<ol>
+<b><li>Oprindelig sti</li></b>
+	<p>Du skal ikke manuelt importere mail og adressebog. PC-data erstattes med de gendannede filer, når du vælger denne mulighed.</p>
+<b><li>Ny sti</li></b>
+	<p>Du kan gendanne data til en bestemt sti og manuelt importere mail og adressebog med Outlook/Outlook Express/Windows Mail, når du vælger denne mulighed.</p>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name=setting></a>Avancerede indstillinger</p>
+<p>I afsnittet Indstillinger kan du definere avancerede sikkerhedskopieringsindstillinger som følger.</p>
+<p class="topic">Filter</p>
+<blockquote>
+  <p>Brug denne funktion til at sikkerhedskopiere filer præcist. Udelukkelse af filer med bestemt præfiks eller filtype fra sikkerhedskopieringslisten vil hjælpe til med at øge hastigheden af sikkerhedskopieringen. Sådan går du videre:</p>
+  <ol>
+    <li>Klik på <b>Filter</b>.</li>
+    <li>Klik på <b>Tilføj</b> til højre for indstillingen "Filtype" eller "Præfiks" </li>
+    <li>Indtast bestemt kriterium, f.eks. ".exe" for filtype eller "~" for præfiks. </li>
+    <li>Klik på <b>OK</b> for at lukke opsætningsdialogboksen, og klik på <b>OK</b> igen for at gemme indstillingerne.</li>
+  </ol>
+</blockquote>
+<p class="topic">Aktiver e-mail-underretning</p>
+<blockquote>
+  <p>Brug denne funktion til at modtage sikkerhedskopieringsdetaljer via e-mail efter den planlagte sikkerhedskopiering er gennemført.</p>
+  <ol>
+    <li>Klik på <b>Opsætning af SMTP</b>. </li>
+    <li>Indtast gyldige e-mail-oplysninger, og klik på <b>OK</b> for at fuldføre.</li>
+  </ol>
+</blockquote>
+<p class="topic">Aktiver filversioner</p>
+<blockquote>
+  <p class="style4">Hvad er filversionsfunktionen til?</p>
+  <p>Aktivering af filversionsfunktionen kan hjælpe dig med at bevare historiske udgaver af den samme fil.</p>
+  <p>Når den første sikkerhedskopiering er færdig, bliver alle sikkerhedskopierede filer gemt i mappen "latest" i sikkerhedskopieringsdestinationen. Fra næste sikkerhedskopiering vil Data Replicator 3 automatisk kontrollere, om der allerede fines en fil med det samme filnavn i mappen ”latest”. Hvis de findes, og indholdsfiler er ændret, vil den forrige sikkerhedskopierede fil i mappen "latest" blive fjernet til mappen "past" som en ældre version, mens filen på din computer bliver sikkerhedskopieret til mappen "latest", hvor du altid kan finde alle de seneste sikkerhedskopierede filer.</p>
+  <p class="notehead">Bemærk:</p>
+  <p class="notecontent">Den oven for refererede fil skal være i den samme mappe. Så når du bruger den samme konto til at sikkerhedskopiere mappen, bliver der ikke genereret nogen tidligere version.</p>
+  <p>Når filversionsfunktionen aktiveres, og du oplever ukorrekt og uoprettelig redigering på dine lokale filer, kan du finde de historiske filer på destinationsplaceringen og nemt gendanne filerne.</p>
+  <p><b>Antal tidligere versioner</b></p>
+  <p>Her kan du angive, hvor mange tidligere versioner af sikkerhedskopierede filer, du vil bevare. Der er et maksimum på 20 versioner.  Filnavnet på versioner af tidligere filer tilføjes med “v00”, “v01” osv. Jo højere tallet er, jo nyere er den.</p>
+  <p>Angiv et antal tidligere versioner for at bestemme, hvor mange tidligere versioner, der skal bevares på destinationen. Sådan går du videre:</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>Marker <v>Aktiver filversioner</v>.</li>
+<li>Angiv et antal tidligere versioner, og klik på <b>Anvend</b> for at gemme indstillingerne. </li>
+</ol>
+</blockquote>
+<p class="topic">Gendannelsespunkter</p>
+<blockquote>
+  <p class="style4">Hvad er gendannelsespunkter?</p>
+  <p>Hver gang der foretages en sikkerhedskopiering, vil en mappe blive navngivet som sikkerhedskopieringens starttidspunkt, der indeholder alle filer i sikkerhedskopieringen. Det bliver et gendannelsespunkt.</p>
+  <p>Den fil, der aldrig er ændret, bliver vist i hvert gendannelsespunkt efter hver sikkerhedskopiering. Kun en fildiskstørrelse optages.</p>
+  <p><b>Antal gendannelsespunkter</b></p>
+  <p>Du kan her angive, hvor mange gendannelsespunkter, du vil bevare. Der er et maksimum på 128 gendannelsespunkter. Når antallet af gendannelsespunkter overstiger den angivne værdi, bliver det ældste gendannelsespunkt på destinationplaceringen automatisk slettet efter næste sikkerhedskopiering.</p>
+</blockquote>
+<blockquote>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Support og begrænsning</font></b>
+</center></td>
+</tr>
+<tr>
+<td>Funktionen Gendannelsespunkt understøttes kun i Windows 2000/Windows XP/Windows 2003/Windows Vista.</td>
+</tr>
+</table>
+</blockquote>
+
+<p class="topic">Automatisk start ved login</p>
+<blockquote>
+  <p>Du kan angive start af Synology Data Replicator 3 automatisk, når du logger ind på Windows. Sådan går du videre:</p>
+  <ol>
+    <li>Marker <b>Automatisk start af Data Replicator 3 ved start af Windows</b>. </li>
+    <li>Klik på <b>Anvend</b>.</li>
+  </ol>
+</blockquote>
+
+<p class="topic">Kontroller datakonsekvens, før du synkroniserer</p>
+<blockquote>
+  <p>Du kan bestemme, om datakonsekvens skal kontrolleres, før Data Replicator går i synkroniseringstilstand. Sådan går du videre:</p>
+  <ol>
+    <li>Marker <b>Kontroller datakonsekvens, før du synkroniserer</b>. </li>
+    <li>Klik på <b>Anvend</b>.</li>
+  </ol>
+  <p class="notehead">Bemærk:</p>
+  <p class="notecontent">Hvis du ophæver markeringen af denne mulighed og lukker Data Replicator, bliver tilføjede, fjernede eller ændrede data måske ikke synkroniseret på serveren, når du starter Data Replicator næste gang.</p>
+</blockquote>
+
+<p class="topic">Bevar identiske filer på destinationsserver</p>
+<blockquote>
+  <p>Du kan opbevare filer i mappen "latest", der er identiske med dem på din lokale computer. Sådan går du videre:</p>
+  <ol>
+    <li>Marker <b>Når lokale filer slettes, skal du slette de modsvarende sikkerhedskopierede filer på samme tid</b>.</li>
+    <li>Klik på <b>Anvend</b>. </li>
+  </ol>
+</blockquote>
+<hr>
+
+<p class=h1><a name=log></a>Log</p>
+<p>Den maksimale logfil er 512 KB. Når logfilen når denne grænse, fjernes de ældste 128 KB.</p>
+<ul>
+<li class=topic>Gem log</li>
+<ol>
+<li>Klik på <b>Gem</b>. </li>
+<li>Vælg stien til sikkerhedsdestinationen, og klik på <b>Gem</b> for at afslutte.</li>
+</ol>
+<br>
+<li class=topic>Ryd log</li>
+<ol>
+<li>Klik på <b>Ryd</b>. </li>
+<li>Klik på <b>Ja</b> i bekræftelsesdialogboksen</li>
+</ol>
+</ul>
+
+</body>
+</html>

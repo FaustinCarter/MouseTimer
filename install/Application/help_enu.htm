@@ -1,0 +1,316 @@
+﻿
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Synology Data Replicator 3</title>
+<style type="text/css">
+<!--
+.head {
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.h1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.h2 {
+	font-weight: bold;
+	color: #FF3300;
+	font-size: 16px;
+}
+
+.topic {
+	font-family: "Geneva, Arial, Helvetica, sans-serif";
+	font-weight: bold;
+	color: #000000;
+	font-size: 16px;
+}
+
+body, td {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 10pt;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.notehead {
+	font-weight: bold;
+	font-size: 10pt;
+	color: #FF0000;
+}
+
+.notecontent {
+	font-size: 10pt;
+	color: #FF0000;
+}
+.style2 {font-size: 20px; font-weight: bold; color: #666666; 
+}
+.style4 {font-weight: bold; color: #0000FF; }
+-->
+</style>
+</head>
+<body>
+<p class="style2">Using Data Replicator 3</p>
+<p>Click the following major functions to get to know Data Replicator 3.</p>
+<ul>
+<li><a href="#bkp">PC Data Backup</a> </li>
+<li><a href="#restore">Backup Files Restoration</a> </li>
+<li><a href="#setting">Advanced Settings</a> </li>
+<li><a href="#log">Log</a> </li>
+</ul>
+<hr>
+<p class=h1><a name="bkp"></a>PC Data Backup</p>
+<p>Please follow steps below to set up your backup. You may also go to <a href="#setting">Advanced Settings</a> to get to know other settings which will help you personalize your PC data backup.</p>
+<ol>
+<li class=topic>Select a backup destination</li>
+	<p>You can choose to back up your PC data to a Synology server or other location. After backup is successfully performed, you will be able to find the backup files in your assigned folder.</p>
+	<p>1.1	Back up to a Synology server</p>
+		<ol type="a">
+		<li>Click <b>Select</b>.</li>
+		<li>Select <b>Synology Server</b>, and click <b>OK</b>. </li>
+		<li>In the next window, click the Synology server where the shared folder for backup is located. Then click <b>Next</b>.</li>
+		<li>Enter the username and password that can Read/Write the shared folder you just chose, and click <b>Next</b>. </li>
+		<li>Click the shared folder you want to use for backup, and click Fi<b></b>nish. </li>
+		</ol>
+  <p>1.2	Back up to other location</p>
+		<ol type="a">
+		<li>Click <b>Select</b>.</li>
+		<li>Select <b>Other location</b>, and click <b>Browse</b> to locate the backup destination.</li>
+		<li>Click <b>OK</b> to finish.</li>
+  </ol>
+<BR>
+<li class=topic>Tick the folders you want to back up</li>
+<BR>
+<li class=topic>Choose a backup mode</li>
+<p>Data Replicator 3 provides 3 backup modes for your most convenience, and they are: <i><b>Immediate</b></i>, <i><b>Sync</b></i>, and <i><b>Schedule</b></i>.</p>
+	3.1	<b>Immediate</b>
+  	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;By clicking the <b>Immediate</b> button, all files in the selected local folder(s) will be immediately backed up to the backup destination.</p>
+	<p>3.2	<b>Sync</b>  </p>
+		<ul>
+		<li>Sync data now and start monitoring</li>
+		<p>Click the <b>Sync</b> button, Data Replicator 3 will make a complete backup of all the files in the selected folder(s) to the backup destination. After that, Data Replicator 3 will start monitoring those folder(s). As you make changes, Data Replicator 3 backs up only files that have changed.</p>
+		<p class="notehead">Note:</p>
+		<ol class="notecontent">
+		<li>After Data Replicator 3 enters the monitoring mode, it will keep working until you stop.</li>
+		<li>The time interval between mail synchronization refers to time from synchronization completes to the next synchronization starts. The task may be postponed when Data Replicator 3 is processing synchronization of other files.</li>
+		</ol>
+		<br>
+		<li>Stop monitoring</li>
+		<p>To stop monitoring, click the <b>Stop Sync</b> button in the Data Replicator 3 program window. If the program window has been minimized to the system tray, please double click on the Data Replicator 3 icon to open it.</p>
+  </ul>
+	    <p>3.3	<b>Schedule</b></p>
+	    <ul>
+	  <li>Set schedule</li>
+	  <p>Data Replicator 3 can be set to do automatic backups at the specified time regularly. To do this:</p>
+	  <ol type="a">
+		<li>Click <b>Schedule</b>.</li>
+		<li>Set the backup period and start time for Schedule Backup, and click <b>OK</b>. </li>
+		<li>If you wish to perform Schedule Backup during log off, please enter the username and password you're using while login to this computer. Then click <b>OK</b>.<br>
+		  If you don't want to perform Schedule Backup during log off, please click <b>Skip</b>.</li>
+	  </ol>
+	  <p class="notehead">Note:</p>
+	  <ol class="notecontent">
+		<li>To back up while logout, the user password cannot be blank.</li>
+		<li>For users running Windows 98 or Windows ME, Schedule Backup can be performed while logout by design.</li>
+	  </ol>
+	  <p>After the schedule setup is complete, you can exit Synology Data Replicator 3 or minimize the program window to the system tray. Synology Data Replicator 3 will perform Schedule Backup automatically when the time is up.</p>
+	  <li>Delete schedule</li>
+	  <p>Click <b>Delete Schedule</b> to stop Schedule Backup and remove the schedule settings.</p>
+		</ul>
+<p>When you want to back up Outlook, Outlook Express, or Windows Mail files, please note:</p>
+<ul>
+<li>If you're running Windows XP, Windows 2003, or Windows Vista, </li>
+	<ol type="a">
+	<li>At least one of the drives on your PC should be in NTFS format. </li>
+	<li>Outlook/Windows Mail files should be on local drives. </li>
+	<li>You have to login as the PC's administrator.</li>
+	</ol>
+<li>If you're running operating systems other than Windows XP and Windows 2003, please close Outlook before back up Outlook.</li>
+<br>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Support & Limitation</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<ol>
+<li>When searching for target server, Synology Data Replicator 3 will use port 9999, or 9998, or 9997. </li>
+<li>Compressed files and encrypted files will become regular files after backup. The file property will be erased. </li>
+<li>For filename length, Synology Data Replicator 3 supports up to 240 bytes. </li>
+<li>If you change the computer name of your PC, you must enter the admin login password of your PC when setting Schedule Backup to assure Data Replicator 3 performs correctly. If you have already set a backup schedule, delete that schedule and use the admin login password of your PC to set a new one again.</li>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name="restore"></a>Backup Files Restoration</p>
+<p>To restore backup files, you need to select a backup target first, and then choose one of the following methods to restore your backup files:</p>
+<ol>
+<li class=topic>Restore by browsing</li>
+<p>In most situations, if you're sure about where the backup files are, you can use <i>Restore by Browsing</i> to restore your files:</p>
+	<ol>
+	<li>Click the <b>Start</b> button under <i>Restore by Browsing</i>. </li>
+	<li>Click <b>Next</b>.</li>
+	<li>Click to select the restore source, and click <b>Next</b>. </li>
+	<li>Choose to list files <b>By version</b> or <b>By restore point</b>. </li>
+	<li>Tick the folder(s) you want to restore, and click <b>Next</b>. </li>
+	<li>Choose the location where the backup files will be restored to. Then click <b>Finish</b>.</li>
+	</ol>
+    <br>
+<li class=topic>Restore by searching</li>
+<p>If you’re not sure where the backup files are, or you only want to restore files with certain keyword, please do the following steps to restore:</p>
+	<ol>
+	<li>Click the <b>Start</b> button under Restore by Searching. </li>
+	<li>Click <b>Next</b>.</li>
+	<li>Click to select the restore source, and click <b>Next</b>. </li>
+	<li>Type the keyword you want to search in the "Keyword:" text field. </li>
+	<li>Choose the backup folder from the "Backups:" drop-down menu. </li>
+	<li>Click <b>Search</b>.</li>
+	<li>Select the files and folders you want to restore in the right-handed frame, and click <b>Next</b>.</li>
+	<li>Choose the location where the backup files will be restored to. Then click <b>Finish</b>.</li>
+	</ol>
+<br>
+<table width="550" border="0" bgcolor="#FFCCFF">
+<tr>
+<td><center>
+<b><font size="3">Tip on Restoring Outlook, Outlook Express, and Windows Mail Files</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;When you're choosing a destination path, you can choose:</p>
+<ol>
+<b><li>Original path</li></b>
+	<p>By choosing this option, you don't need to manually import mail and address book, PC data will be replaced by the restored files.</p>
+<b><li>New path</li></b>
+	<p>By choosing this option, you can restore the data to a specified path, and manually import mail and address book with Outlook/Outlook Express/Windows Mail.</p>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name=setting></a>Advanced Settings</p>
+<p>In the Options section, you can set up for advanced backup settings as follows.</p>
+<p class="topic">Filter</p>
+<blockquote>
+  <p>Use this function to back up files precisely. Excluding files with certain prefix or extension from the backup list will help you speed up the backup. Follow the steps to proceed:</p>
+  <ol>
+    <li>Click <b>Filter</b>.</li>
+    <li>Click <b>Add</b> in the right-handed side of the "Extension" or "Prefix" option. </li>
+    <li>Enter specified criterion, for example, ".exe" for extension or "~" for prefix. </li>
+    <li>Click <b>OK</b> to close the setup dialogue, and click <b>OK</b> again to save the settings.</li>
+  </ol>
+</blockquote>
+<p class="topic">Enable email notification</p>
+<blockquote>
+  <p>Use this function to receive backup details by email after Schedule Backup is complete.</p>
+  <ol>
+    <li>Click <b>SMTP Setup</b>. </li>
+    <li>Enter valid email information, and click <b>OK</b> to finish.</li>
+  </ol>
+</blockquote>
+<p class="topic">Enable file versions</p>
+<blockquote>
+  <p class="style4">What is file versions function for?</p>
+  <p>Enabling file versions function can help you keep the history editions of the same file.</p>
+  <p>After the first-time backup completes, all backed-up files will be stored in the ''latest'' folder in the backup destination. From the next backup, Data Replicator 3 will automatically check if any file with the same file name already exists in the "latest" folder. If there is and content of files has changed, the previous backed-up file in the "latest" folder will then be moved to the "past" folder as an older version, whereas the file on your computer will be backed up to the "latest" folder, where you can always find all the latest backed-up files there.</p>
+  <p class="notehead">Note:</p>
+  <p class="notecontent">The referred file above must be in the same folder. So when you're using the same account to back up the folder, there will be past version generated.</p>
+  <p>When the file version function is enabled, and you experienced improper and irreversible editing on your local files, you can find the history files in the backup destination and restore files easily.</p>
+  <p><b>Number of past versions</b></p>
+  <p>You can set here how many past versions of backup files you wish to keep, 20 versions are the maximum. The file name of past version files will be added with "v00", "v01", and so on. The bigger the number is, the newer version it is.</p>
+  <p>Set a number of past versions to decide how many previous versions will be kept in the backup destination. Follow the steps to proceed:</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>Tick <v>Enable file versions</v>.</li>
+<li>Set a number of past versions, and click <b>Apply</b> to save the settings. </li>
+</ol>
+</blockquote>
+<p class="topic">Restore points</p>
+<blockquote>
+  <p class="style4">What is restore points?</p>
+  <p>Every time after backup is performed, there will be a folder named as the backup starting time which contains all files of this backup. That will be a restore point.</p>
+  <p>The file which had never been modified will appear in every restore point after each backup. However, only one file disk size is occupied actually.</p>
+  <p><b>Number of restore points</b></p>
+  <p>You can set here how many restore points you wish to keep, 128 restore points are the maximum. When the restore point number exceeds the set value, the oldest restore points on the backup destination will be automatically deleted after next backup.</p>
+</blockquote>
+<blockquote>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Support & Limitation</font></b>
+</center></td>
+</tr>
+<tr>
+<td>Restore point function is supported only on Windows 2000 / Windows XP / Windows 2003 / Windows Vista.</td>
+</tr>
+</table>
+</blockquote>
+
+<p class="topic">Auto-Start when Logon</p>
+<blockquote>
+  <p>You can set to start Synology Data Replicator 3 automatically when you login Windows. Follow the steps to proceed:</p>
+  <ol>
+    <li>Tick <b>Auto-start Data Replicator 3 on Windows Startup</b>. </li>
+    <li>Click <b>Apply</b>.</li>
+  </ol>
+</blockquote>
+
+<p class="topic">Check data consistency before sync</p>
+<blockquote>
+  <p>You can decide whether to check data consistency before Data Replicator enters sync mode. Follow the steps to proceed:</p>
+  <ol>
+    <li>Tick <b>Check data consistency before start syncing</b>. </li>
+    <li>Click <b>Apply</b>.</li>
+  </ol>
+  <p class="notehead">Note:</p>
+  <p class="notecontent">If you uncheck this option and close Data Replicator, data added, removed, or modified might not be synced to the server when you start Data Replicator next time.</p>
+</blockquote>
+
+<p class="topic">Keep identical files on destination server</p>
+<blockquote>
+  <p>If  You can set to keep files in the "latest" folder to be identical to the ones on your local computer. Follow the steps to proceed:</p>
+  <ol>
+    <li>Tick <b>When local files are deleted, delete the opposite backup files at the same time</b>.</li>
+    <li>Click <b>Apply</b>. </li>
+  </ol>
+</blockquote>
+<hr>
+
+<p class=h1><a name=log></a>Log</p>
+<p>The maximum log file is 512KB; when the log file reaches the limit, the oldest 128KB will be removed.</p>
+<ul>
+<li class=topic>Save Log</li>
+<ol>
+<li>Click <b>Save</b>. </li>
+<li>Choose the path of the backup destination, and click <b>Save</b> to finish.</li>
+</ol>
+<br>
+<li class=topic>Clear Log</li>
+<ol>
+<li>Click <b>Clear</b>. </li>
+<li>Click <b>Yes</b> on the confirmation dialogue.</li>
+</ol>
+</ul>
+
+</body>
+</html>

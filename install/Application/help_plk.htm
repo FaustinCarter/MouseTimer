@@ -1,0 +1,315 @@
+﻿
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Synology Data Replicator 3</title>
+<style type="text/css">
+<!--
+.head {
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.h1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.h2 {
+	font-weight: bold;
+	color: #FF3300;
+	font-size: 16px;
+}
+
+.topic {
+	font-family: "Geneva, Arial, Helvetica, sans-serif";
+	font-weight: bold;
+	color: #000000;
+	font-size: 16px;
+}
+
+body, td {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 10pt;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.notehead {
+	font-weight: bold;
+	font-size: 10pt;
+	color: #FF0000;
+}
+
+.notecontent {
+	font-size: 10pt;
+	color: #FF0000;
+}
+.style2 {font-size: 20px; font-weight: bold; color: #666666; 
+}
+.style4 {font-weight: bold; color: #0000FF; }
+-->
+</style>
+</head>
+<body>
+<p class="style2">Korzystanie z programu Data Replicator 3</p>
+<p>Kliknij następujące główne funkcje, aby zapoznać się z programem Data Replicator 3.</p>
+<ul>
+<li><a href="#bkp">Kopia zapasowa danych komputera</a> </li>
+<li><a href="#restore">Przywracanie plików kopii zapasowej</a> </li>
+<li><a href="#setting">Ustawienia zaawansowane</a> </li>
+<li><a href="#log">Log</a> </li>
+</ul>
+<hr>
+<p class=h1><a name="bkp"></a>Kopia zapasowa danych komputera</p>
+<p>Wykonaj następujące kroki, aby skonfigurować kopię zapasową. Możesz też przejść do sekcji <a href="#setting">Ustawienia zaawansowane</a>, aby dowiedzieć się o innych ustawieniach, które pomogą Ci spersonalizować tworzenie kopii zapasowej danych komputera.</p>
+<ol>
+<li class=topic>Wybierz miejsce docelowe kopii zapasowej</li>
+	<p>Możesz wybrać tworzenie kopii zapasowej danych z komputera na serwerze Synology albo w innej lokalizacji. Po udanym wykonaniu kopii zapasowej pliki kopii zapasowej będą się znajdować w przypisanym folderze.</p>
+	<p>1.1	Kopia zapasowa na serwerze Synology</p>
+		<ol type="a">
+		<li>Kliknij <b>Wybierz</b>.</li>
+		<li>Wybierz<b>Serwer Synology</b>, a następnie kliknij <b>OK</b>. </li>
+		<li>W kolejnym oknie kliknij serwer Synology, na którym znajduje się folder współdzielony na kopię zapasową. Następnie kliknij <b>Dalej</b>.</li>
+		<li>Wprowadź nazwę użytkownika i hasło z uprawnieniami do Odczytu/Zapisu w wybranym folderze współdzielonym i kliknij <b>Dalej</b>. </li>
+		<li>Kliknij folder współdzielony, którego chcesz użyć do tworzenia kopii zapasowej, i kliknij <b>Zakończ</b>. </li>
+		</ol>
+  <p>1.2	Kopia zapasowa w innej lokalizacji</p>
+		<ol type="a">
+		<li>Kliknij <b>Wybierz</b>.</li>
+		<li>Wybierz <b>Inna lokalizacja</b> i kliknij <b>Przeglądaj</b>, aby zlokalizować miejsce docelowe kopii zapasowej.</li>
+		<li>Kliknij <b>OK</b>, aby zakończyć.</li>
+  </ol>
+<BR>
+<li class=topic>Zaznacz foldery do uwzględnienia w kopii zapasowej</li>
+<BR>
+<li class=topic>Wybierz tryb kopii zapasowej</li>
+<p>Data Replicator 3 oferuje 3 tryby kopii zapasowej: <i><b>Natychmiastowa</b></i>, <i><b>Synchronizacja</b></i> i <i><b>Harmonogram</b></i>.</p>
+	3.1	<b>Natychmiastowa</b>
+  	<p>     Po kliknięciu przycisku <b>Natychmiastowa</b> wszystkie pliki w wybranych folderach lokalnych zostaną natychmiast skopiowane do miejsca docelowego kopii zapasowej.</p>
+	<p>3.2	<b>Synchronizacja</b>  </p>
+		<ul>
+		<li>Zsynchronizuj dane teraz i rozpocznij monitorowanie</li>
+		<p>Kliknij przycisk <b>Synchronizacja</b>. Data Replicator 3 wykona pełną kopię zapasową wszystkich plików w wybranych folderach w miejscu docelowym kopii zapasowej. Następnie Data Replicator 3 zacznie monitorować te foldery. Po dokonaniu zmian Data Replicator 3 skopiuje tylko zmienione pliki.</p>
+		<p class="notehead">Uwaga:</p>
+		<ol class="notecontent">
+		<li>Po przejściu programu Data Replicator 3 do trybu monitoringu będzie on pracował aż do zatrzymania.</li>
+		<li>Interwał między synchronizacjami poczty oznacza czas między zakończeniem jednej synchronizacji a rozpoczęciem kolejnej. Zadanie może zostać opóźnione, kiedy Data Replicator 3 przeprowadza synchronizację innych plików.</li>
+		</ol>
+		<br>
+		<li>Zatrzymaj monitorowanie</li>
+		<p>Aby zatrzymać monitorowanie, kliknij przycisk <b>Zatrzymaj synchronizację</b> w oknie programu Data Replicator 3. Jeśli okno programu zostało zminimalizowane do zasobnika systemowego, kliknij dwukrotnie ikonę Data Replicator 3.</p>
+  </ul>
+	    <p>3.3	<b>Harmonogram</b></p>
+	    <ul>
+	  <li>Ustaw harmonogram</li>
+	  <p>Program Data Replicator 3 można ustawić tak, aby regularnie wykonywał automatyczne kopie zapasowe o określonej porze. Aby to zrobić:</p>
+	  <ol type="a">
+		<li>Kliknij <b>Harmonogram</b>.</li>
+		<li>Ustaw okres kopii zapasowej i czas rozpoczęcia dla zaplanowanej kopii zapasowej i kliknij <b>OK</b>. </li>
+		<li>Jeśli chcesz tworzyć zaplanowaną kopię zapasową podczas wylogowywania, wprowadź nazwę użytkownika i hasło, których używasz podczas logowania się do tego komputera. Następnie kliknij <b>OK</b>.<br> Jeśli nie chcesz tworzyć zaplanowanej kopii zapasowej podczas wylogowywania, kliknij <b>Pomiń</b>.</li>
+	  </ol>
+	  <p class="notehead">Uwaga:</p>
+	  <ol class="notecontent">
+		<li>Aby można było wykonać kopię zapasową podczas wylogowania, hasło użytkownika nie może być puste.</li>
+		<li>W systemach Windows 98 lub Windows ME zaplanowana kopia zapasowa może z założenia być wykonywana podczas wylogowywania.</li>
+	  </ol>
+	  <p>Po ustawieniu harmonogramu możesz wyjść z programu Synology Data Replicator 3 lub zminimalizować okno programu do zasobnika systemowego. Kiedy nadejdzie czas, Synology Data Replicator 3 automatycznie wykona zaplanowaną kopię zapasową.</p>
+	  <li>Usuń plan</li>
+	  <p>Kliknij <b>Usuń plan</b>, aby zatrzymać zaplanowaną kopię zapasową i usunąć ustawienia harmonogramu.</p>
+		</ul>
+<p>Jeśli chcesz zapisać kopię zapasową plików programów Outlook, Outlook Express lub Windows Mail, zwróć uwagę, że:</p>
+<ul>
+<li>Jeśli używasz systemów Windows XP, Windows 2003 lub Windows Vista </li>
+	<ol type="a">
+	<li>Przynajmniej jeden z napędów twojego komputera powinien być w formacie NTFS. </li>
+	<li>Pliki programów Outlook/Windows Mail powinny być na dyskach lokalnych. </li>
+	<li>Musisz się zalogować jako administrator komputera.</li>
+	</ol>
+<li>Jeśli używasz innych systemów operacyjnych niż Windows XP i Windows 2003, zamknij program Outlook przed utworzeniem kopii zapasowej jego plików.</li>
+<br>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Obsługa i ograniczenie</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<ol>
+<li>Szukając serwera docelowego, Synology Data Replicator 3 użyje portu 9999, 9998 lub 9997. </li>
+<li>Po wykonaniu kopii zapasowej skompresowane pliki i pliki zaszyfrowane staną się zwykłymi plikami. Właściwości plików zostaną skasowane. </li>
+<li>Synology Data Replicator 3 obsługuje nazwy plików o długości do 240 bajtów. </li>
+<li>Jeśli zmienisz nazwę swojego komputera PC, musisz wprowadzić hasło logowania administratora podczas ustawiania zaplanowanej kopii zapasowej, aby mieć pewność, że Data Replicator 3 będzie działać prawidłowo. Jeśli już został ustawiony harmonogram kopii zapasowej, usuń go i użyj hasła logowania administratora komputera, aby ustawić nowy.</li>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name="restore"></a>Przywracanie plików kopii zapasowej</p>
+<p>Aby przywrócić pliki kopii zapasowej, musisz najpierw wybrać miejsce docelowe kopii zapasowej, a następnie wybrać jedną z następujących metod przywracania plików kopii zapasowej:</p>
+<ol>
+<li class=topic>Przywróć przeglądając</li>
+<p>W większości sytuacji, kiedy masz pewność, gdzie znajdują się pliki kopii zapasowej, możesz użyć funkcji <i>Przywróć przeglądając</i>, aby przywrócić swoje pliki:</p>
+	<ol>
+	<li>Kliknij przycisk <b>Uruchom</b> pod <i>Przywróć przeglądając</i>. </li>
+	<li>Kliknij <b>Dalej</b>.</li>
+	<li>Kliknij, aby wybrać źródło przywracania, a następnie kliknij <b>Dalej</b>. </li>
+	<li>Wybierz wyświetlanie plików <b>Według wersji</b> lub <b>Według punktu przywracania</b>. </li>
+	<li>Zaznacz foldery do przywrócenia, a następnie kliknij <b>Dalej</b>. </li>
+	<li>Wybierz lokalizację do przywrócenia kopii zapasowej plików. Następnie kliknij <b>Zakończ</b>.</li>
+	</ol>
+    <br>
+<li class=topic>Przywróć wyszukując</li>
+<p>Jeśli nie masz pewności, gdzie znajdują się pliki kopii zapasowej, albo jeśli chcesz przywrócić tylko pliki z określonym słowem kluczowym, wykonaj następujące kroki:</p>
+	<ol>
+	<li>Kliknij przycisk <b>Uruchom</b> pod Przywróć wyszukując. </li>
+	<li>Kliknij <b>Dalej</b>.</li>
+	<li>Kliknij, aby wybrać źródło przywracania, a następnie kliknij <b>Dalej</b>. </li>
+	<li>Wpisz słowo kluczowe, które chcesz wyszukać w polu tekstowym „Słowo Kluczowe:”. </li>
+	<li>Wybierz folder kopii zapasowej z menu rozwijanego „Kopie zapasowe:”. </li>
+	<li>Kliknij <b>Szukaj</b>.</li>
+	<li>Wybierz pliki i foldery do przywrócenia z ramki po prawej stronie, a następnie kliknij <b>Dalej</b>.</li>
+	<li>Wybierz lokalizację do przywrócenia kopii zapasowej plików. Następnie kliknij <b>Zakończ</b>.</li>
+	</ol>
+<br>
+<table width="550" border="0" bgcolor="#FFCCFF">
+<tr>
+<td><center>
+<b><font size="3">Porada dotycząca przywracania plików programów Outlook, Outlook Express oraz Windows Mail</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<p>     Podczas wybierania ścieżki docelowej możesz wybrać następujące opcje:</p>
+<ol>
+<b><li>Ścieżka oryginalna</li></b>
+	<p>Wybierając tę opcję, nie musisz ręcznie importować poczty i książki adresowej. Dane z komputera zostaną zastąpione przez przywrócone pliki.</p>
+<b><li>Nowa ścieżka</li></b>
+	<p>Wybierając tę opcję, możesz przywrócić dane do określonej ścieżki, a następnie ręcznie importować pocztę, książkę adresową i pocztę programów Outlook/Outlook Express/Windows Mail.</p>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name=setting></a>Ustawienia zaawansowane</p>
+<p>W sekcji Opcje możesz skonfigurować następujące zaawansowane ustawienia kopii zapasowej.</p>
+<p class="topic">Filtruj</p>
+<blockquote>
+  <p>Użyj tej funkcji, aby precyzyjnie kopiować pliki. Wykluczenie z listy kopii zapasowej plików z określonym prefiksem lub rozszerzeniem umożliwi szybsze tworzenie kopii zapasowej. Wykonaj następujące kroki:</p>
+  <ol>
+    <li>Kliknij <b>Filtruj</b>.</li>
+    <li>Kliknij <b>Dodaj</b> z prawej strony opcji „Rozszerzenie” lub „Prefix”. </li>
+    <li>Wprowadź określone kryterium, na przykład „.exe” w przypadku rozszerzenia lub „~” w przypadku prefiksu. </li>
+    <li>Kliknij <b>OK</b>, aby zamknąć okno dialogowe konfiguracji, a następnie kliknij ponownie <b>OK</b>, aby zapisać ustawienia.</li>
+  </ol>
+</blockquote>
+<p class="topic">Włączenie powiadomienia email</p>
+<blockquote>
+  <p>Użyj tej funkcji, aby otrzymywać w wiadomościach e-mail szczegóły po ukończeniu zaplanowanej kopii zapasowej.</p>
+  <ol>
+    <li>Kliknij <b>Konfiguracja SMTP</b>. </li>
+    <li>Wprowadź poprawne informacje o koncie e-mail, i kliknij <b>OK</b>, aby zakończyć.</li>
+  </ol>
+</blockquote>
+<p class="topic">Włącz wersje plików</p>
+<blockquote>
+  <p class="style4">Do czego służy funkcja wersji plików?</p>
+  <p>Włączenie funkcji wersje plików pomoże Ci zachować historię edycji pliku.</p>
+  <p>Po zakończeniu pierwszej kopii zapasowej wszystkie skopiowane pliki będą przechowywane w miejscu docelowym kopii zapasowej w folderze „latest”. Podczas tworzenia następnej kopii zapasowej Data Replicator 3 automatycznie sprawdzi, czy już istnieje w folderze „latest” jakiś plik o tej samej nazwie. Jeśli plik istnieje, a jego zawartość uległa zmianie, poprzednio zapisany plik w folderze „latest” zostanie przeniesiony do folderu „past” jako starsza wersja, a plik na Twoim komputerze zostanie skopiowany do folderu „latest”, w którym zawsze znajdziesz najnowsze kopie zapasowe plików.</p>
+  <p class="notehead">Uwaga:</p>
+  <p class="notecontent">Plik, o którym mowa powyżej, musi być w tym samym folderze. Jeżeli więc używasz tego samego konta do tworzenia kopii zapasowej folderu, zostanie wygenerowana poprzednia wersja.</p>
+  <p>Kiedy funkcja wersji plików jest włączona i dokonasz niewłaściwej oraz nieodwracalnej edycji plików lokalnych, możesz znaleźć starsze wersje tych plików w miejscu docelowym kopii zapasowej i łatwo je przywrócić.</p>
+  <p><b>Liczba poprzednich wersji</b></p>
+  <p>Możesz tu ustawić liczbę poprzednich wersji plików kopii zapasowej, które chcesz przechowywać. Maksimum to 20 wersji. Nazwy plików poprzednich wersji będą miały dodane „v00”, „v01” i tak dalej. Im większy numer, tym nowsza wersja.</p>
+  <p>Ustaw liczbę poprzednich wersji, aby określić, ile poprzednich wersji będzie przechowywanych w miejscu docelowym kopii zapasowej. Wykonaj następujące kroki:</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>Zaznacz <v>Włącz wersje plików</v>.</li>
+<li>Ustaw liczbę poprzednich wersji i kliknij <b>Zastosuj</b>, aby zapisać ustawienia. </li>
+</ol>
+</blockquote>
+<p class="topic">Punkty przywracania</p>
+<blockquote>
+  <p class="style4">Co to jest punkt przywracania?</p>
+  <p>Za każdym razem po wykonaniu kopii zapasowej powstanie folder o nazwie odpowiadającej godzinie rozpoczęcia tworzenia kopii zapasowej i zawierający wszystkie pliki tej kopii. Jest to punkt przywracania.</p>
+  <p>Plik, który nigdy nie był modyfikowany, pojawi się w każdym punkcie przywracania po każdym utworzeniu kopii zapasowej. Na dysku zostanie jednak zajęte miejsce tylko jednego pliku.</p>
+  <p><b>Liczba punktów przywracania</b></p>
+  <p>Możesz tu ustawić, ile punktów przywracania chcesz przechowywać. Maksymalna liczba to 128 punktów. Kiedy liczba punktów przywracania przekroczy ustawioną wartość, najstarszy punkt przywracania w miejscu docelowym kopii zapasowej zostanie automatycznie usunięty po następnej kopii zapasowej.</p>
+</blockquote>
+<blockquote>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Obsługa i ograniczenie</font></b>
+</center></td>
+</tr>
+<tr>
+<td>Funkcja punktu przywracania jest obsługiwana tylko w systemach Windows 2000 / Windows XP / Windows 2003 / Windows Vista.</td>
+</tr>
+</table>
+</blockquote>
+
+<p class="topic">Automatyczne uruchamianie po zalogowaniu</p>
+<blockquote>
+  <p>Możesz ustawić automatyczne uruchamianie Synology Data Replicator 3 po zalogowaniu do systemu Windows. Wykonaj następujące kroki:</p>
+  <ol>
+    <li>Zaznacz <b>Auto-start Data Replicator 3 przy uruchomieniu Windows</b>. </li>
+    <li>Kliknij <b>Zastosuj</b>.</li>
+  </ol>
+</blockquote>
+
+<p class="topic">Sprawdź spójność danych przed synchronizacją</p>
+<blockquote>
+  <p>Zanim Data Replicator przejdzie do trybu synchronizacji, możesz sprawdzić spójność danych. Wykonaj następujące kroki:</p>
+  <ol>
+    <li>Zaznacz <b>Sprawdź spójność danych przed synchronizacją</b>. </li>
+    <li>Kliknij <b>Zastosuj</b>.</li>
+  </ol>
+  <p class="notehead">Uwaga:</p>
+  <p class="notecontent">Jeżeli nie zaznaczysz tej opcji i zamkniesz Data Replicator, dodane, usunięte lub zmodyfikowane dane mogą nie zostać zsynchronizowane z serwerem po ponownym uruchomieniu programu Data Replicator.</p>
+</blockquote>
+
+<p class="topic">Przechowywanie identycznych plików na serwerze docelowym</p>
+<blockquote>
+  <p>Możesz ustawić przechowywanie w folderze „latest” plików identycznych jak na komputerze. Wykonaj następujące kroki:</p>
+  <ol>
+    <li>Zaznacz <b>Kiedy pliki lokalne są usuwane, usuń w tym samym czasie odpowiednie pliki kopii zapasowej</b>.</li>
+    <li>Kliknij <b>Zastosuj</b>. </li>
+  </ol>
+</blockquote>
+<hr>
+
+<p class=h1><a name=log></a>Log</p>
+<p>Maksymalny rozmiar logu to 512 KB. Kiedy plik logu osiągnie limit, najstarsze 128 KB zostanie usunięte.</p>
+<ul>
+<li class=topic>Zapisywanie logu</li>
+<ol>
+<li>Kliknij <b>Zapisz</b>. </li>
+<li>Wybierz ścieżkę miejsca docelowego kopii zapasowej, a następnie kliknij <b>Zapisz</b>, aby zakończyć.</li>
+</ol>
+<br>
+<li class=topic>Czyszczenie logu</li>
+<ol>
+<li>Kliknij <b>Wyczyść</b>. </li>
+<li>Kliknij <b>Tak</b> w oknie dialogowym potwierdzenia.</li>
+</ol>
+</ul>
+
+</body>
+</html>

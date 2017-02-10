@@ -1,0 +1,315 @@
+﻿
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Synology Data Replicator 3</title>
+<style type="text/css">
+<!--
+.head {
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.h1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.h2 {
+	font-weight: bold;
+	color: #FF3300;
+	font-size: 16px;
+}
+
+.topic {
+	font-family: "Geneva, Arial, Helvetica, sans-serif";
+	font-weight: bold;
+	color: #000000;
+	font-size: 16px;
+}
+
+body, td {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 10pt;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.notehead {
+	font-weight: bold;
+	font-size: 10pt;
+	color: #FF0000;
+}
+
+.notecontent {
+	font-size: 10pt;
+	color: #FF0000;
+}
+.style2 {font-size: 20px; font-weight: bold; color: #666666; 
+}
+.style4 {font-weight: bold; color: #0000FF; }
+-->
+</style>
+</head>
+<body>
+<p class="style2">Het gebruik van de Data Replicator 3</p>
+<p>Klik op de volgende belangrijke functies om kennis te maken met Data Replicator 3.</p>
+<ul>
+<li><a href="#bkp">PC gegevens back-up</a> </li>
+<li><a href="#restore">Back-up bestanden herstel</a> </li>
+<li><a href="#setting">Geavanceerde instellingen</a> </li>
+<li><a href="#log">Logboek</a> </li>
+</ul>
+<hr>
+<p class=h1><a name="bkp"></a>PC gegevens back-up</p>
+<p>Volg de onderstaande stappen om uw back-up te herstellen. U kunt ook naar de <a href="#setting">Geavanceerde instellingen</a> gaan voor andere instellingen die u helpen uw PC gegevens back-up een persoonlijk karakter te geven.</p>
+<ol>
+<li class=topic>Selecteer een back-upbestemming</li>
+	<p>U kunt een back-up maken van uw PC-gegevens naar een Synology server of een andere locatie. Aan het einde van de back-up kunt u de back-upbestanden terugvinden in uw toegewezen map.</p>
+	<p>1.1	Een back-up maken naar een Synology server</p>
+		<ol type="a">
+		<li>Klik op <b>Selecteren</b>.</li>
+		<li>Selecteer <b>Synology Server</b> en klik op <b>OK</b>. </li>
+		<li>In het volgende venster klikt u op de Synology server waar de gedeelde map voor de back-up zich bevindt. Klik daarna op <b>Volgende</b>.</li>
+		<li>Voer de gebruikersnaam en het wachtwoord in dat de gedeelde map kan lezen/schrijven die u net geselecteerd hebt en klik op <b>Volgende</b>. </li>
+		<li>Klik op de gedeelde map die u wilt gebruiken voor de back-up en klik op <b>Voltooien</b>. </li>
+		</ol>
+  <p>1.2	Back-up naar een andere locatie</p>
+		<ol type="a">
+		<li>Klik op <b>Selecteren</b>.</li>
+		<li>Selecteer <b>Andere locatie</b> en klik op <b>Bladeren</b> om de back-updoelmap te vinden.</li>
+		<li>Klik op <b>OK</b> om te voltooien.</li>
+  </ol>
+<BR>
+<li class=topic>Vink de mappen aan waarvan u een back-up wilt maken</li>
+<BR>
+<li class=topic>Selecteer een back-upmodus</li>
+<p>Data Replicator 3 biedt 3 back-upmodi voor een optimale gebruiksvriendelijkheid en deze zijn: <i><b>Onmiddellijk</b></i>, <i><b>Sync</b></i> en <i><b>Planning</b></i>.</p>
+	3.1	<b>Onmiddellijk</b>
+  	<p>     Als u op de <b>Onmiddellijk</b> toets klikt, wordt onmiddellijke een back-up gemaakt van alle bestanden in de geselecteerde lokale map(pen) naar de back-updoelmap.</p>
+	<p>3.2	<b>Sync</b>  </p>
+		<ul>
+		<li>Synchroniseer de gegevens nu en start de controle</li>
+		<p>Als u op de <b>Sync</b> toets klikt, maakt Data Replicator 3 een volledige back-up van alle bestanden in de geselecteerde map(pen) naar de back-updoelmap. Daarna start Data Replicator 3 de controle van deze map(pen). Naarmate u wijzigingen uitvoert, maakt Data Replicator 3 uitsluitend een back-up van de bestanden die gewijzigd werden.</p>
+		<p class="notehead">Opmerking:</p>
+		<ol class="notecontent">
+		<li>Nadat Data Replicator 3 naar de controlemodus gaat, blijft het programma werken tot u stopt.</li>
+		<li>De tijdsinterval tussen de e-mailsynchronisatie verwijst naar de periode tussen het einde van de synchronisatie tot het begin van de volgende synchronisatie. De taak kan uitgesteld worden wanneer Data Replicator 3 bezig is met de verwerking van de synchronisatie van andere bestanden.</li>
+		</ol>
+		<br>
+		<li>De controle stoppen</li>
+		<p>Om de controle te stoppen, klik op de <b>Stop Sync</b> toets in het Data Replicator 3 programmavenster. Indien het programmavenster geminimaliseerd werd naar het systeemvak moet u dubbelklikken op het Data Replicator 3 pictogram om het te openen.</p>
+  </ul>
+	    <p>3.3	<b>Planning</b></p>
+	    <ul>
+	  <li>Plan instellen</li>
+	  <p>Data Replicator 3 kan ingesteld worden om regelmatig automatische back-ups te maken op een gepreciseerd tijdstip. Volg hiervoor deze procedure:</p>
+	  <ol type="a">
+		<li>Klik op <b>Planning</b>.</li>
+		<li>Stel de back-upperiode en het begintijdstip in voor de geplande back-up en klik op <b>OK</b>. </li>
+		<li>Indien u Back-up Planning wenst uit te voeren terwijl u afgemeld bent, voer dan de gebruikersnaam en wachtwoord in die u gebruikt als u aangemeld bent op deze computer. Klik daarna op <b>OK</b>.<br> Als u geen geplande back-up wilt maken tijdens het afmelden van uw computer, klik op <b>Overslaan</b>.</li>
+	  </ol>
+	  <p class="notehead">Opmerking:</p>
+	  <ol class="notecontent">
+		<li>Om een back-up te maken wanneer u zich afmeldt van de computer mag het wachtwoord niet blanco zijn.</li>
+		<li>Voor Windows 98 of Windows ME gebruikers kan de back-up gepland worden tijdens het afmelden per ontwerp.</li>
+	  </ol>
+	  <p>Wanneer de planning ingesteld is, kunt u Synology Data Replicator 3 afsluiten of het programmavenster minimaliseren naar het systeemvak. Synology Data Replicator 3 voert de geplande back-up automatisch uit op het ingestelde tijdstip.</p>
+	  <li>Een schema verwijderen</li>
+	  <p>Klik op <b>Schema verwijderen</b> om de geplande back-up te stoppen en de instellingen te verwijderen.</p>
+		</ul>
+<p>Als u een back-up wilt maken van Outlook, Outlook Express of Windows Mail bestanden mag u het volgende niet vergeten:</p>
+<ul>
+<li>Voor Windows XP, Windows 2003 of Windows Vista gebruikers</li>
+	<ol type="a">
+	<li>Minimum een van de stations op uw PC moet in het NTFS formaat ingesteld zijn. </li>
+	<li>Outlook/Windows Mail bestanden moeten op lokale stations opgeslagen worden. </li>
+	<li>U moet zich aanmelden als de systeembeheerder van de PC.</li>
+	</ol>
+<li>Als u een ander besturingssysteem gebruikt dan Windows XP en Windows 2003 moet u Outlook sluiten voor u een back-up maakt van Outlook.</li>
+<br>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Ondersteuning & beperking</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<ol>
+<li>Tijdens de zoekopdracht naar de doelserver gebruikt Synology Data Replicator 3 poort 9999, 9998 of 9997.</li>
+<li>Gecomprimeerde bestanden en gecodeerde bestanden worden normale bestanden na de back-up. De bestandseigenschap wordt gewist. </li>
+<li>Met betrekking tot de lengte van de bestandsnaam ondersteunt Synology Data Replicator 3 een maximum van 240 bytes. </li>
+<li>Als u de naam van uw PC wijzigt, moet u het systeembeheerder login wachtwoord van uw PC invoeren voor de instelling van de geplande back-up om zeker te zijn dat Data Replicator 3 correct werkt. Als u reeds een back-up plan hebt ingesteld, moet u dat plan verwijderen en het systeembeheerder login wachtwoord van uw PC gebruiken om een nieuw plan in te stellen.</li>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name="restore"></a>Back-up bestanden herstel</p>
+<p>Om back-upbestanden te herstellen, moet u eerst een back-up doelmap selecteren en daarna een van de volgende methoden selecteren om uw back-upbestanden te herstellen:</p>
+<ol>
+<li class=topic>Herstel door te bladeren</li>
+<p>In de meeste situaties, als u zeker weet waar de back-upbestanden zich bevinden, kunt u <i>Herstel door te bladeren</i> gebruiken om uw bestanden:</p>
+	<ol>
+	<li>Klik op de <b>Start</b> toets in <i>Herstellen door te bladeren</i>. </li>
+	<li>Klik op <b>Volgende</b>.</li>
+	<li>Klik om het herstel bronbestand te selecteren en klik op <b>Volgende</b>. </li>
+	<li>Selecteer om bestanden te rangschikken <b>Op versie</b> of <b>Op herstelpunt</b>. </li>
+	<li>Vink de map(pen) aan die u wilt herstellen en klik op <b>Volgende</b>. </li>
+	<li>Selecteer de locatie waar u de back-upbestanden wilt herstellen. Klik daarna op <b>Voltooien</b>.</li>
+	</ol>
+    <br>
+<li class=topic>Herstel door te zoeken</li>
+<p>Als u niet zeker bent waar de back-upbestanden zich bevinden, of u wilt enkel bestanden herstellen met een bepaald trefwoord, moet u de onderstaande stappen volgen om te herstellen:</p>
+	<ol>
+	<li>Klik op de <b>Start</b> toets in Herstellen door te zoeken. </li>
+	<li>Klik op <b>Volgende</b>.</li>
+	<li>Klik om het herstel bronbestand te selecteren en klik op <b>Volgende</b>. </li>
+	<li>Voer het trefwoord in dat u wilt zoeken in het "Trefwoord" tekstveld. </li>
+	<li>Selecteer de back-upmap in de "Back-ups:" vervolgkeuzelijst. </li>
+	<li>Klik op <b>Zoeken</b>.</li>
+	<li>Selecteer de bestanden en mappen die u wilt herstellen in het frame aan de rechterzijde en klik op <b>Volgende</b>.</li>
+	<li>Selecteer de locatie waar u de back-upbestanden wilt herstellen. Klik daarna op <b>Voltooien</b>.</li>
+	</ol>
+<br>
+<table width="550" border="0" bgcolor="#FFCCFF">
+<tr>
+<td><center>
+<b><font size="3">Tip over het herstel van Outlook, Outlook Express en Windows Mail bestanden</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<p>     Als u een doelpad selecteert, kunt u kiezen uit:</p>
+<ol>
+<b><li>Oorspronkelijk pad</li></b>
+	<p>Als u deze optie selecteert, hoeft u de e-mailberichten en het adresboek niet handmatig te importeren. De PC-gegevens worden vervangen door de herstelde bestanden.</p>
+<b><li>Nieuw pad</li></b>
+	<p>Als u deze optie selecteert, kunt u de gegevens herstellen naar een specifiek pad en de e-mailberichten en het adresboek handmatig importeren met Outlook/Outlook Express/Windows Mail.</p>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name=setting></a>Geavanceerde instellingen</p>
+<p>In de Optiesectie kunt u de geavanceerde back-upinstellingen als volgt instellen.</p>
+<p class="topic">Filter</p>
+<blockquote>
+  <p>Gebruik deze functie om een nauwkeurige back-up te maken van bestanden. Het uitsluiten van bestanden met een bepaald voorvoegsel of een bepaalde extensie uit de back-up zal de back-upprocedure versnellen. Volg deze stappen om door te gaan:</p>
+  <ol>
+    <li>Klik op <b>Filter</b>.</li>
+    <li>Klik op <b>Toevoegen</b> aan de rechterzijde van de "Extensie" of "Prefix" optie. </li>
+    <li>Voer het specifieke criterium in, bijvoorbeeld, ".exe" voor extensie of "~" voor prefix. </li>
+    <li>Klik op <b>OK</b> om het set-up dialoogvenster te sluiten en klik opnieuw op <b>OK</b> om de instellingen op te slaan.</li>
+  </ol>
+</blockquote>
+<p class="topic">E-mailmelding inschakelen</p>
+<blockquote>
+  <p>Gebruik deze functie om back-upinformatie te ontvangen via e-mail wanneer de back-up planning voltooid is.</p>
+  <ol>
+    <li>Klik op <b>SMTP set-up</b>. </li>
+    <li>Voer geldige e-mailinformatie in en klik op <b>OK</b> om te voltooien.</li>
+  </ol>
+</blockquote>
+<p class="topic">Bestandsversies inschakelen</p>
+<blockquote>
+  <p class="style4">Waartoe dient de bestandsversie functie?</p>
+  <p>Als u de bestandsversie functie inschakelt, kunt u de geschiedenisedities van hetzelfde bestand opslaan.</p>
+  <p>Wanneer de eerste back-up voltooid is, worden alle back-upbestanden opgeslagen in de "latest" map in de back-up doelmap. Vanaf de volgende back-up zal Data Replicator 3 automatisch controleren of er reeds een bestand bestaat met dezelfde naam in de "latest" map. Zo ja en de inhoud van de bestanden werd gewijzigd, wordt het vorige back-upbestand in de "latest" map verplaatst naar de "past" map als een oudere versie en er wordt een back-up gemaakt van het bestand op uw computer naar de "latest" map. In deze map vindt u steeds de meest recente back-upbestanden.</p>
+  <p class="notehead">Opmerking:</p>
+  <p class="notecontent">Het bestand waarnaar hierboven verwezen wordt, moet in dezelfde map staan. Wanneer u dus dezelfde account gebruikt om een back-up te maken van de map, wordt de vorige versie daar aangemaakt.</p>
+  <p>Als de bestandsversie functie ingeschakeld is en u stelt incorrecte en onomkeerbare bewerkingen vast op uw lokale bestanden kunt u de geschiedenisbestanden terugvinden in de back-up doelmap en deze bestanden eenvoudig herstellen.</p>
+  <p><b>Aantal vorige versies</b></p>
+  <p>U kunt hier het aantal vorige versies van de back-upbestanden instellen dat u wilt opslaan, met een maximum van 20. De bestandsnaam of de vorige versiebestanden zal worden toegevoegd met "v00", "v01" enz. Hoe hoger het getal, hoe nieuwer de versie.</p>
+  <p>Stel een aantal vorige versies in om te beslissen hoeveel vorige versies bewaard blijven in de back-up doelmap. Volg deze stappen om door te gaan:</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>Vink <v>Bestandsversies inschakelen</v> aan.</li>
+<li>Stel een aantal vorige versies in en klik op <b>Toepassen</b> om de instellingen op te slaan. </li>
+</ol>
+</blockquote>
+<p class="topic">Herstelpunten</p>
+<blockquote>
+  <p class="style4">Wat zijn herstelpunten?</p>
+  <p>Iedere maal nadat een back-up gemaakt werd, wordt een map opgeslagen met de naam van het begintijdstip van de back-up die alle bestanden bevat van deze back-up. Dit wordt het herstelpunt.</p>
+  <p>Het bestand dat nooit gewijzigd werd, verschijnt in ieder herstelpunt na iedere back-up. Hoewel er effectief slechts een bestand schijfgrootte ingenomen wordt.</p>
+  <p><b>Aantal herstelpunten</b></p>
+  <p>U kunt hier instellen hoeveel herstelpunten u wilt bewaren, met een maximum van 128 herstelpunten. Als het aantal herstelpunten de ingestelde waarde overschrijdt, worden de oudste herstelpunten op de back-up doelmap automatisch verwijderd na de volgende back-up.</p>
+</blockquote>
+<blockquote>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Ondersteuning & beperking</font></b>
+</center></td>
+</tr>
+<tr>
+<td>De herstelpuntfunctie wordt uitsluitend ondersteund in Windows 2000 / Windows XP / Windows 2003 / Windows Vista.</td>
+</tr>
+</table>
+</blockquote>
+
+<p class="topic">Automatisch starten tijdens aanmelding</p>
+<blockquote>
+  <p>U kunt Synology Data Replicator 3 instellen automatisch te starten wanneer u zich aanmeldt in Windows. Volg deze stappen om door te gaan:</p>
+  <ol>
+    <li>Vink <b>Data Replicator 3 automatisch starten wanneer Windows start</b>. </li>
+    <li>Klik op <b>Toepassen</b>.</li>
+  </ol>
+</blockquote>
+
+<p class="topic">Gegevensconsistentie controleren voor synchronisatie</p>
+<blockquote>
+  <p>U kunt beslissen of u de gegevensconsistentie wilt controleren voor Data Replicator in modus synchroon gaat. Volg deze stappen om door te gaan:</p>
+  <ol>
+    <li>Selecteer <b>Controleer de gegevensconsistentie voor synchronisatie</b>. </li>
+    <li>Klik op <b>Toepassen</b>.</li>
+  </ol>
+  <p class="notehead">Opmerking:</p>
+  <p class="notecontent">Als u deze optie uitschakelt en Data Replicator afsluit, dan is het mogelijk dat toegevoegde, verwijderde of bewerkte gegevens niet worden gesynchroniseerd op de server wanneer u de volgende keer Data Replicator opstart.</p>
+</blockquote>
+
+<p class="topic">Identieke mappen bewaren op de doelserver</p>
+<blockquote>
+  <p>U kunt het systeem zodanig instellen bestanden te bewaren in de "latest" map identiek te zijn aan de bestanden op uw lokale computer. Volg deze stappen om door te gaan:</p>
+  <ol>
+    <li>Vink <b>Wanneer lokale bestanden verwijderd worden, moet u de tegenovergestelde back-upbestanden ook verwijderen</b> aan.</li>
+    <li>Klik op <b>Toepassen</b>. </li>
+  </ol>
+</blockquote>
+<hr>
+
+<p class=h1><a name=log></a>Logboek</p>
+<p>De maximumgrootte van het logboekbestand is 512KB; als het logboekbestand deze limiet benadert, worden de oudste 128KB verwijderd.</p>
+<ul>
+<li class=topic>Logboek opslaan</li>
+<ol>
+<li>Klik op <b>Opslaan</b>. </li>
+<li>Selecteer het pad van de back-up doelmap en klik op <b>Opslaan</b> om af te sluiten.</li>
+</ol>
+<br>
+<li class=topic>Logboek wissen</li>
+<ol>
+<li>Klik op <b>Wissen</b>. </li>
+<li>Klik op <b>Ja</b> in het bevestiging dialoogvenster.</li>
+</ol>
+</ul>
+
+</body>
+</html>

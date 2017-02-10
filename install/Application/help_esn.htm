@@ -1,0 +1,315 @@
+﻿
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Synology Data Replicator 3</title>
+<style type="text/css">
+<!--
+.head {
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.h1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.h2 {
+	font-weight: bold;
+	color: #FF3300;
+	font-size: 16px;
+}
+
+.topic {
+	font-family: "Geneva, Arial, Helvetica, sans-serif";
+	font-weight: bold;
+	color: #000000;
+	font-size: 16px;
+}
+
+body, td {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 10pt;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.notehead {
+	font-weight: bold;
+	font-size: 10pt;
+	color: #FF0000;
+}
+
+.notecontent {
+	font-size: 10pt;
+	color: #FF0000;
+}
+.style2 {font-size: 20px; font-weight: bold; color: #666666; 
+}
+.style4 {font-weight: bold; color: #0000FF; }
+-->
+</style>
+</head>
+<body>
+<p class="style2">Uso de Data Replicator 3</p>
+<p>Haga clic en las siguientes funciones principales para conocer Data Replicator 3.</p>
+<ul>
+<li><a href="#bkp">Copia de seguridad de datos en PC</a> </li>
+<li><a href="#restore">Restauración de archivos de copia de seguridad</a> </li>
+<li><a href="#setting">Configuración avanzada</a> </li>
+<li><a href="#log">Registro</a> </li>
+</ul>
+<hr>
+<p class=h1><a name="bkp"></a>Copia de seguridad de datos en PC</p>
+<p>Siga estos pasos para configurar la copia de seguridad. También puede ir a <a href="#setting">Configuración avanzada</a> para conocer otros ajustes que le ayudarán a personalizar su copia de seguridad de datos del PC.</p>
+<ol>
+<li class=topic>Seleccione un destino para la copia de seguridad</li>
+	<p>Puede hacer una copia de seguridad de los datos del PC en un servidor Synology o en otra ubicación. Una vez realizada correctamente la copia de seguridad, podrá buscar los archivos de copia de seguridad en la carpeta que tenga asignada.</p>
+	<p>1.1	Copia de seguridad en un servidor Synology</p>
+		<ol type="a">
+		<li>Haga clic en <b>Seleccionar</b>.</li>
+		<li>Seleccione <b>Servidor Synology</b> y haga clic en <b>OK</b>. </li>
+		<li>En la siguiente ventana, haga clic en el servidor Synology en el que se encuentra la carpeta compartida para la copia de seguridad. A continuación, haga clic en <b>Siguiente</b>.</li>
+		<li>Introduzca el nombre de usuario y contraseña que puede Leer/Escribir en la carpeta compartida que acaba de elegir y haga clic en <b>Siguiente</b>. </li>
+		<li>Haga clic en la carpeta compartida que desee usar para la copia de seguridad y haga clic en <b>Terminar</b>. </li>
+		</ol>
+  <p>1.2	Copia de seguridad en otra ubicación</p>
+		<ol type="a">
+		<li>Haga clic en <b>Seleccionar</b>.</li>
+		<li>Seleccione <b>Otra ubicación</b> y haga clic en <b>Examinar</b> para localizar el destino de copia de seguridad.</li>
+		<li>Haga clic en <b>OK</b> para terminar.</li>
+  </ol>
+<BR>
+<li class=topic>Marque las carpetas de las que desea realizar una copia de seguridad</li>
+<BR>
+<li class=topic>Seleccione un modo de copia de seguridad</li>
+<p>Data Replicator 3 proporciona los 3 modos siguientes de copia de seguridad: <i><b>Inmediata</b></i>, <i><b>Sincronizar</b></i> y <i><b>Programa</b></i>.</p>
+	3.1	<b>Inmediata</b>
+  	<p>     Al hacer clic en el botón <b>Inmediata</b>, se hará inmediatamente una copia de seguridad en el destino de copia de seguridad de todos los archivos que se encuentren en las carpetas locales seleccionadas.</p>
+	<p>3.2	<b>Sincronizar</b>  </p>
+		<ul>
+		<li>Sincronizar los datos en este momento y comenzar la supervisión</li>
+		<p>Haga clic en el botón <b>Sincronizar</b>; Data Replicator 3 realizará una completa copia de seguridad en el destino de copia de seguridad de todos los archivos que se encuentren en las carpetas seleccionadas. A continuación, Data Replicator 3 comenzará a supervisar dichas carpetas. Según va realizando cambios, Data Replicator 3 hace una copia de seguridad únicamente de los archivos que han cambiado.</p>
+		<p class="notehead">Observación:</p>
+		<ol class="notecontent">
+		<li>Una vez que Data Replicator 3 entra en modo de supervisión, seguirá funcionando hasta que lo detenga.</li>
+		<li>El intervalo de tiempo entre la sincronización del correo es el tiempo desde que termina una sincronización hasta que comienza la siguiente. La tarea se puede posponer si Data Replicator 3 está procesando la sincronización de otros archivos.</li>
+		</ol>
+		<br>
+		<li>Detener la supervisión</li>
+		<p>Para detener la supervisión, haga clic en el botón <b>Detener sincronización</b> en la ventana del programa Data Replicator 3. Si la ventana del programa se ha minimizado en la bandeja del sistema, haga doble clic en el icono de Data Replicator 3 para abrirla.</p>
+  </ul>
+	    <p>3.3	<b>Programa</b></p>
+	    <ul>
+	  <li>Establecer el programa</li>
+	  <p>Data Replicator 3 puede configurarse para que realice copias de seguridad automáticas de manera periódica a la hora especificada. Para ello:</p>
+	  <ol type="a">
+		<li>Haga clic en <b>Programa</b>.</li>
+		<li>Defina el período de copia de seguridad y la hora final para Copia de seguridad programada y haga clic en <b>OK</b>. </li>
+		<li>Si desea realizar Copia de seguridad programada durante el tiempo de desconexión, introduzca el nombre de usuario y la contraseña que utiliza para iniciar sesión en este equipo. A continuación, haga clic en <b>OK</b>.<br> Si no desea realizar la Copia de seguridad programada durante el tiempo de desconexión, haga clic en <b>Omitir</b>.</li>
+	  </ol>
+	  <p class="notehead">Observación:</p>
+	  <ol class="notecontent">
+		<li>Para realizar la copia de seguridad durante el tiempo de desconexión, la contraseña de usuario no puede estar vacía.</li>
+		<li>Para usuarios de Windows 98 o Windows ME, Copia de seguridad programada se puede ejecutar durante el tiempo de desconexión.</li>
+	  </ol>
+	  <p>Cuando finalice la configuración, podrá salir de Synology Data Replicator 3 o minimizar la ventana del programa en la bandeja del sistema. Synology Data Replicator 3 realizará automáticamente la Copia de seguridad programada cuando llegue el momento.</p>
+	  <li>Borrar programa</li>
+	  <p>Haga clic en <b>Borrar programa</b> para detener Copia de seguridad programada y copiar la configuración del programa.</p>
+		</ul>
+<p>Si desea realizar una copia de seguridad de archivos de Outlook, Outlook Express o Windows Mail, tenga en cuenta lo siguiente:</p>
+<ul>
+<li>Si ejecuta Windows XP, Windows 2003 o Windows Vista,  </li>
+	<ol type="a">
+	<li>Al menos una de las unidades del PC deben estar en formato NTFS. </li>
+	<li>Los archivos de Outlook/Windows Mail deberán estar en unidades locales. </li>
+	<li>Debe iniciar sesión como administrador del PC.</li>
+	</ol>
+<li>Si ejecuta sistemas operativos distintos de Windows XP y Windows 2003, cierre Outlook antes de hacer una copia de seguridad de Outlook.</li>
+<br>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Soporte y Limitaciones</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<ol>
+<li>Al buscar el servidor de destino, Synology Data Replicator 3 utilizará el puerto 9999, 9998 o el 9997.  </li>
+<li>Los archivos comprimidos y cifrados se convertirán en archivos normales después de la copia de seguridad. La propiedad de los archivos se borrará. </li>
+<li>Para la longitud del nombre de archivo, Synology Data Replicator 3 admite hasta 240 bytes. </li>
+<li>Si cambia el nombre del PC, deberá introducir la contraseña de inicio de sesión del administrador del PC al configurar Copia de seguridad programada para garantizar que Data Replicator 3 se ejecute de manera correcta. Si ya ha configurado un programa de copia de seguridad, bórrelo y utilice la contraseña de inicio de sesión del administrador de PC para configurar una nueva.</li>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name="restore"></a>Restauración de archivos de copia de seguridad</p>
+<p>Para restaurar archivos de copia de seguridad, deberá seleccionar primero un destino para la copia de seguridad y elegir uno de los siguientes métodos para restaurar los archivos de copia de seguridad:</p>
+<ol>
+<li class=topic>Restaurar explorando</li>
+<p>En la mayoría de las situaciones, si está seguro de dónde se encuentran los archivos de copia de seguridad, puede utilizar <i>Restaurar explorando</i> para restaurar sus archivos:</p>
+	<ol>
+	<li>Haga clic en el botón <b>Iniciar</b> situado debajo de <i>Restaurar explorando</i>. </li>
+	<li>Haga clic en <b>Siguiente</b>.</li>
+	<li>Haga clic para seleccionar el origen de restauración y, a continuación, haga clic en <b>Siguiente</b>. </li>
+	<li>Seleccione mostrar los archivos <b>Por versión</b> o <b>Por punto de restauración</b>. </li>
+	<li>Marque las carpetas que desee restaurar y haga clic en <b>Siguiente</b>. </li>
+	<li>Seleccione la ubicación a la que se van a restaurar los archivos de copia de seguridad. A continuación, haga clic en <b>Terminar</b>.</li>
+	</ol>
+    <br>
+<li class=topic>Restaurar buscando</li>
+<p>Si no está seguro de dónde se encuentran los archivos de copia de seguridad, o si únicamente desea restaurar los archivos que tengan una determinada palabra clave, siga estos pasos para restaurar:</p>
+	<ol>
+	<li>Haga clic en el botón <b>Iniciar</b> situado debajo de Restaurar buscando. </li>
+	<li>Haga clic en <b>Siguiente</b>.</li>
+	<li>Haga clic para seleccionar el origen de restauración y, a continuación, haga clic en <b>Siguiente</b>. </li>
+	<li>Escriba la palabra clave que desee buscar en el campo de texto "Palabra clave:". </li>
+	<li>Elija la carpeta de copia de seguridad en el menú desplegable "Copias de seguridad:". </li>
+	<li>Haga clic en <b>Buscar</b>.</li>
+	<li>Seleccione los archivos y carpetas que desea restaurar en el cuadro de la derecha y haga clic en <b>Siguiente</b>.</li>
+	<li>Seleccione la ubicación a la que se van a restaurar los archivos de copia de seguridad. A continuación, haga clic en <b>Terminar</b>.</li>
+	</ol>
+<br>
+<table width="550" border="0" bgcolor="#FFCCFF">
+<tr>
+<td><center>
+<b><font size="3">Sugerencias sobre la restauración de archivos de Outlook, Outlook Express y Windows Mail</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<p>     A la hora de elegir una ruta de destino, puede elegir:</p>
+<ol>
+<b><li>Ruta original</li></b>
+	<p>Si elige esta opción, no será necesario que importe manualmente el correo y la libreta de direcciones, pues los datos del PC serán reemplazados por los archivos restaurados.</p>
+<b><li>Ruta nueva</li></b>
+	<p>Si elige esta opción, puede restaurar los datos a una ruta especificada e importar manualmente el correo y la libreta de direcciones con Outlook, Outlook Express y Windows Mail.</p>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name=setting></a>Configuración avanzada</p>
+<p>En la sección Opciones, puede configurar la configuración de copia de seguridad avanzada como sigue.</p>
+<p class="topic">Filtrar</p>
+<blockquote>
+  <p>Utilice esta función para realizar con precisión la copia de seguridad de los archivos. Si excluye de la lista de copia de seguridad los archivos que contengan un determinado prefijo o extensión, la copia de seguridad se realizará antes. Siga estos pasos para continuar:</p>
+  <ol>
+    <li>Haga clic en <b>Filtrar</b>.</li>
+    <li>Haga clic en <b>Agregar</b> a la derecha de la opción "Extensión" o "Prefix". </li>
+    <li>Escriba el criterio especificado; por ejemplo, ".exe" para extensiones o "~" para prefijo. </li>
+    <li>Haga clic en <b>OK</b> para cerrar el cuadro de diálogo de configuración y de nuevo en <b>OK</b> para guardar la configuración.</li>
+  </ol>
+</blockquote>
+<p class="topic">Habilitar notificación de correo electrónico</p>
+<blockquote>
+  <p>Utilice esta función para recibir detalles de la copia de seguridad por correo electrónico una vez finalizada Copia de seguridad programada.</p>
+  <ol>
+    <li>Haga clic en <b>Configuración de SMTP</b>. </li>
+    <li>Introduzca información válida de correo electrónico y haga clic en <b>OK</b> para finalizar.</li>
+  </ol>
+</blockquote>
+<p class="topic">Habilitar versiones de archivos</p>
+<blockquote>
+  <p class="style4">¿Para qué sirve la función de versiones de archivos?</p>
+  <p>La función Habilitar versiones de archivos puede ayudarle a conservar el historial de ediciones del mismo archivo.</p>
+  <p>Una vez finalizada la primera copia de seguridad, todos los archivos de copia de seguridad se almacenarán en la carpeta “latest” en el destino de copia de seguridad. A partir de la siguiente copia de seguridad, Data Replicator 3 comprobará automáticamente si ya existe algún archivo con el mismo nombre en la carpeta “latest”. Si existe y ha cambiado el contenido de los archivos, el archivo de copia de seguridad anterior de la carpeta "latest" se moverá a la carpeta "past" como versión anterior, mientras que el archivo de su equipo se copiará en la carpeta "latest", donde siempre encontrará los archivos copiados más recientes.</p>
+  <p class="notehead">Observación:</p>
+  <p class="notecontent">El archivo al que se ha hecho referencia anteriormente debe encontrarse en la misma carpeta. De este modo, cuando use la misma cuenta para hacer una copia de seguridad de la carpeta, se habrán generado versiones anteriores.</p>
+  <p>Con la función de versiones de archivos activada, si sufre una edición inadecuada e irreversible en sus archivos locales, podrá encontrar el historial de archivos en el destino de copia de seguridad y restaurar los archivos con facilidad.</p>
+  <p><b>Número de versiones anteriores</b></p>
+  <p>Aquí puede indicar cuántas versiones anteriores de archivos de copia de seguridad desea mantener. El máximo es de 20 versiones. Al nombre de archivo de los archivos de versiones anteriores se le añadirá "v00", "v01", etc. Cuanto mayor sea el número, más reciente será la versión.</p>
+  <p>Defina un número de versiones anteriores para decidir cuántas versiones anteriores se conservarán en el destino de copia de seguridad. Siga estos pasos para continuar:</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>Active <v>Habilitar versiones de archivos</v>.</li>
+<li>Defina un número de versiones anteriores y haga clic en <b>Aplicar</b> para guardar la configuración. </li>
+</ol>
+</blockquote>
+<p class="topic">Puntos de restauración</p>
+<blockquote>
+  <p class="style4">¿Qué son los puntos de restauración?</p>
+  <p>Cada vez que se realiza una copia de seguridad, habrá una carpeta con el nombre de la hora de inicio de la copia de seguridad, que contendrá todos los archivos de esta copia de seguridad. Se trata de un punto de restauración.</p>
+  <p>Los archivos que no se hayan modificado nunca aparecerán en todos los puntos de restauración después de cada copia de seguridad. Sin embargo, en realidad sólo estará ocupado un espacio de disco para el archivo.</p>
+  <p><b>Número de puntos de restauración</b></p>
+  <p>Aquí puede indicar el número de puntos de restauración que desee conservar, con un máximo de 128. Si el número de puntos de restauración supera el valor establecido, se borrará automáticamente el más antiguo en el destino de la copia de seguridad tras la siguiente copia de seguridad.</p>
+</blockquote>
+<blockquote>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Soporte y Limitaciones</font></b>
+</center></td>
+</tr>
+<tr>
+<td>La función Punto de restauración sólo se admite en Windows 2000 / Windows XP / Windows 2003 / Windows Vista.</td>
+</tr>
+</table>
+</blockquote>
+
+<p class="topic">Inicio automático al iniciar sesión</p>
+<blockquote>
+  <p>Puede configurar Synology Data Replicator 3 para que se inicie automáticamente cuando inicie sesión en Windows. Siga estos pasos para continuar:</p>
+  <ol>
+    <li>Active <b>Iniciar automáticamente Data Replicator 3 al iniciar Windows</b>. </li>
+    <li>Haga clic en <b>Aplicar</b>.</li>
+  </ol>
+</blockquote>
+
+<p class="topic">Comprobar la consistencia de datos antes de sincronizar</p>
+<blockquote>
+  <p>Puede decidir si desea comprobar la consistencia de datos antes de que Data Replicator entre en modo de sincronización. Siga estos pasos para continuar:</p>
+  <ol>
+    <li>Active <b>Comprobar la consistencia de datos antes de sincronizar</b>. </li>
+    <li>Haga clic en <b>Aplicar</b>.</li>
+  </ol>
+  <p class="notehead">Observación:</p>
+  <p class="notecontent">Si desactiva esta opción y cierra Data Replicator, los datos agregados, quitados o modificados podrían no sincronizarse con el servidor la próxima vez que inicie Data Replicator.</p>
+</blockquote>
+
+<p class="topic">Conservar archivos idénticos en servidor de destino</p>
+<blockquote>
+  <p>Puede hacer que los archivos de la carpeta "latest" sean idénticos a los del equipo local. Siga estos pasos para continuar:</p>
+  <ol>
+    <li>Active <b>Cuando elimine archivos locales, elimine también los archivos de copia de seguridad opuestos al mismo tiempo</b>.</li>
+    <li>Haga clic en <b>Aplicar</b>. </li>
+  </ol>
+</blockquote>
+<hr>
+
+<p class=h1><a name=log></a>Registro</p>
+<p>El tamaño máximo del archivo de registro es de 512 KB; si el archivo de registro supera el límite, se quitarán los 128 KB más antiguos.</p>
+<ul>
+<li class=topic>Guardar registro</li>
+<ol>
+<li>Haga clic en <b>Guardar</b>. </li>
+<li>Elija la ruta del destino de copia de seguridad y haga clic en <b>Guardar</b> para finalizar.</li>
+</ol>
+<br>
+<li class=topic>Limpiar registro</li>
+<ol>
+<li>Haga clic en <b>Borrar</b>. </li>
+<li>Haga clic en <b>Sí</b> en el cuadro de diálogo de confirmación.</li>
+</ol>
+</ul>
+
+</body>
+</html>

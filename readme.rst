@@ -1,0 +1,1 @@
+This is the first piece of software I ever sold for actual cash money! Now it's officially open source. It basically lets you hook up a webcam and then manually log some data related to whatever you see. It was originally written for a neuro-psychology lab that was logging where their mice liked to hang out over time.

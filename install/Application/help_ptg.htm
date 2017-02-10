@@ -1,0 +1,315 @@
+﻿
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Synology Data Replicator 3</title>
+<style type="text/css">
+<!--
+.head {
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.h1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.h2 {
+	font-weight: bold;
+	color: #FF3300;
+	font-size: 16px;
+}
+
+.topic {
+	font-family: "Geneva, Arial, Helvetica, sans-serif";
+	font-weight: bold;
+	color: #000000;
+	font-size: 16px;
+}
+
+body, td {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 10pt;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.notehead {
+	font-weight: bold;
+	font-size: 10pt;
+	color: #FF0000;
+}
+
+.notecontent {
+	font-size: 10pt;
+	color: #FF0000;
+}
+.style2 {font-size: 20px; font-weight: bold; color: #666666; 
+}
+.style4 {font-weight: bold; color: #0000FF; }
+-->
+</style>
+</head>
+<body>
+<p class="style2">Usar o Data Replicator 3</p>
+<p>Clique nas seguintes funções principais para conhecer melhor o Data Replicator 3.</p>
+<ul>
+<li><a href="#bkp">Cópia de segurança dos dados do computador</a> </li>
+<li><a href="#restore">Cópia de segurança da restauração de ficheiros</a> </li>
+<li><a href="#setting">Definições Avançadas</a> </li>
+<li><a href="#log">Registo</a> </li>
+</ul>
+<hr>
+<p class=h1><a name="bkp"></a>Cópia de segurança dos dados do computador</p>
+<p>Siga os passos abaixo indicados para configurar a sua cópia de segurança. Também poderá ir a <a href="#setting">Definições Avançadas</a> para conhecer outras definições que o ajudarão a personalizar a cópia de segurança de dados do seu computador.</p>
+<ol>
+<li class=topic>Seleccione um destino da cópia de segurança</li>
+	<p>Pode optar por fazer a cópia de segurança dos dados do seu computador num servidor Synology ou noutra localização. Depois de a cópia de segurança ser realizada com sucesso, poderá encontrar os ficheiros de cópia de segurança na sua pasta atribuída.</p>
+	<p>1.1	Fazer a cópia de segurança num servidor Synology</p>
+		<ol type="a">
+		<li>Clique em <b>Seleccionar</b>.</li>
+		<li>Seleccione <b>Servidor Synology</b> e clique em <b>OK</b>. </li>
+		<li>Na próxima janela, clique no servidor Synology onde está localizada a pasta partilhada para a cópia de segurança. De seguida, clique em <b>Seguinte</b>.</li>
+		<li>Introduza o nome de utilizador e a palavra-passe que pode Ler/Escrever na pasta partilhada que acabou de escolher, e clique em <b>Seguinte</b>. </li>
+		<li>Clique na pasta partilhada que pretende usar para a cópia de segurança e clique em <b>Terminar</b>. </li>
+		</ol>
+  <p>1.2	Fazer cópia de segurança noutra localização</p>
+		<ol type="a">
+		<li>Clique em <b>Seleccionar</b>.</li>
+		<li>Seleccione <b>Outra localização</b> e clique em <b>Pesquisar</b> para localizar o destino da cópia de segurança.</li>
+		<li>Clique em <b>OK</b> para terminar.</li>
+  </ol>
+<BR>
+<li class=topic>Coloque um visto nas pastas de que pretende fazer a cópia de segurança</li>
+<BR>
+<li class=topic>Escolha um modo de cópia de segurança</li>
+<p>O Data Replicator 3 fornece 3 modos de cópia de segurança para sua maior comodidade, que são: <i><b>Imediata</b></i>, <i><b>Sincronização</b></i> e <i><b>Agendada</b></i>.</p>
+	3.1	<b>Imediata</b>
+  	<p>     Clicando no botão <b>Imediata</b>, será feita uma cópia de segurança imediata de todos os ficheiros nas pastas locais seleccionadas para o destino da cópia de segurança.</p>
+	<p>3.2	<b>Sincronização</b>  </p>
+		<ul>
+		<li>Sincronizar os dados agora e começar a monitorização</li>
+		<p>Clique no botão <b>Sincronização</b>; o Data Replicator 3 fará uma cópia de segurança completa de todos os ficheiros das pastas seleccionadas para o destino da cópia de segurança. Depois disso, o Data Replicator 3 começará a monitorização dessas mesmas pastas. À medida que fizer alterações, o Data Replicator 3 fará apenas cópias de segurança dos ficheiros que forem modificados.</p>
+		<p class="notehead">Nota:</p>
+		<ol class="notecontent">
+		<li>Depois de o Data Replicator 3 entrar no modo de monitorização, continuará a trabalhar até que o pare.</li>
+		<li>O tempo de intervalo entre a sincronização e-mail diz respeito ao tempo desde que a sincronização termina até ao início da próxima sincronização. A tarefa pode ser adiada quando o Data Replicator 3 estiver a processar a sincronização de outros ficheiros.</li>
+		</ol>
+		<br>
+		<li>Parar a monitorização</li>
+		<p>Para parar a monitorização, clique no botão <b>Parar a sincronização</b> na janela do programa Data Replicator 3. Se a janela do programa foi minimizada para a tabuleiro do sistema, clique duas vezes no ícone do Data Replicator 3 para a abrir.</p>
+  </ul>
+	    <p>3.3	<b>Agendar</b></p>
+	    <ul>
+	  <li>Configurar horário</li>
+	  <p>O Data Replicator 3 pode ser configurado para fazer cópias de segurança automáticas regularmente no horário especificado. Para isso:</p>
+	  <ol type="a">
+		<li>Clique em <b>Agendar</b>.</li>
+		<li>Configure o período da cópia de segurança e a hora de início para a cópia de segurança agendada e clique em <b>OK</b>. </li>
+		<li>Se pretende realizar a cópia de segurança durante o encerramento de sessão, introduza o nome de utilizador e a palavra-passe que usa para iniciar a sessão neste computador. De seguida, clique em <b>OK</b>.<br> Se não pretende realizar a cópia de segurança agendada durante o fim de sessão, clique em <b>Ignorar</b>.</li>
+	  </ol>
+	  <p class="notehead">Nota:</p>
+	  <ol class="notecontent">
+		<li>Para fazer a cópia de segurança durante o fecho de sessão, o utilizador e a palavra-passe não podem estar em branco.</li>
+		<li>Para utilizadores com Windows 98 ou Windows ME, a cópia de segurança agendada pode ser realizada durante o fecho de sessão por defeito.</li>
+	  </ol>
+	  <p>Depois de configurar o horário, pode sair do Synology Data Replicator 3 ou minimizar a janela do programa para o tabuleiro do sistema. O Synology Data Replicator 3 irá realizar a cópia de segurança agendada automaticamente no horário indicado.</p>
+	  <li>Apagar o agendamento</li>
+	  <p>Clique em <b>Apagar o agendamento</b> para parar a cópia de segurança agendada e remover as configurações de agendamento.</p>
+		</ul>
+<p>Quando pretender fazer a cópia de segurança dos ficheiros do Outlook, Outlook Express ou do Windows Mail, tenha em conta que:</p>
+<ul>
+<li>Se estiver a executar o Windows XP, Windows 2003 ou o Windows Vista, </li>
+	<ol type="a">
+	<li>Pelo menos uma das drives do seu computador deve estar no formato NTFS. </li>
+	<li>Os ficheiros do Outlook/Windows Mail devem estar nas drives locais. </li>
+	<li>Tem de iniciar a sessão como administrador do computador.</li>
+	</ol>
+<li>Se estiver a executar um sistema operativo sem ser Windows XP e o Windows 2003, feche o Outlook antes de fazer a cópia de segurança do mesmo.</li>
+<br>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Suporte e Limitação</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<ol>
+<li>Ao pesquisar o servidor alvo, o Synology Data Replicator 3 usará a porta 9999, ou 9998, ou 9997. </li>
+<li>Os ficheiros comprimidos e os ficheiros encriptados tornar-se-ão ficheiros normais depois da cópia de segurança. A propriedade do ficheiro será apagada. </li>
+<li>Para o comprimento do nome do ficheiro, o Synology Data Replicator 3 permite até 240 bytes. </li>
+<li>Se mudar o nome do computador do seu PC, deve introduzir a palavra-passe de início de sessão do administrador do seu computador ao configurar a cópia de segurança agendada para garantir que o Data Replicator 3 a realiza correctamente. Se já configurou um horário para a cópia de segurança, apague esse horário e use a palavra-passe de início de sessão do administrador do seu computador para definir um novo.</li>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name="restore"></a>Cópia de segurança da restauração de ficheiros</p>
+<p>Para restaurar ficheiros de cópia de segurança, deve seleccionar um alvo de cópia de segurança primeiro, e depois escolher um dos seguintes métodos para restaurar os seus ficheiros de cópia de segurança:</p>
+<ol>
+<li class=topic>Restaurar por navegação</li>
+<p>Na maior parte das situações, se tiver a certeza da localização dos ficheiros de cópia de segurança, pode usar <i>Restaurar por navegação</i> para restaurar os seus ficheiros:</p>
+	<ol>
+	<li>Clique no botão <b>Iniciar</b> debaixo de <i>Restaurar por navegação</i>. </li>
+	<li>Clique em <b>Seguinte</b>.</li>
+	<li>Clique para seleccionar a fonte de restauro e clique em <b>Seguinte</b>. </li>
+	<li>Escolha se pretende mostrar os ficheiros <b>por versão</b> ou <b>por ponto de restauro</b>. </li>
+	<li>Coloque um visto nos ficheiros que pretende restaurar, e clique em <b>Seguinte</b>. </li>
+	<li>Escolha a localização para onde os ficheiros de cópia de segurança serão restaurados. De seguida, clique em <b>Terminar</b>.</li>
+	</ol>
+    <br>
+<li class=topic>Restaurar por pesquisa</li>
+<p>Se não tiver certeza de onde estão os ficheiros de cópia de segurança, ou se só pretende restaurar ficheiros com determinada palavra-chave, siga os seguintes passos para restaurar:</p>
+	<ol>
+	<li>Clique no botão <b>Iniciar</b> debaixo do restaurar por pesquisa. </li>
+	<li>Clique em <b>Seguinte</b>.</li>
+	<li>Clique para seleccionar a fonte de restauro e clique em <b>Seguinte</b>. </li>
+	<li>Digite a palavra-chave que pretende pesquisar no campo de texto "Palavra-chave:" . </li>
+	<li>Escolha a pasta de cópia de segurança no menu pendente "Cópias de segurança:" . </li>
+	<li>Clique em <b>Procurar</b>.</li>
+	<li>Seleccione os ficheiros e pastas que pretende restaurar na moldura do lado direito e clique em <b>Seguinte</b>.</li>
+	<li>Escolha a localização para onde os ficheiros de cópia de segurança serão restaurados. De seguida, clique em <b>Terminar</b>.</li>
+	</ol>
+<br>
+<table width="550" border="0" bgcolor="#FFCCFF">
+<tr>
+<td><center>
+<b><font size="3">Dica sobre a restauração de ficheiros Outlook, Outlook Express e Windows Mail</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<p>     Ao escolher o caminho de destino, pode optar por:</p>
+<ol>
+<b><li>Caminho original</li></b>
+	<p>Ao escolher esta opção, não precisa de importar manualmente o e-mail e a lista de endereços; os dados do computador serão substituídos pelos ficheiros restaurados.</p>
+<b><li>Novo caminho</li></b>
+	<p>Ao escolher esta opção, pode restaurar os dados para um caminho específico e importar manualmente o mail e o livro de endereços com o Outlook/Outlook Express/Windows Mail.</p>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name=setting></a>Definições Avançadas</p>
+<p>Na secção desta Opção, pode configurar as definições avançadas da cópia de segurança como se mostra a seguir.</p>
+<p class="topic">Filtro</p>
+<blockquote>
+  <p>Use esta função para fazer cópias de segurança de ficheiros com precisão. Excluir ficheiros com determinados prefixos e extensões da lista de cópia de segurança ajuda-lo-á a configurar a cópia de segurança. Siga estes passos para continuar:</p>
+  <ol>
+    <li>Clique em <b>Filtro</b>.</li>
+    <li>Clique em <b>Adicionar</b> no lado direito da opção "Extensão" ou "Prefix". </li>
+    <li>Introduza o critério específico - por exemplo, "exe" para extensão ou "~" para prefixo. </li>
+    <li>Clique em <b>OK</b> para fechar a caixa de diálogo de configuração e clique em <b>OK</b> novamente para guardar as configurações.</li>
+  </ol>
+</blockquote>
+<p class="topic">Activar notificação por e-mail</p>
+<blockquote>
+  <p>Use esta função para receber os dados da cópia de segurança por e-mail depois da cópia de segurança agendada terminar.</p>
+  <ol>
+    <li>Clique em <b>Configurar SMTP</b>. </li>
+    <li>Introduza a informação de e-mail válida e clique em <b>OK</b> para terminar.</li>
+  </ol>
+</blockquote>
+<p class="topic">Activar as versões dos ficheiros</p>
+<blockquote>
+  <p class="style4">Para que serve a função de versões dos ficheiros?</p>
+  <p>Activar as versões dos ficheiros pode ajudá-lo a guardar o histórico das edições do mesmo ficheiro.</p>
+  <p>Após a conclusão da primeira cópia de segurança, todos os ficheiros com cópia de segurança serão guardados na pasta "latest" no destino da cópia de segurança. Na próxima cópia de segurança, o Data Replicator 3 verificará automaticamente se já existe algum ficheiro com o mesmo nome na pasta "latest". Se houver e se o conteúdo dos ficheiros foi modificado, a anterior cópia de segurança do ficheiro na pasta "latest" será então movida para a pasta "past", como uma versão anterior. No seu computador será feita uma cópia de segurança do ficheiro na pasta "latest", onde poderá sempre encontrar todas as cópias de segurança recentes.</p>
+  <p class="notehead">Nota:</p>
+  <p class="notecontent">O ficheiro referido em cima deve estar na mesma pasta. Portanto, quando está a usar a mesma conta para fazer uma cópia de segurança da pasta, será gerada uma versão passada.</p>
+  <p>Quando a função de versão de ficheiro está activa, se houver edição imprópria ou irreversível nos seus ficheiros locais, pode encontrar o histórico dos ficheiros no destino de cópia de segurança e restaurar os ficheiros facilmente.</p>
+  <p><b>Número das versões anteriores</b></p>
+  <p>Pode definir aqui quantas versões anteriores de cópia de segurança dos ficheiros pretende guardar; 20 versões é o máximo. Ao nome do ficheiro dos ficheiros de versão passado será adicionado "v00", "v01" e assim sucessivamente. Quanto maior for o número, mais recente é a versão.</p>
+  <p>Configurar um número de versões anteriores para decidir quantas versões anteriores serão guardadas no destino de cópia de segurança. Siga estes passos para continuar:</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>Coloque um visto em <v>Activar versões de ficheiro</v>.</li>
+<li>Defina um número para as versões anteriores e clique em <b>Aplicar</b> para guardar as configurações. </li>
+</ol>
+</blockquote>
+<p class="topic">Pontos de restauro</p>
+<blockquote>
+  <p class="style4">O que são pontos de restauro?</p>
+  <p>Sempre que uma cópia de segurança é realizada, haverá uma pasta cujo nome será a hora de início da cópia de segurança que contém todos os ficheiros dessa cópia de segurança. Esse será o ponto de restauro.</p>
+  <p>O ficheiro que nunca foi modificado aparecerá em todos os pontos de restauro depois de cada cópia de segurança. No entanto, apenas um tamanho do disco do ficheiro será ocupado na realidade.</p>
+  <p><b>Número de pontos de restauro</b></p>
+  <p>Pode definir aqui quantos pontos de restauro pretende guardar; o máximo são 128 pontos de restauro. Quando o número de pontos de restauro exceder o valor definido, os pontos de restauro mais antigos no destino da cópia de segurança serão apagados automaticamente na seguinte cópia de segurança.</p>
+</blockquote>
+<blockquote>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">Suporte e Limitação</font></b>
+</center></td>
+</tr>
+<tr>
+<td>A função dos pontos de restauro é apenas suportada no Windows 2000 / Windows XP / Windows 2003 / Windows Vista.</td>
+</tr>
+</table>
+</blockquote>
+
+<p class="topic">Inicialização automática no arranque</p>
+<blockquote>
+  <p>Pode definir para iniciar o Synology Data Replicator 3 automaticamente quando inicia a sessão no Windows. Siga estes passos para continuar:</p>
+  <ol>
+    <li>Coloque um visto em <b>Inicialização automática do Data Replicator 3 no arranque do Windows</b>. </li>
+    <li>Clique em <b>Aplicar</b>.</li>
+  </ol>
+</blockquote>
+
+<p class="topic">Verificar a consistência dos dados antes de sincronizar</p>
+<blockquote>
+  <p>Pode decidir se deve ser verificada a consistência dos dados antes do Data Replicator entrar no modo de sincronização. Siga estes passos para continuar:</p>
+  <ol>
+    <li>Assinale a caixa de verificação <b>Verificar a consistência dos dados antes de começar a sincronizar</b>. </li>
+    <li>Clique em <b>Aplicar</b>.</li>
+  </ol>
+  <p class="notehead">Nota:</p>
+  <p class="notecontent">Se desmarcar esta opção e fechar o Data Replicator, os dados adicionados, removidos ou modificados podem não ser sincronizados quando iniciar o Data Replicator da próxima vez.</p>
+</blockquote>
+
+<p class="topic">Manter os ficheiros idênticos no servidor de destino</p>
+<blockquote>
+  <p>Se puder definir guardar os ficheiros na pasta "latest" para serem idênticos aos que estão no seu computador local. Siga estes passos para continuar:</p>
+  <ol>
+    <li>Coloque um visto em <b>Quando os ficheiros locais são apagados, apagar os ficheiros de cópia de segurança correspondentes ao mesmo tempo</b>.</li>
+    <li>Clique em <b>Aplicar</b>. </li>
+  </ol>
+</blockquote>
+<hr>
+
+<p class=h1><a name=log></a>Registo</p>
+<p>O máximo do ficheiro de registo é 512KB; quando o ficheiro de registo atinge o limite, os 128KB mais antigos serão removidos.</p>
+<ul>
+<li class=topic>Guardar registo</li>
+<ol>
+<li>Clique em <b>Guardar </b>. </li>
+<li>Escolha o caminho do destino da cópia de segurança e clique em <b>Guardar</b> para terminar.</li>
+</ol>
+<br>
+<li class=topic>Limpar registo</li>
+<ol>
+<li>Clique em <b>Limpar</b>. </li>
+<li>Clique em <b>Sim</b> na caixa de diálogo de confirmação .</li>
+</ol>
+</ul>
+
+</body>
+</html>

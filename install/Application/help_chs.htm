@@ -1,0 +1,315 @@
+﻿
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Synology Data Replicator 3</title>
+<style type="text/css">
+<!--
+.head {
+	font-size: 20px;
+	font-weight: bold;
+	color: #666666;
+}
+
+.h1 {
+	font-size: 20px;
+	font-weight: bold;
+	color: #FF0000;
+}
+
+.h2 {
+	font-weight: bold;
+	color: #FF3300;
+	font-size: 16px;
+}
+
+.topic {
+	font-family: "Geneva, Arial, Helvetica, sans-serif";
+	font-weight: bold;
+	color: #000000;
+	font-size: 16px;
+}
+
+body, td {
+	font-family: "Arial", "Helvetica", "sans-serif";
+	font-size: 10pt;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.notehead {
+	font-weight: bold;
+	font-size: 10pt;
+	color: #FF0000;
+}
+
+.notecontent {
+	font-size: 10pt;
+	color: #FF0000;
+}
+.style2 {font-size: 20px; font-weight: bold; color: #666666; 
+}
+.style4 {font-weight: bold; color: #0000FF; }
+-->
+</style>
+</head>
+<body>
+<p class="style2">Data Replicator 3 使用入门</p>
+<p>直接点选下列主题来深入了解Data Replicator 3 使用方法。</p>
+<ul>
+<li><a href="#bkp">备份PC 文件</a> </li>
+<li><a href="#restore">回复备份文件</a> </li>
+<li><a href="#setting">高级设定</a> </li>
+<li><a href="#log">日志记录</a> </li>
+</ul>
+<hr>
+<p class=h1><a name="bkp"></a>备份PC 文件</p>
+<p>请按照下列顺序设置备份。在开始备份前，您亦可前往<a href="#setting">高级设定</a>页面进行进阶备份设</p>
+<ol>
+<li class=topic>选择备份目的地</li>
+	<p>您可以选择Synology 服务器上的共享文件夹或是其他位置的文件夹作为备份目的地，未来，在备份成功运行后，您便可以在您所指定的目的地文件夹中找到备份文件。</p>
+	<p>1.1	备份到Synology 服务器</p>
+		<ol type="a">
+		<li>点选<b>选择</b>按钮。</li>
+		<li>选择<b>Synology 服务器</b>，然后按<b>确定</b>。 </li>
+		<li>在下一个画面中点选共享文件夹所在的<b>Synology 服务器</b>，然后按<b>下一步</b>。</li>
+		<li>输入您存取该共享文件夹的账号和密码，再按<b>下一步</b>。 </li>
+		<li>点选您要使用的共享文件夹，然后按<b>完成</b>。 </li>
+		</ol>
+<p>1.2	备份到其他位置</p>
+		<ol type="a">
+		<li>点选<b>选择</b>按钮。</li>
+		<li>选择<b>其他位置</b>，然后按<b>浏览</b>选择备份目的地。</li>
+		<li>按<b>确定</b>完成。</li>
+  </ol>
+<BR>
+<li class=topic>勾选想要备份的文件夹</li>
+<BR>
+<li class=topic>选择备份模式</li>
+<p>Data Replicator 3 提供3 种备份方式：<i><b>立即备份</b></i>、<i><b>同步</b></i>、<i><b>排程备份</b></i>。</p>
+	3.1	<b>立即备份</b>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;按下<b>立即备份</b>，将勾选的文件夹内所有文件立即备份到备份目的地。</p>
+	<p>3.2	<b>同步</b>  </p>
+		<ul>
+		<li>启动同步</li>
+		<p>按下<b>同步</b>，Data Replicator 3 会将勾选的文件夹内所有文件立即备份到备份目的地，然后进入监控状态，保持数据同步。若文件夹中的文件有任何修改，则会被备份到备份目的地。</p>
+		<p class="notehead">注意：</p>
+		<ol class="notecontent">
+		<li>当您启动同步后，同步功能会持续进行，直到您停止同步。</li>
+		<li>同步电子邮件的时间间隔指的是从同步完成后至下次同步开始之间的时间。实际运行同步电子邮件的时间间隔可能会因为Data Replicator 3 正在同步其他文件而延长。</li>
+		</ol>
+		<br>
+		<li>停止同步</li>
+		<p>请点选程序窗口中的<b>停止同步</b>。若您的程序窗口已经最小化至系统列，请双击Data Replicator 3 程序图标开始程序窗口。</p>
+  </ul>
+	    <p>3.3	<b>排程备份</b></p>
+	    <ul>
+	  <li>启动排程备份</li>
+	  <p>您可以设置Data Replicator 3 固定在指定的时间自动进行备份。请依照下列步骤设置：</p>
+	  <ol type="a">
+		<li>按下<b>排程备份</b>。</li>
+		<li>选择排程备份的周期和开始的时间，然后按<b>确定</b>。 </li>
+		<li>若您希望排程备份在您注销计算机时依然正常运行，请输入您登入本计算机的用户账号和密码，然后按<b>确定</b>。<br>若您不需要在注销时运行排程备份，请按<b>略过</b>。</li>
+	  </ol>
+	  <p class="notehead">注意：</p>
+	  <ol class="notecontent">
+		<li>密码字段不可为空白。</li>
+		<li>在Windows 98 或Windows ME 环境下，使用者无需登入即可进行排程备份。</li>
+	  </ol>
+	  <p>设置完毕后，您可以关闭Data Replicator 3 或是将程序缩小。每当指定排程备份的时间一到，Data Replicator 3 会自动进行排程备份。</p>
+	  <li>删除排程</li>
+	  <p>请点选程序窗口中的<b>删除排程</b>。</p>
+		</ul>
+<p>若您想要备份Outlook、Outlook Express 及Windows Mail 文件，请注意下列几点：</p>
+<ul>
+<li>若您的工作环境为Windows XP、Windows 2003，或Windows Vista： </li>
+	<ol type="a">
+	<li>您计算机上使用的硬盘驱动器必须至少有一个是格式化为NTFS 格式。 </li>
+	<li>Outlook/Windows Mail 文件必须存在于本机硬盘中。 </li>
+	<li>您必须以这台计算机的系统管理员身分登入。</li>
+	</ol>
+<li>若您的工作环境为Windows XP 或Windows 2003 以外的操作系统，则请先关闭Outlook 再进行备份。</li>
+<br>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">支持与限制</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<ol>
+<li>在寻找目标服务器的时候，Synology Data Replicator 3 会依序使用端口9999、或9998、或是9997。 </li>
+<li>压缩和加密这两种文件属性在备份后会消失，即具此属性的文件在备份后会变为一般文件。 </li>
+<li>Synology Data Replicator 3 支持至多240 个比特数的长文件名文件备份。 </li>
+<li>若您修改了您计算机的名称，则在设置排程备份时必须输入您计算机的管理员密码，以确保Data Replicator 3 正常运行。若您在计算机上已设置运行排程备份，则需删除排程，重新以输入计算机管理员密码的方式设置一次。</li>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name="restore"></a>回复备份文件</p>
+<p>在选择备份目的地后，您可以使用下列2 种文件回复方式回复您需要的文件：</p>
+<ol>
+<li class=topic>以浏览的方式来回复</li>
+<p>一般状况下，如果您确定要回复的文件位置，请依照下列步骤用浏览的方式来回复：</p>
+	<ol>
+	<li>按下「以浏览的方式来回复」项目下的<b>开始</b>。 </li>
+	<li>按<b>下一步</b>。</li>
+	<li>选择回复文件来源，按<b>下一步</b>。 </li>
+	<li>选择您要依照版本或回复点来寻找数据。 </li>
+	<li>要回复的文件夹及文件，按<b>下一步</b>。 </li>
+	<li>选择目标路径，然后按<b>完成</b>。</li>
+	</ol>
+    <br>
+<li class=topic>以搜索的方式来回复</li>
+<p>如果您不确定要回复的文件位置，或只想回复特定文件名的文件，请依照下列步骤用搜索的方式来回复：</p>
+	<ol>
+	<li>按下「以搜索的方式来回复」项目下的<b>开始</b>。 </li>
+	<li>按<b>下一步</b>。</li>
+	<li>选择回复文件来源，按<b>下一步</b>。 </li>
+	<li>在「关键词：」文本框下输入要搜索文件的关键词。 </li>
+	<li>在「备份：」下拉选单中选择备份文件。 </li>
+	<li>按下<b>搜索</b>。</li>
+	<li>勾选右方窗口中要回复的文件夹及文件，然后按<b>下一步</b>。</li>
+	<li>选择目标路径，然后按<b>完成</b>。</li>
+	</ol>
+<br>
+<table width="550" border="0" bgcolor="#FFCCFF">
+<tr>
+<td><center>
+<b><font size="3">回复Outlook、Outlook Express 及Windows Mail 文件小技巧</font></b>
+</center></td>
+</tr>
+<tr>
+<td>
+<br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;在选择目标路径时，您可以选择将文件回复到：</p>
+<ol>
+<b><li>原始路径</li></b>
+	<p>选择原始路径，您可省去手动汇入邮件或通讯簿的动作，不过您PC端的数据会被回复的文件取代。</p>
+<b><li>新路径</li></b>
+	<p>选择新路径，您可以直接将文件回复到指定的位置，但回复后请使用Outlook/Outlook Express/Windows Mail的汇入功能汇入邮件及通讯簿。</p>
+</ol>
+<br>
+</td>
+</tr>
+</table>
+</ul>
+</ol>
+<hr>
+
+<p class=h1><a name=setting></a>高级设定</p>
+<p>在设置页面，您可以为您的PC 备份做进阶的设置。</p>
+<p class="topic">文件过滤</p>
+<blockquote>
+<p>使用文件过滤可以帮助您精准地备份文件，排除文件名包含特定前缀或扩展名的文件以缩短备份的时间。请依照下列步骤设置：</p>
+  <ol>
+<li>点选<b>文件过滤</b>按钮。</li>
+<li>按「扩展名」或「前缀」字段右方的<b>新增</b>。 </li>
+<li>输入条件或扩展名，例如：扩展名为「.exe」或前缀为「~」的文件。 </li>
+<li>按<b>确定</b>，并且按<b>套用</b>存储设置。</li>
+  </ol>
+</blockquote>
+<p class="topic">启动电子邮件通知</p>
+<blockquote>
+<p>启动电子邮件通知选项，您可以在排程备份完成后收到电子邮件通知该次备份的详细信息。</p>
+  <ol>
+<li>点选<b>SMTP 设置</b>按钮。 </li>
+<li>输入有效的电子邮件信息，并且按<b>OK </b>完成。</li>
+  </ol>
+</blockquote>
+<p class="topic">启用文件版本功能</p>
+<blockquote>
+<p class="style4">什么是文件版本功能？</p>
+<p>文件版本功能让您保留同一文件的历史修改记录。</p>
+<p>第一次成功备份后，所有文件将被存放在「latest」文件夹。之后每一次运行备份时，程序皆自动检查「latest」文件夹是否已存有相同文件名的文件。若已存有相同文件名的文件但内容相异（表示该文件曾被修改），则前次备份的该文件将被视为旧版本，并自动转存至「past」文件夹；现行文件则被视为最新版本，并自动存放于「latest」文件夹。 因此，您可以在「latest」文件夹找到所有备份文件的最新版本。</p>
+<p class="notehead">注意：</p>
+<p class="notecontent">该文件需位于同一个共享文件夹，且由同一个使用者进行备份，才被视为同一文件而产生新旧版本。</p>
+<p>若您启用了文件版本功能，当本机数据遭到不当修改且无法回复时，您将可以从服务器端的备份数据库中找到历史文件，并藉由回复功能回复该文件。</p>
+<p><b>旧版本数目</b></p>
+<p>您可以自行决定欲保留的旧版本数目，至多20个版本。旧版本文件的文件名后方将会自动加上数字标注（v00、v01等以此类推），数字越大表示该文件越新。</p>
+<p>利用此功能设置要在备份目的地保留几个旧文件备份版本，请依照下列步骤设置：</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>勾选<b>启用文件版本</b>功能。</li>
+<li>设置旧版本数目，然后按<b>套用</b>存储设置。 </li>
+</ol>
+</blockquote>
+<p class="topic">回复点</p>
+<blockquote>
+<p class="style4">什么是回复点？</p>
+<p>在每一次成功备份勾选的文件后，备份目的地即会产生一个以备份开始时间为文件名的文件夹，这个文件夹就是一个回复点，包含此次备份的所有文件。</p>
+<p>同一文件若未经修改而再次备份，仍会存在于每个回复点中，但在硬盘中只保留一份实体文件，并不重复占用硬盘空间。</p>
+<p><b>回复点个数</b></p>
+<p>您可以自行决定欲保留的回复点个数，至多128个。若回复点数目已超出所设置的数值时，则服务器上较旧的回复点会在下次备份完成后自动被删除。</p>
+</blockquote>
+<blockquote>
+<table width="550" border="0" bgcolor="#CCCCCC">
+<tr>
+<td><center>
+<b><font size="3">支持与限制</font></b>
+</center></td>
+</tr>
+<tr>
+<td>回复点功能只支持于Windows 2000 / Windows XP / Windows 2003 / Windows Vista。</td>
+</tr>
+</table>
+</blockquote>
+
+<p class="topic">登入时自动启动</p>
+<blockquote>
+<p>您可以设置在登入 Windows 后，自动启动 Synology Data Replicator 3。请依照下列步骤设置：</p>
+  <ol>
+<li>勾选<b>当我登入 Windows 时自动启动 Data Replicator 3</b>。 </li>
+<li>按<b>套用</b>。</li>
+  </ol>
+</blockquote>
+
+<p class="topic">同步前检查文件一致性</p>
+<blockquote>
+<p>您可以决定是否要在 Data Replicator 进入同步模式之前检查文件一致性。请依照下列步骤设置：</p>
+  <ol>
+<li>请勾选<b>同步前检查文件一致性</b>。 </li>
+<li>按<b>套用</b>。</li>
+  </ol>
+<p class="notehead">注意：</p>
+<p class="notecontent">如果您取消勾选此选项并关闭 Data Replicator，然后开始新增、删除或修改数据，则当您下次启动 Data Replicator 时，这些数据可能不会同步至服务器上。</p>
+</blockquote>
+
+<p class="topic">保持备份目的地端文件一致</p>
+<blockquote>
+<p>您可以设置让备份目的地上「latest」文件夹中的备份文件与PC 端备份来源目录中的文件保持一致，相互对应。请依照下列步骤设置：</p>
+  <ol>
+<li>勾选<b>当删除本机计算机上的文件时，同时删除相对应的备份文件</b>。</li>
+<li>按<b>套用</b>。 </li>
+  </ol>
+</blockquote>
+<hr>
+
+<p class=h1><a name=log></a>日志纪录</p>
+<p>日志的容量最大是 512KB，达到容量上限时，系统会将较旧的128KB 记录删除。</p>
+<ul>
+<li class=topic>存储日志</li>
+<ol>
+<li>按程序窗口下方的<b>存储</b>。 </li>
+<li>选取存储位置，然后按<b>存储</b>完成。</li>
+</ol>
+<br>
+<li class=topic>清除日志</li>
+<ol>
+<li>按程序窗口下方的<b>清除</b>。 </li>
+<li>确认清除日志，请按确认窗口的<b>是</b>。</li>
+</ol>
+</ul>
+
+</body>
+</html>
